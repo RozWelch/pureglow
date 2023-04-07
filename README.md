@@ -1,108 +1,348 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Pure Glow
+Pure Glow is a skincare range, selling products for the face, body and an organic range. 
+Users can browse skincare products, and purchase them. There is a ‘how to’ section, with useful articles on how to use the products, and suggested products for each article. Shoppers can leave reviews of a product,  and leave a star rating. They can also see how the product was reviewed and starred by other users.
+The payment system uses Stripe. Please note that this website is for educational purposes do not enter any personal credit/debit card details when using the site.
+To test this system, test card details can be used. These can be found in Stripe's documentation website: https://stripe.com/docs/testing
+The live link can be found here - add link
 
-Welcome RozWelch,
+## Am I Responsive mockups
+* Used Am I Responsive website to show the main pages on different devices:
+    <details>
+    <summary>Pure Glow mockups</summary>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+    ![home](https://github.com/RozWelch/)
+    ![list](https://github.com/RozWelch/)
+    ![details](https://github.com/RozWelch/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Contents
+* [Design and User Experience](#Design-and-User-Experience)
+* [Features](#Features)
+* [Technologies Used](#Technologies-Used)
+* [Agile Methodology](#Agile)
+* [Fixed and Unfixed Bugs](#Fixed-and-Unfixed-Bugs)
+* [Validation](#Validation)
+* [Testing](#Testing)
+* [Project Deployment](#Project-Creation-and-Deployment)
+* [Credits](#Credits)
 
-## Gitpod Reminders
+## Design and User Experience
+The site was aimed at purchasers of skin care products.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* Accessibility:
+    * To ensure maximum user accessibility, the contrast between the background colour and text was kept to a high contrast.
+    * Font size was kept large to ensure high legibility
+    * The overall design was kept simple and easy to follow. Call-to-action buttons were made easy to view and locate on the page.
 
-`python3 -m http.server`
+* Colour pallet:
+    * The main colours choosen gave the site a medical feel, with warm accent colours to give an approchable feel.  
+    ![Colour Pallett](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/colour_scheme.jpg)
 
-A blue button should appear to click: _Make Public_,
+* Wireframes:
+    <details>
+    <summary>Balsamiq wireframes</summary>
+    
+    * Home Page Wireframe
+    ![Home Page](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/homepage.jpg)
 
-Another blue button should appear to click: _Open Browser_.
+    * Care Providers list Wireframe 
+    ![|List Page](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/providerlist.jpg)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    * Care Providers details Wireframe
+    ![Detail Page](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/providerdetails.jpg)
+    
+    * Add Care Provider page Wireframe
+    ![Add Page](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/addprovider.jpg)
 
-A blue button should appear to click: _Make Public_,
+* Database Drawing:
+    <details>
+    <summary>Database schema</summary>
 
-Another blue button should appear to click: _Open Browser_.
+    * Database
+    
+    ![Database](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/database_schema_drawing.jpg)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* User Stories:
+* Epic: First Time User - Site design and navigation
+    * As a First time User, I can view information on the Home Page so that I can clearly see the purpose of the site and how to use it
+    * As a First Time User, I can easily understand the main purpose of the app, so that I can find the infomation I require easily
+    * As a First Time User, I can navigate the site so that I can navigate to the information I require in an effective and intuitive fashion
+    * As a First Time User,  I can view care providers, so that I can browse a list of care providers
+    * As a First Time User,  I can view care providers full profile, so that I can see all of their details and comments
+ 
+* Epic: Frequent User - account functions
+    * As a Frequent User, I can create a new account so that I can access all functions provided by the app
+    * As a Frequent User,  I can login and logout, so that I can access my details 
+    * As a Frequent User, I can see my login status so that I can know if I am logged in or out
+    * As a Frequent User,  I can view care providers and service provided, so that I can see care providers that suit my needs 
+    * As a Frequent User,  I can login and comment on a care provider, so that I can give my feedback on their service
 
-To log into the Heroku toolbelt CLI:
+* Epic: Care Provider Account
+    * As a care provider,  I can login and logout, so that I can access my details
+    * As a care provider,  I can see my login status so that I can know if I am logged in or out 
+    * As a care provider,  I can create an account, so that I can add my details 
+    * As a care provider,  I can update my account details, so that I can manage my account content
+    * As a care provider,  I can delete my account details, so that I can manage my account 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* Epic: Site Admin
+    * As a Site Admin,  I can approve care provider’s accounts, so that I can check they are authentic care providers
+    * As a Site Admin,  I can add a care provider account, so that I can add to the site content's list of care providers
+    * As a Site Admin,  I can update or delete a care provider’s accounts, so that I can manage my care providers content
+    * As a Site Admin,  I can approve comments, so that I can filter out objectionable comments
+    * As a Site Admin, I can update comments, so that I can manage my care providers content
+    * As a Site Admin, I can delete comments, so that I can manage my care providers content
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* Epic: Future Features
+    * Logged in User can 'like' a Care Provider, number of likes can be displayed 
+    * Have different user types for a care provider or a care seeker, so they can be restricted to certain areas of the website
+    * Care providers can be filtered by county or by speciality or by disabled parking availability
+    * Bookmarks page, so logged in user can bookmark providers, and see a page of their bookmarked providers
 
-------
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Features
+* Header and footer
+    ![header](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/header_logo_nav.jpg)
+    * Logo: This logo is positioned in the top left of the navigation bar. The logo is linked to the home page so the user can easily navigate back to the home page.
+    * Navigation Bar: The navigation bar is present at the top of every page and includes links to other pages.
+When logged in, the user will see an icon and their user name. If not logged in they will see a link to sign up or log in.
+The navigation bar is fully responsive, collapsing into a hamburger menu for smaller devices. The links show the user their current page by displaying a different colour and an underline, this is also used when the user hovers over a link so they can see what page they will navigate to.
+    ![footer](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/footer.jpg)
+    * Footer: The footer section has links to Carehub's Facebook, Instagram, Twitter and Youtube pages.
+These open in a separate browser window to avoid taking the user away from the site.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* Home page
+    * The call to action section
+    ![cta_in](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/cta_section_loggedin.jpg)
+    ![cta_out](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/cta_section_notloggedin.jpg)
+    * The call to action section shows a relevant image, and a easy to locate call to action button: sign up button if not logged in, or find care button if already logged in.
+    * The about section
+    ![about](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/about_section.jpg)
+    * The about section gives a brief description of who the site is for and what type of care a user can find there. 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* Account pages
+    * Sign In
+    ![signin](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/sign_in.jpg)
+    * Sign up
+    ![signup](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/sign_up.jpg)
+    * Log out
+    ![logout](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/sign_out.jpg)
+    * Allauth was used to create the Sign up / Log in / Log out functions. A success message is displayed when the user has signed in / signed out / or created and account sucessfully.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* Care Providers' list view
+    ![providerlist](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/providers_list.jpg)
+    * Shows a list of Care Providers that have been approved by the site Admin, ordered by business name. The page paginates after every 6 providers are listed. Clicking on the 'Care providers Detail' button will bring the user to the full details for that provider.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* Care Provider Detail view
+    ![providerdetail](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/provider_details.jpg)
+    * Shows the full details for that provider
+    * If the user is the author of the provider listing, they will see the buttons to edit or delete that provider
+    ![editdeleteprovider](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/edit_delete_provider.jpg)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* Care Provider Detail - Comments section
+    ![comments](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/comments.jpg)
+    * Shows comments that have been approved by the site Admin for that Care Provider. If the user is signed in, a comment box is shown where they can leave a commnet. They are shown a message to show they have sucessfully left a comment, and it awaits approval by admin.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* Add a care provider page
+    ![comments](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/add_provider.jpg)
+    * If logged in, a user will see a form to add a care provider. A care provider can add an image, or a default placeholder image will be used. The user will receive a success message. The care provider details then await approval by the site Admin.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* Edit care provider page
+    ![comments](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/edit_provider.jpg)
+    * If logged in, and the user is the author of the Care Provider, they can see the edit button, which brings them to an edit provider page. The form is pre populated with all fields from the original provider details. When changes are submitted, the user will receive a message that the details have been sucessfully updated.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* Delete care provider page
+    ![comments](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/delete_provider.jpg)
+    * If logged in, and the user is the author of the Care Provider, they can see the delete button. If clicked, they will be asked to confirm they wish to delete the provider, or they can cancel. If they click delete, the user will receive a message to say the provider has successfully been deleted.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* Future Features
+    * Logged in User can 'like' a Care Provider, number of likes can be displayed 
+    * Have different user types for a care provider or a care seeker, so they can be restricted to certain areas of the website
+    * Care providers can be filtered by county or by speciality
+    * Bookmarks page, so logged in user can bookmark providers, and see a page of their bookmarked providers
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Technologies Used
+* Languages: Python, HTML, CSS, Javascript
+* Other technologies used:  
+    * Django: Main python framework 
+    * Django-allauth: authentication library used to create user accounts
+    * Elephant PostgreSQL: database
+    * Heroku: cloud based platform to deploy the site
+    * Balsamiq: to draw wireframes
+    * Chrome Dev Tools - for testing responsiveness, performance and for debugging
+    * Font Awesome: icons used on the site
+    * GitHub: version control and agile Kanban boards
+    * Google Fonts: for fonts used on site
+    * Favicon: to create a favicon for the site
+    * Summernote: WYSIWYG editor - for users to create comments 
+    * Crispy Forms: for Django forms
+    * Cloudinary: image hosting service 
+    * Bootstrap: CSS Framework for developing the site
+    * Secret Key Generator: https://djecrety.ir/
+    * Database schema drawing toool: https://drawsql.app
+* Validators:
+    * W3C: to validate html and css
+    * PEP8: to validate Python code
+    * Jshint: to validate Javascript
+    * Python: Code Institute pep8 validator: https://pep8ci.herokuapp.com/
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Agile
+* Github projects kanban boards were used, see link to final board here: https://github.com/users/RozWelch/projects/6/views/1
+* The project was then divided in 6 sprints:
+* Sprint 1:
+    <details>
+    <summary>Administration functionality</summary>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+    ![sprint1](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/sprint1_AdmininProgress.jpg)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* Sprint 2:
+    <details>
+    <summary>Add Care Providers list and details views</summary>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+    ![sprint2](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/sprint_2_addviews.jpg)
 
-------
+* Sprint 3:
+    <details>
+    <summary>Add Commenting functionality</summary>
 
-## FAQ about the uptime script
+    ![sprint3](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/sprint_3_addlikesandcomments-.jpg)
 
-**Why have you added this script?**
+* Sprint 4:
+    <details>
+    <summary>Home Page and site navigation</summary>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+    ![sprint4](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/sprint4-homepage-sitenav-mainpurpose.jpg)
 
-**How will this affect me?**
+* Sprint 5:
+    <details>
+    <summary>User login and logout functionality</summary>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+    ![sprint5](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/sprint5_create.jpg)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* Sprint 6:
+    <details>
+    <summary>Care Provider CRUD functionality</summary>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+    ![sprint6](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/sprint_6_update_delete.jpg)
 
-**So….?**
+* Final Sprint:
+    <details>
+    <summary>Tidy up and final review</summary>
+    After a meeting with my mentor, some of the tasks were moved to future features, due to time contraints at this stage.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+    ![sprintfinal](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/final_sprint.jpg)
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Fixed and Unfixed Bugs
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* Fixed bugs:
 
-**Anything more?**
+    * The comments form would re-submit a comment if the back button was used. To prevent this autocomplete="off" was added to the form in the html file.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+    * The care providers list was misaligned, the loop was in the wrong place, it had an opening div before it, and closing div after, leaving the styling crossing over into the next iteration, causing the next iteration to be moved out by 12px each time. It was resolved by moving the closing div tag.
 
----
+    * When a success message was added to the DeleteProvider view, it was not showing up. A bug in Django which has yet to be fixed meant Message Mixins didn't work with Delete Views.
+    The workaround was found on Stack: https://stackoverflow.com/a/42656041
 
-Happy coding!
+    * When initial commit was made, it failed as I had divergent branches, there was remote work that was not local. I found the answer on Slack. I integrated the remote changes by using the 'git config pull.rebase false' command to tell git how to merge the changes 'git pull' command to get the changes from the local branch, and then it was possible to 'git push' my commit.
+
+    * When site was deployed to Heroku, the css file was not linking. After speaking with tutor support, a workaround was that in the env.py file add a var DEV,  with a value of '1', then DEBUG was set to DEBUG = 'DEV' in os.environ. Then disable collect static variable was removed from Heroku vars. The deployed site then ran with css working.
+
+* No known unfixed bugs
+
+## Validation 
+
+* CSS:
+    <details>
+    <summary>No errors when ran through the official W3C CSS Validator.</summary>
+
+    ![css](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/css_valid.jpg)
+
+* HTML:
+    <details>
+    <summary>All HTML files ran through the W3C HTML Validator with no errors</summary>
+
+    ![homepage](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/homepage_noerrors.jpg)
+    ![findcare](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/find_care_noerrors.jpg)
+    ![providerdetails](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/provider_details_noerrors.jpg)
+    ![forproviders](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/forproviders_noerrors.jpg)
+    ![signup](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/signup_noerrors.jpg)
+    ![login](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/login_noerrors.jpg)
+    ![logout](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/logout_noerrors.jpg)
+
+* Python:
+    <details>
+    <summary>Code Institites PEP8 Validator</summary>
+
+    All Python files ran through Code Institites PEP8 Validator with no errors, except for 2 files. The env.py and settings.py files had 2 lines that were too long, but I kept them as long lines, as the code was more legible.
+
+    ![admin](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/admin_clear.jpg)    
+    ![apps](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/apps_clear.jpg) 
+    ![env](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/env_2lines_left_long.jpg) 
+    ![forms](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/forms_clear.jpg) 
+    ![manage](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/manage_clear.jpg) 
+    ![models](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/models_clear.jpg) 
+    ![settings](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/settings_2lines_left_long.jpg) 
+    ![urlscaresearch](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/urls_caresearch_clear.jpg) 
+    ![urls](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/urls_clear.jpg) 
+    ![views](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/views_clear.jpg) 
+    ![wsgi](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/wsgi_clear.jpg) 
+
+* Javascript:
+    <details>
+    <summary>No errors when ran through JShint.</summary>
+
+    ![jshint](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/jshint_valid.jpg)
+
+* Lighthouse:
+    <details>
+    <summary>Score was 100% for Accessibility</summary>
+
+    Score was 100% for Accessibility, which was important for the site's target users. On first running through Lighthouse, the score was lower, but after adjusting the colour contrast on CTA buttons, the score was brought to 100%. Other scores were close to, or at 100%.
+    ![homepage](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/homepage.jpg) 
+    ![findcare](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/find_care.jpg) 
+    ![addprovider](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/add_provider.jpg)    
+    ![logout](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/logout.jpg) 
+    ![providerdetails](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/provider_details.jpg) 
+    ![signin](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/signin.jpg) 
+    ![signup](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/signup.jpg) 
+
+
+## Testing
+
+* Link to testing and results: https://github.com/RozWelch/CareHub-Project4-2023/blob/main/TESTING.md
+
+## Project Creation and Deployment
+
+The project was created in Git Hub using the Code Institute template.
+
+* Deployment from Heroku:  
+    * Login to Heroku (https://www.heroku.com/) or create an account
+    * On the main page, click the 'New' button in the top right corner, select 'Create New App' from the menu
+    * Choose a name and select your region, then click on the 'Create App' button
+    * Choose Github as the deployment method, then select the correct repository, and click the connect button
+    * Select the Settings tab
+    * Click Reveal Config Vars
+    * Add Config Vars settings with values: SECRET_KEY =(add value here), CLOUDINARY_URL, DATABASE_URL, PORT = 8000, DISABLE_COLLECTSTATIC = 1
+    * Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes
+    * Scroll to the bottom of the deploy page and select the preferred deployment type
+    * Click 'Enable Automatic Deploys' if you wish to automatically deploy when you push updates to Github
+
+* Forking the repository
+     * Locate the repository at this link https://github.com/RozWelch/CareHub-Project4-2023
+     * At the top right of the repository, select 'Fork' from the menu
+     * A copy of the repository is now created
+
+* Cloning the repository
+     * Locate the repository at this link https://github.com/RozWelch/CareHub-Project4-2023
+     * Under 'Local', there is cloning options: HTTPS, SSH, GitHub CLI. Click the prefered cloning option, and then copy the link provided.
+     * Open the terminal
+     * In the terminal change the current working directory to where you wish to put the cloned directory
+     * Type: 'git clone', then paste the URL already copied from GitHub earlier
+     * Press Enter. Your local clone will be created.
+
+## Credits
+* Code Institue's 'I think therefore I blog' tutorial
+* All images used are from Freepix: www.freepix.com
+
+## Acknowledgements
+Thanks to my mentor, my facilitator, my fellow students on Slack, tutoring support and to my friends for helping test the site.
