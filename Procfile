@@ -1,1 +1,1 @@
-web: gunicorn pureglow.wsgi:application
+web: gunicorn pure_glow.wsgi:application
