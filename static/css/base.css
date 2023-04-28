@@ -27,7 +27,7 @@ body {
 }
 
 .logo-font {
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .main-logo-link {
@@ -86,7 +86,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: #fae8d8;
 	z-index: -1;
 }
 
