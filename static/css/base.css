@@ -180,7 +180,7 @@ a.category-badge > span.badge:hover {
 /* footer */
 
 footer {
-    background-color: #4e2000;
+    background: linear-gradient(135deg, #bb5c2a, #85390e) !important;
     color: white;
 }
 
