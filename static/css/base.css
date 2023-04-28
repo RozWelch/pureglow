@@ -177,6 +177,42 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
+/* footer */
+
+footer {
+    background-color: #4e2000;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline !important;
+    color: white;
+}
+
+.divider {
+    border-left: 1px solid rgba(187, 92, 42, 0.2);
+    border-right: 1px solid rgba(187, 92, 42, 0.2);
+}
+
+.social-networks i {
+    font-size: 160%;
+    padding-right: 15px;
+}
+
+.social-networks i:hover {
+    opacity: 75%;
+}
+
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
