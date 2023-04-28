@@ -177,7 +177,7 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
-/* footer */
+/* --------------------------------footer */
 
 footer {
     background: linear-gradient(135deg, #bb5c2a, #85390e) !important;
@@ -211,6 +211,15 @@ footer a:hover {
     background: #fff;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
+}
+
+/* ------------------------styling for wishlist table */
+.wishlist-table-style {
+    background-color: #fae8d8;
+}
+
+.wishlist-tr-style {
+    border: 2px solid #fae8d8;
 }
 
 /* -------------------------------- Media Queries */
