@@ -26,10 +26,20 @@
                     {% endif %}
                 </div>
             </div>
+            <!-- Product details section -->
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0">{{ product.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                        <!-- Display Add to wishlist icon -->
+                        <div class="col pt-2 pl-0">
+                            <p class="text-right mb-0">
+                                <span class="pr-1">Wishlist: </span>
+                                <a href="{% url 'add_to_wishlist' product.id %}" aria-label="Add to wishlist">
+                                    <i class="fas fa-heart alt-text-muted"></i>
+                                </a>
+                            </p>
+                        </div>
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
                         <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
