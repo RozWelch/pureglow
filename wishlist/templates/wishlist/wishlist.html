@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}Your wishlist | {% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container mb-1">
+        <div class="row">
+            <div class="col">
+                <!-- PAGE HEADING -->
+                <h2 class="display-5 brand-font-alt text-center mt-5 mb-3">View and Edit your Wishlist</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="font-weight-bold mb-0">Hi {{ user.username }},</p>
+                {% if wishlist %}
+                <p>Here are the products currently in your wishlist</p>
+                {% else %}
+                <p class="mt-1">Your wishlist is empty</p>
+                <!-- Link to continue shopping -->
+                <div class="col mt-4 pl-0">
+                    <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1">
+                        <span class="icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </span>
+                    <span class="text-uppercase">Continue Shopping</span>
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        {% if wishlist %}
+        <div class="table-responsive rounded-0">
+            <table class="table wishlist-table wishlist-table-lg text-align-center">
+                <thead class="wishlist-thead">
+                    <tr class="wishlist-tr wishlist-tr-lg mx-1 my-1">
+                        <th>Product Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Shop Now</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in wishlist %}
+                    <tr class="wishlist-tr wishlist-tr-lg">
+                        <td class="wishlist-td" data-label="Product: ">
+                            <!-- Product image -->
+                            {% if product.product.image %}
+                            <img class="product-image-sm" src="{{ product.product.image.url }}" alt="{{ product.product.name }}">
+                            {% else %}
+                            <img class="" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.product.name }}">
+                            {% endif %}
+                        </td>
+                        <td class="wishlist-td" data-label="Name:">
+                            <p class="h6 brand-font-alt">{{ product.product.name }}</p>
+                        </td>
+                        <td class="wishlist-td" data-label="Price:">
+                            <div>
+                                <p class="mb-0 pb-1"><span class="text-left h5 brand-font">€{{ product.product.price }}</span></p>
+                            </div>
+                        </td>
+                        <td class="wishlist-td" data-label="Shop Now: ">
+                            <!-- Shop now link to open product detail page for current product -->
+                            <a href="{% url 'product_detail' product.product.id %}" aria-label="link to product detail">
+                                <i class="fas fa-shopping-bag text-muted"></i>
+                            </a>
+                        </td>
+                        <td class="wishlist-td" data-label="Remove: ">
+                            <a href="{% url 'remove_from_wishlist' product.product.id %}" aria-label="remove product from wishlist">
+                                <i class="fas fa-trash alt-text-muted"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor%}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+    </div>
+
+{% endblock %}

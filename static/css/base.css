@@ -27,7 +27,7 @@ body {
 }
 
 .logo-font {
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 
 .main-logo-link {
@@ -35,7 +35,7 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #4e2000;
     color: white;
     min-width: 260px;
 }
