@@ -16,15 +16,15 @@
     <div class="container mb-1">
         <div class="row">
             <div class="col">
-                <!-- PAGE HEADING -->
+                <!-- Page heading -->
                 <h2 class="display-5 brand-font-alt text-center mt-5 mb-3">View and Edit your Wishlist</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <p class="font-weight-bold mb-0">Hi {{ user.username }},</p>
+                <p class="font-weight-bold mb-0">Hello, {{ user.username }},</p>
                 {% if wishlist %}
-                <p>Here are the products currently in your wishlist</p>
+                <p>Products currently in your wishlist</p>
                 {% else %}
                 <p class="mt-1">Your wishlist is empty</p>
                 <!-- Link to continue shopping -->
@@ -59,7 +59,7 @@
                         <td class="wishlist-td" data-label="Product: ">
                             <!-- Product image -->
                             {% if product.product.image %}
-                            <img class="product-image-sm" src="{{ product.product.image.url }}" alt="{{ product.product.name }}">
+                            <img class="product-image_small" src="{{ product.product.image.url }}" alt="{{ product.product.name }}">
                             {% else %}
                             <img class="" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.product.name }}">
                             {% endif %}
