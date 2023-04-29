@@ -67,6 +67,7 @@
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    <!-- Dropdown menu for my account -->
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
@@ -87,6 +88,23 @@
                             {% endif %}
                         </div>
                     </li>
+                    <!-- Wishlist icon and link -->
+                    {% if request.user.is_authenticated %}
+                    <li class="list-inline-item dropdown">
+                        <a class="{% if wishlist %}alt-text-info font-weight-bold{% else %}text-black{% endif %} nav-link px-1" href="{% url 'wishlist' %}">
+                             <div class="text-center">
+                                {% if wishlist.count %}
+                                <div><i class="fas fa-heart fa-lg"></i></div>
+                                <p class="my-0">Wishlist ({{ wishlist.count }})</p>
+                                {% else %}
+                                <div><i class="fas fa-heart fa-lg"></i></div>
+                                <p class="my-0">Wishlist</p>
+                                {% endif %}
+                            </div>
+                        </a>
+                    </li>
+                    {% endif %}
+                    <!-- Shopping bag icon and link -->
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
@@ -112,6 +130,7 @@
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
+        <!-- Free delivery banner -->
         </div>
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
