@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'wishlist',
+    'how_to',
 
     # Other
     'crispy_forms',
@@ -129,10 +130,12 @@ WSGI_APPLICATION = 'pure_glow.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 if 'DATABASE_URL' in os.environ:
+    print('ELEPHANTSQL')
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
+    print('SQLITE')
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
