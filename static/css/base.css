@@ -41,14 +41,14 @@ body {
 }
 
 .btn-black {
-    background: black;
+    background: #4e2000;
     color: white;
 }
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    color: #4e2000 !important; /* override link colours for <a> elements */
+    border: 1px solid #4e2000;
 }
 
 .btn-outline-black:hover,
@@ -69,11 +69,11 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: #4e2000 !important;
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #4e2000 !important;
 }
 
 .bg-brown {
@@ -132,7 +132,7 @@ a.category-badge > span.badge:hover {
     height: 0; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #4e2000;
     position: absolute;
     top: -10px;
     right: 36px;
