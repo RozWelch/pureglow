@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.views import generic, View
 from .models import HowTo, ArticleComment
 
@@ -6,7 +6,6 @@ from .models import HowTo, ArticleComment
 class HowToList(generic.ListView):
     model = HowTo
     template_name = "articles.html"
-    paginate_by = 6
 
 
 class HowToDetail(View):
