@@ -60,7 +60,6 @@ h2 {
 .btn-black {
     background: #aa4416;
     color: white;
-    margin-bottom: 20px;
 }
 
 .btn-outline-black {
@@ -217,8 +216,7 @@ footer a:hover {
 }
 
 .social-networks i {
-    font-size: 160%;
-    padding-right: 15px;
+    font-size: 1.6rem;
 }
 
 .social-networks i:hover {
@@ -361,11 +359,11 @@ footer a:hover {
 /* Media Queries for mobile size devices */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 130px;
     }
 
     body {
-        height: calc(80vh - 116px);
+        height: calc(80vh - 130px);
         background: url('/media/homepage_image_mobile.jpg') no-repeat center center fixed;
     }
 
@@ -409,14 +407,14 @@ footer a:hover {
         font-size: 2rem !important;
     }
 
-    h2 {
+    .bodycopy {
         font-size: 1rem !important;
     }
 
     .main-logo {
-        font-size: 2.7rem;
+        font-size: 2rem;
         margin-left: 12px;
-        margin-right: 30px;
+        margin-right: 80px;
     }
 
 /* Wishlist styling for smaller screens */
