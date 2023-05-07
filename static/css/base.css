@@ -242,6 +242,13 @@ footer a:hover {
 }
 
 /* ------------------------ Wishlist table */
+.product-image-small {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 10px auto;
+    display: flex;
+}
+
 .wishlist-td {
     display: flex;
 }
