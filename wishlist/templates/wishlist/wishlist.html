@@ -16,17 +16,17 @@
     <div class="container mb-1">
         <div class="row">
             <div class="col">
-                <!-- Page heading -->
+                <!-- Wishlist Page heading -->
                 <h2 class="display-5 brand-font-alt text-center mt-5 mb-3">Your Wishlist</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <p class="font-weight-bold mb-0">Hello, {{ user.username }},</p>
+                <p class="font-weight-bold mb-0 wishlist-heading">Hello, {{ user.username }},</p>
                 {% if wishlist %}
-                <p>View and edit products currently in your wishlist</p>
+                <p class="wishlist-heading">View and edit products currently in your wishlist</p>
                 {% else %}
-                <p class="mt-1">Your wishlist is empty</p>
+                <p class="mt-1 wishlist-heading">Your wishlist is empty</p>
                 <!-- Link to continue shopping -->
                 <div class="col mt-4 pl-0">
                     <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1">
@@ -46,17 +46,17 @@
             <table class="table wishlist-table wishlist-table-style text-align-center">
                 <thead class="wishlist-thead">
                     <tr class="wishlist-tr wishlist-tr-style mx-1 my-1">
-                        <th>Product Image</th>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Shop Now</th>
-                        <th>Remove</th>
+                        <th class="wishlist-heading">Product Image</th>
+                        <th class="wishlist-heading">Name</th>
+                        <th class="wishlist-heading">Price</th>
+                        <th class="wishlist-heading">Shop Now</th>
+                        <th class="wishlist-heading">Remove</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for product in wishlist %}
                     <tr class="wishlist-tr wishlist-tr-style">
-                        <td class="wishlist-td" data-label="Product: ">
+                        <td class="wishlist-td" data-label="Product">
                             <!-- Product image -->
                             {% if product.product.image %}
                             <img class="product-image_small" src="{{ product.product.image.url }}" alt="{{ product.product.name }}">
@@ -64,23 +64,23 @@
                             <img class="" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.product.name }}">
                             {% endif %}
                         </td>
-                        <td class="wishlist-td" data-label="Name:">
-                            <p class="h6 brand-font-alt">{{ product.product.name }}</p>
+                        <td data-label="Product name">
+                            <p class="wishlist-body">{{ product.product.name }}</p>
                         </td>
-                        <td class="wishlist-td" data-label="Price:">
+                        <td data-label="Price">
                             <div>
-                                <p class="mb-0 pb-1"><span class="text-left h5 brand-font">€{{ product.product.price }}</span></p>
+                                <p class="wishlist-body"><span class="text-left h5">€{{ product.product.price }}</span></p>
                             </div>
                         </td>
-                        <td class="wishlist-td" data-label="Shop Now: ">
+                        <td data-label="Shop Now">
                             <!-- Shop now link to open product detail page for current product -->
-                            <a href="{% url 'product_detail' product.product.id %}" aria-label="link to product detail">
+                            <a href="{% url 'product_detail' product.product.id %}" aria-label="Link to this product details page">
                                 <i class="fas fa-shopping-bag text-muted"></i>
                             </a>
                         </td>
-                        <td class="wishlist-td" data-label="Remove: ">
-                            <a href="{% url 'remove_from_wishlist' product.product.id %}" aria-label="remove product from wishlist">
-                                <i class="fas fa-trash alt-text-muted"></i>
+                        <td class="wishlist-td" data-label="Remove">
+                            <a href="{% url 'remove_from_wishlist' product.product.id %}" aria-label="Remove this product from wishlist">
+                                <i class="fas fa-trash text-muted"></i>
                             </a>
                         </td>
                     </tr>
