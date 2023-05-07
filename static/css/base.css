@@ -242,8 +242,12 @@ footer a:hover {
 }
 
 /* ------------------------ Wishlist table */
+.wishlist-td {
+    display: flex;
+}
+
 .wishlist-heading {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #aa4416 !important;
 }
 
@@ -257,7 +261,7 @@ footer a:hover {
 }
 
 .wishlist-tr-style {
-    border: 2px solid #fae8d8;
+    border: 1px solid #fff;
 }
 
 /* ------------------------ How to Articles */
@@ -420,11 +424,11 @@ footer a:hover {
     }
 
     h1 {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
     }
 
     .bodycopy {
-        font-size: 1.2rem !important;
+        font-size: 1.1rem !important;
     }
 
     .main-logo {
@@ -434,6 +438,10 @@ footer a:hover {
     }
 
 /* Wishlist styling for smaller screens */
+    ..wishlist-heading {
+        font-size: 1.1rem;
+    }
+
     .wishlist-thead {
         display: none;
     }
@@ -442,22 +450,21 @@ footer a:hover {
     .wishlist-tr {
         display: flex;
         flex-direction: column;
-        border: 1px solid #fff;
         background-color: #f8efe7;
+        border: 1px solid #fff;
     }
 
     .wishlist-table,
     .wishlist-td[data-label] {
         display: flex;
-        font-weight: bold;
         border-bottom: 1px solid #fff;
     }
 
     .wishlist-table .wishlist-td[data-label]::before {
         content: attr(data-label);
-        color: #000;
+        color: #4e2000;
         width: 30%;
-        margin-right: 1rem;
+        margin-right: .8rem;
         
     }
 
