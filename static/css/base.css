@@ -249,27 +249,10 @@ footer a:hover {
     display: flex;
 }
 
-.wishlist-td {
-    display: flex;
-}
-
 .wishlist-heading {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #aa4416 !important;
     margin-bottom: 20px;
-}
-
-.wishlist-body {
-    font-size: 1.1rem;
-    color: #4e2000 !important;
-}
-
-.wishlist-table-style {
-    background-color: #fae8d8;
-}
-
-.wishlist-tr-style {
-    border: 1px solid #fff;
 }
 
 /* ------------------------ How to Articles */
@@ -446,34 +429,9 @@ footer a:hover {
     }
 
 /* Wishlist styling for smaller screens */
-    ..wishlist-heading {
-        font-size: 1.1rem;
-    }
 
-    .wishlist-thead {
-        display: none;
-    }
-
-    .wishlist-table,
-    .wishlist-tr {
-        display: flex;
-        flex-direction: column;
-        background-color: #f8efe7;
-        border: 1px solid #fff;
-    }
-
-    .wishlist-table,
-    .wishlist-td[data-label] {
-        display: flex;
-        border-bottom: 1px solid #fff;
-    }
-
-    .wishlist-table .wishlist-td[data-label]::before {
-        content: attr(data-label);
-        color: #4e2000;
-        width: 30%;
-        margin-right: .8rem;
-        
-    }
+.wishlist-heading {
+    font-size: .9rem;
+}
 
 }
