@@ -1,9 +1,9 @@
 ## Pure Glow
-Pure Glow is a skincare range, selling products for the face, body and an organic range. 
-Users can browse skincare products, and purchase them. There is a ‘how to’ section, with useful articles on how to use the products, and suggested products for each article. Shoppers can leave reviews of a product,  and leave a star rating. They can also see how the product was reviewed and starred by other users.
-The payment system uses Stripe. Please note that this website is for educational purposes do not enter any personal credit/debit card details when using the site.
-To test this system, test card details can be used. These can be found in Stripe's documentation website: https://stripe.com/docs/testing
-The live link can be found here - add link
+Pure Glow is a skincare range, selling products for the face, body and an organic range. Users can browse skincare products, and purchase them. There is a ‘how to’ section, with useful articles on how to use the products, users can view comments and signed-in users can add a comment. Signed-in users can add products to a wishlist, to purchase at a later date. 
+
+The payment system uses Stripe. Please note this website is for educational purposes. Do not enter any personal credit/debit card details when using the site. To test this system, test card details can be used. These can be found in Stripe's documentation website: ![stripe](https://stripe.com/docs/testing/) 
+
+The live link can be found here - ![pure_glow](https://pureglow.herokuapp.com/)
 
 ## Am I Responsive mockups
 * Used Am I Responsive website to show the main pages on different devices:
@@ -26,16 +26,11 @@ The live link can be found here - add link
 * [Credits](#Credits)
 
 ## Design and User Experience
-The site was aimed at purchasers of skin care products.
-
-* Accessibility:
-    * To ensure maximum user accessibility, the contrast between the background colour and text was kept to a high contrast.
-    * Font size was kept large to ensure high legibility
-    * The overall design was kept simple and easy to follow. Call-to-action buttons were made easy to view and locate on the page.
+The site was aimed at purchasers of skin care products, main target audience is women age 18+.
 
 * Colour pallet:
-    * The main colours choosen gave the site a medical feel, with warm accent colours to give an approchable feel.  
-    ![Colour Pallett](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/colour_scheme.jpg)
+    * The main colours choosen gave the site a premium look, with warm accent colours to give an approchable feel.  
+    ![Colour Pallett](https://github.com/RozWelch/pureglow/documentation/readme_images/colour_pallet.jpg)
 
 * Wireframes:
     <details>
