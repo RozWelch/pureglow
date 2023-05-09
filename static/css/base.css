@@ -29,6 +29,18 @@ h1 {
     color: rgba(0, 0, 0, 0.2);
 }
 
+.text-muted {
+    color: #654630 !important;
+}
+
+.text-danger { 
+    color: #c94709 !important;
+}
+
+.edit-product {
+    color: #004b8d !important;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -120,8 +132,8 @@ h2 {
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
+    background: #4e2000 !important;
+    color: #f8f9fa !important;
 }
 
 .btt-button {
@@ -250,9 +262,13 @@ footer a:hover {
 }
 
 .wishlist-heading {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #aa4416 !important;
     margin-bottom: 20px;
+}
+
+.dark-orange {
+    color: #c94709 !important;
 }
 
 /* ------------------------ How to Articles */
@@ -321,7 +337,7 @@ footer a:hover {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #c94709; /* text-info */
 }
 
 /* Product Form */
