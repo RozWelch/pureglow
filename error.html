@@ -1,0 +1,2455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>BadHeaderError
+          at /checkout/wh/</title>
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background-color:#fff; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; }
+    h2 { margin-bottom:.8em; }
+    h3 { margin:1em 0 .5em 0; }
+    h4 { margin:0 0 .5em 0; font-weight: normal; }
+    code, pre { font-size: 100%; white-space: pre-wrap; }
+    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+    tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+    thead th {
+      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+      font-weight:normal; font-size:11px; border:1px solid #ddd;
+    }
+    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    table.vars { margin:5px 0 2px 40px; }
+    table.vars td, table.req td { font-family:monospace; }
+    table td.code { width:100%; }
+    table td.code pre { overflow:hidden; }
+    table.source th { color:#666; }
+    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+    ul.traceback { list-style-type:none; color: #222; }
+    ul.traceback li.frame { padding-bottom:1em; color:#4f4f4f; }
+    ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+    div.context { padding:10px 0; overflow:hidden; }
+    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }
+    div.context ol li pre { display:inline; }
+    div.context ol.context-line li { color:#464646; background-color:#dfdfdf; padding: 3px 2px; }
+    div.context ol.context-line li span { position:absolute; right:32px; }
+    .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+    .user div.context ol li { color:#666; }
+    div.commands { margin-left: 40px; }
+    div.commands a { color:#555; text-decoration:none; }
+    .user div.commands a { color: black; }
+    #summary { background: #ffc; }
+    #summary h2 { font-weight: normal; color: #666; }
+    #explanation { background:#eee; }
+    #template, #template-not-exist { background:#f6f6f6; }
+    #template-not-exist ul { margin: 0 0 10px 20px; }
+    #template-not-exist .postmortem-section { margin-bottom: 3px; }
+    #unicode-hint { background:#eee; }
+    #traceback { background:#eee; }
+    #requestinfo { background:#f6f6f6; padding-left:120px; }
+    #summary table { border:none; background:transparent; }
+    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+    #requestinfo h3 { margin-bottom:-1em; }
+    .error { background: #ffc; }
+    .specific { color:#cc3300; font-weight:bold; }
+    h2 span.commands { font-size:.7em; font-weight:normal; }
+    span.commands a:link {color:#5E5694;}
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+    .append-bottom { margin-bottom: 10px; }
+    .fname { user-select: all; }
+  </style>
+  
+  <script>
+    function hideAll(elems) {
+      for (var e = 0; e < elems.length; e++) {
+        elems[e].style.display = 'none';
+      }
+    }
+    window.onload = function() {
+      hideAll(document.querySelectorAll('table.vars'));
+      hideAll(document.querySelectorAll('ol.pre-context'));
+      hideAll(document.querySelectorAll('ol.post-context'));
+      hideAll(document.querySelectorAll('div.pastebin'));
+    }
+    function toggle() {
+      for (var i = 0; i < arguments.length; i++) {
+        var e = document.getElementById(arguments[i]);
+        if (e) {
+          e.style.display = e.style.display == 'none' ? 'block': 'none';
+        }
+      }
+      return false;
+    }
+    function varToggle(link, id) {
+      toggle('v' + id);
+      var s = link.getElementsByTagName('span')[0];
+      var uarr = String.fromCharCode(0x25b6);
+      var darr = String.fromCharCode(0x25bc);
+      s.textContent = s.textContent == uarr ? darr : uarr;
+      return false;
+    }
+    function switchPastebinFriendly(link) {
+      s1 = "Switch to copy-and-paste view";
+      s2 = "Switch back to interactive view";
+      link.textContent = link.textContent.trim() == s1 ? s2: s1;
+      toggle('browserTraceback', 'pastebinTraceback');
+      return false;
+    }
+  </script>
+  
+</head>
+<body>
+<div id="summary">
+  <h1>BadHeaderError
+       at /checkout/wh/</h1>
+  <pre class="exception_value">Header values can&#x27;t contain newlines (got &#x27;Pure Glow Confirmation for Order Number DBAE55A5B29E429D97BEC820F454F973\n&#x27; for header &#x27;Subject&#x27;)</pre>
+  <table class="meta">
+    <tr>
+      <th>Request Method:</th>
+      <td>POST</td>
+    </tr>
+    <tr>
+      <th>Request URL:</th>
+      <td>https://pureglow.herokuapp.com/checkout/wh/</td>
+    </tr>
+    <tr>
+      <th>Django Version:</th>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <th>Exception Type:</th>
+      <td>BadHeaderError</td>
+    </tr>
+    <tr>
+      <th>Exception Value:</th>
+      <td><pre>Header values can&#x27;t contain newlines (got &#x27;Pure Glow Confirmation for Order Number DBAE55A5B29E429D97BEC820F454F973\n&#x27; for header &#x27;Subject&#x27;)</pre></td>
+    </tr>
+    <tr>
+      <th>Exception Location:</th>
+      <td><span class="fname">/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/message.py</span>, line 60, in forbid_multi_line_headers</td>
+    </tr>
+    <tr>
+      <th>Python Executable:</th>
+      <td>/app/.heroku/python/bin/python</td>
+    </tr>
+    <tr>
+      <th>Python Version:</th>
+      <td>3.11.3</td>
+    </tr>
+    <tr>
+      <th>Python Path:</th>
+      <td><pre>[&#x27;/app/.heroku/python/bin&#x27;,
+ &#x27;/app&#x27;,
+ &#x27;/app/.heroku/python/lib/python311.zip&#x27;,
+ &#x27;/app/.heroku/python/lib/python3.11&#x27;,
+ &#x27;/app/.heroku/python/lib/python3.11/lib-dynload&#x27;,
+ &#x27;/app/.heroku/python/lib/python3.11/site-packages&#x27;]</pre></td>
+    </tr>
+    <tr>
+      <th>Server time:</th>
+      <td>Tue, 09 May 2023 12:41:47 +0000</td>
+    </tr>
+  </table>
+</div>
+<div id="traceback">
+  <h2>Traceback <span class="commands"><a href="#" onclick="return switchPastebinFriendly(this);">
+    Switch to copy-and-paste view</a></span>
+  </h2>
+  <div id="browserTraceback">
+    <ul class="traceback">
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/app/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py</code>, line 47, in inner
+          
+          
+            <div class="context" id="c139968481166976">
+              
+                <ol start="40" class="pre-context" id="pre139968481166976">
+                
+                  <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre>                response = await sync_to_async(response_for_exception, thread_sensitive=False)(request, exc)</pre></li>
+                
+                  <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre>            return response</pre></li>
+                
+                  <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre>        return inner</pre></li>
+                
+                  <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre>        @wraps(get_response)</pre></li>
+                
+                  <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre>        def inner(request):</pre></li>
+                
+                  <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="47" class="context-line">
+                <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre>                response = get_response(request)</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='48' class="post-context" id="post139968481166976">
+                  
+                  <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre>            except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre>                response = response_for_exception(request, exc)</pre></li>
+                  
+                  <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre>            return response</pre></li>
+                  
+                  <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre>        return inner</pre></li>
+                  
+                  <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139968481166976', 'post139968481166976')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968481166976')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968481166976">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>BadHeaderError(&quot;Header values can&#x27;t contain newlines (got &#x27;Pure Glow Confirmation for Order Number DBAE55A5B29E429D97BEC820F454F973\\n&#x27; for header &#x27;Subject&#x27;)&quot;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>get_response</td>
+                    <td class="code"><pre>&lt;bound method BaseHandler._get_response of &lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f4cf3d07d90&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/checkout/wh/&#x27;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/app/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py</code>, line 181, in _get_response
+          
+          
+            <div class="context" id="c139968481170304">
+              
+                <ol start="174" class="pre-context" id="pre139968481170304">
+                
+                  <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre>        if response is None:</pre></li>
+                
+                  <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                
+                  <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre>            # If it is an asynchronous view, run it in a subthread.</pre></li>
+                
+                  <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre>            if asyncio.iscoroutinefunction(wrapped_callback):</pre></li>
+                
+                  <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre>                wrapped_callback = async_to_sync(wrapped_callback)</pre></li>
+                
+                  <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="181" class="context-line">
+                <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='182' class="post-context" id="post139968481170304">
+                  
+                  <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre>            except Exception as e:</pre></li>
+                  
+                  <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre>                response = self.process_exception_by_middleware(e, request)</pre></li>
+                  
+                  <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre>                if response is None:</pre></li>
+                  
+                  <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre>                    raise</pre></li>
+                  
+                  <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139968481170304', 'post139968481170304')"><pre>        # Complain if the view returned None (a common error).</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968481170304')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968481170304">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>callback</td>
+                    <td class="code"><pre>&lt;function webhook at 0x7f4cf3a22c00&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>middleware_method</td>
+                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x7f4cf3d14090&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/checkout/wh/&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f4cf3d07d90&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>wrapped_callback</td>
+                    <td class="code"><pre>&lt;function webhook at 0x7f4cf3a22c00&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/app/.heroku/python/lib/python3.11/site-packages/django/views/decorators/http.py</code>, line 40, in inner
+          
+          
+            <div class="context" id="c139968481145600">
+              
+                <ol start="33" class="pre-context" id="pre139968481145600">
+                
+                  <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre>                response = HttpResponseNotAllowed(request_method_list)</pre></li>
+                
+                  <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre>                log_response(</pre></li>
+                
+                  <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre>                    &#x27;Method Not Allowed (%s): %s&#x27;, request.method, request.path,</pre></li>
+                
+                  <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre>                    response=response,</pre></li>
+                
+                  <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre>                    request=request,</pre></li>
+                
+                  <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre>                )</pre></li>
+                
+                  <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre>                return response</pre></li>
+                
+                </ol>
+              
+              <ol start="40" class="context-line">
+                <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre>            return func(request, *args, **kwargs)</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='41' class="post-context" id="post139968481145600">
+                  
+                  <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre>        return inner</pre></li>
+                  
+                  <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre>    return decorator</pre></li>
+                  
+                  <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre>require_GET = require_http_methods([&quot;GET&quot;])</pre></li>
+                  
+                  <li onclick="toggle('pre139968481145600', 'post139968481145600')"><pre>require_GET.__doc__ = &quot;Decorator to require that a view only accepts the GET method.&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968481145600')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968481145600">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>func</td>
+                    <td class="code"><pre>&lt;function webhook at 0x7f4cf3a22480&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/checkout/wh/&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request_method_list</td>
+                    <td class="code"><pre>[&#x27;POST&#x27;]</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/app/.heroku/python/lib/python3.11/site-packages/django/views/decorators/csrf.py</code>, line 54, in wrapped_view
+          
+          
+            <div class="context" id="c139968481135680">
+              
+                <ol start="47" class="pre-context" id="pre139968481135680">
+                
+                  <li onclick="toggle('pre139968481135680', 'post139968481135680')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139968481135680', 'post139968481135680')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139968481135680', 'post139968481135680')"><pre>def csrf_exempt(view_func):</pre></li>
+                
+                  <li onclick="toggle('pre139968481135680', 'post139968481135680')"><pre>    &quot;&quot;&quot;Mark a view function as being exempt from the CSRF view protection.&quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139968481135680', 'post139968481135680')"><pre>    # view_func.csrf_exempt = True would also work, but decorators are nicer</pre></li>
+                
+                  <li onclick="toggle('pre139968481135680', 'post139968481135680')"><pre>    # if they don&#x27;t have side effects, so return a new function.</pre></li>
+                
+                  <li onclick="toggle('pre139968481135680', 'post139968481135680')"><pre>    def wrapped_view(*args, **kwargs):</pre></li>
+                
+                </ol>
+              
+              <ol start="54" class="context-line">
+                <li onclick="toggle('pre139968481135680', 'post139968481135680')"><pre>        return view_func(*args, **kwargs)</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='55' class="post-context" id="post139968481135680">
+                  
+                  <li onclick="toggle('pre139968481135680', 'post139968481135680')"><pre>    wrapped_view.csrf_exempt = True</pre></li>
+                  
+                  <li onclick="toggle('pre139968481135680', 'post139968481135680')"><pre>    return wraps(view_func)(wrapped_view)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968481135680')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968481135680">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>(&lt;WSGIRequest: POST &#x27;/checkout/wh/&#x27;&gt;,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>view_func</td>
+                    <td class="code"><pre>&lt;function webhook at 0x7f4cf3a22980&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/app/checkout/webhooks.py</code>, line 54, in webhook
+          
+          
+            <div class="context" id="c139968481136704">
+              
+                <ol start="47" class="pre-context" id="pre139968481136704">
+                
+                  <li onclick="toggle('pre139968481136704', 'post139968481136704')"><pre>    event_type = event[&#x27;type&#x27;]</pre></li>
+                
+                  <li onclick="toggle('pre139968481136704', 'post139968481136704')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139968481136704', 'post139968481136704')"><pre>    # If there&#x27;s a handler for it, get it from the event map</pre></li>
+                
+                  <li onclick="toggle('pre139968481136704', 'post139968481136704')"><pre>    # Use the generic one by default</pre></li>
+                
+                  <li onclick="toggle('pre139968481136704', 'post139968481136704')"><pre>    event_handler = event_map.get(event_type, handler.handle_event)</pre></li>
+                
+                  <li onclick="toggle('pre139968481136704', 'post139968481136704')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139968481136704', 'post139968481136704')"><pre>    # Call the event handler with the event</pre></li>
+                
+                </ol>
+              
+              <ol start="54" class="context-line">
+                <li onclick="toggle('pre139968481136704', 'post139968481136704')"><pre>    response = event_handler(event)</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='55' class="post-context" id="post139968481136704">
+                  
+                  <li onclick="toggle('pre139968481136704', 'post139968481136704')"><pre>    return response</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968481136704')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968481136704">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>event</td>
+                    <td class="code"><pre>&lt;Event event id=evt_3N5prBGL6JttpIgf0fhGi8Tc at 0x7f4cf397e0f0&gt; JSON: {
+  &quot;api_version&quot;: &quot;2022-11-15&quot;,
+  &quot;created&quot;: 1683636106,
+  &quot;data&quot;: {
+    &quot;object&quot;: {
+      &quot;amount&quot;: 2695,
+      &quot;amount_capturable&quot;: 0,
+      &quot;amount_details&quot;: {
+        &quot;tip&quot;: {}
+      },
+      &quot;amount_received&quot;: 2695,
+      &quot;application&quot;: null,
+      &quot;application_fee_amount&quot;: null,
+      &quot;automatic_payment_methods&quot;: null,
+      &quot;canceled_at&quot;: null,
+      &quot;cancellation_reason&quot;: null,
+      &quot;capture_method&quot;: &quot;automatic&quot;,
+      &quot;client_secret&quot;: &quot;pi_3N5prBGL6JttpIgf07JjTKnb_secret_fNQQveOxqk46TWZQNvajlgkJC&quot;,
+      &quot;confirmation_method&quot;: &quot;automatic&quot;,
+      &quot;created&quot;: 1683636089,
+      &quot;currency&quot;: &quot;eur&quot;,
+      &quot;customer&quot;: null,
+      &quot;description&quot;: null,
+      &quot;id&quot;: &quot;pi_3N5prBGL6JttpIgf07JjTKnb&quot;,
+      &quot;invoice&quot;: null,
+      &quot;last_payment_error&quot;: null,
+      &quot;latest_charge&quot;: &quot;ch_3N5prBGL6JttpIgf0wAwtqTX&quot;,
+      &quot;livemode&quot;: false,
+      &quot;metadata&quot;: {
+        &quot;bag&quot;: &quot;{\&quot;8\&quot;: 1}&quot;,
+        &quot;save_info&quot;: &quot;true&quot;,
+        &quot;username&quot;: &quot;newsuperuser1&quot;
+      },
+      &quot;next_action&quot;: null,
+      &quot;object&quot;: &quot;payment_intent&quot;,
+      &quot;on_behalf_of&quot;: null,
+      &quot;payment_method&quot;: &quot;pm_1N5prRGL6JttpIgfwMNcHbGC&quot;,
+      &quot;payment_method_options&quot;: {
+        &quot;card&quot;: {
+          &quot;installments&quot;: null,
+          &quot;mandate_options&quot;: null,
+          &quot;network&quot;: null,
+          &quot;request_three_d_secure&quot;: &quot;automatic&quot;
+        }
+      },
+      &quot;payment_method_types&quot;: [
+        &quot;card&quot;
+      ],
+      &quot;processing&quot;: null,
+      &quot;receipt_email&quot;: null,
+      &quot;review&quot;: null,
+      &quot;setup_future_usage&quot;: null,
+      &quot;shipping&quot;: {
+        &quot;address&quot;: {
+          &quot;city&quot;: &quot;lina&quot;,
+          &quot;country&quot;: &quot;IE&quot;,
+          &quot;line1&quot;: &quot;reside&quot;,
+          &quot;line2&quot;: &quot;llenagh&quot;,
+          &quot;postal_code&quot;: &quot;V9aaaa&quot;,
+          &quot;state&quot;: &quot;Co. Tipperary&quot;
+        },
+        &quot;carrier&quot;: null,
+        &quot;name&quot;: &quot;Testing name&quot;,
+        &quot;phone&quot;: &quot;999999&quot;,
+        &quot;tracking_number&quot;: null
+      },
+      &quot;source&quot;: null,
+      &quot;statement_descriptor&quot;: null,
+      &quot;statement_descriptor_suffix&quot;: null,
+      &quot;status&quot;: &quot;succeeded&quot;,
+      &quot;transfer_data&quot;: null,
+      &quot;transfer_group&quot;: null
+    }
+  },
+  &quot;id&quot;: &quot;evt_3N5prBGL6JttpIgf0fhGi8Tc&quot;,
+  &quot;livemode&quot;: false,
+  &quot;object&quot;: &quot;event&quot;,
+  &quot;pending_webhooks&quot;: 2,
+  &quot;request&quot;: {
+    &quot;id&quot;: &quot;req_jaaXDDBXQOVpmx&quot;,
+    &quot;idempotency_key&quot;: &quot;fa712a15-1eeb-443a-885c-39f5b92d6e0e&quot;
+  },
+  &quot;type&quot;: &quot;payment_intent.succeeded&quot;
+}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>event_handler</td>
+                    <td class="code"><pre>&lt;bound method StripeWH_Handler.handle_payment_intent_succeeded of &lt;checkout.webhook_handler.StripeWH_Handler object at 0x7f4cf3995f10&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>event_map</td>
+                    <td class="code"><pre>{&#x27;payment_intent.payment_failed&#x27;: &lt;bound method StripeWH_Handler.handle_payment_intent_payment_failed of &lt;checkout.webhook_handler.StripeWH_Handler object at 0x7f4cf3995f10&gt;&gt;,
+ &#x27;payment_intent.succeeded&#x27;: &lt;bound method StripeWH_Handler.handle_payment_intent_succeeded of &lt;checkout.webhook_handler.StripeWH_Handler object at 0x7f4cf3995f10&gt;&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>event_type</td>
+                    <td class="code"><pre>&#x27;payment_intent.succeeded&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;checkout.webhook_handler.StripeWH_Handler object at 0x7f4cf3995f10&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>payload</td>
+                    <td class="code"><pre>(b&#x27;{\n  &quot;id&quot;: &quot;evt_3N5prBGL6JttpIgf0fhGi8Tc&quot;,\n  &quot;object&quot;: &quot;event&quot;,\n  &quot;api_ve&#x27;
+ b&#x27;rsion&quot;: &quot;2022-11-15&quot;,\n  &quot;created&quot;: 1683636106,\n  &quot;data&quot;: {\n    &quot;object&quot;:&#x27;
+ b&#x27; {\n      &quot;id&quot;: &quot;pi_3N5prBGL6JttpIgf07JjTKnb&quot;,\n      &quot;object&quot;: &quot;payment_i&#x27;
+ b&#x27;ntent&quot;,\n      &quot;amount&quot;: 2695,\n      &quot;amount_capturable&quot;: 0,\n      &quot;amoun&#x27;
+ b&#x27;t_details&quot;: {\n        &quot;tip&quot;: {\n        }\n      },\n      &quot;amount_received&#x27;
+ b&#x27;&quot;: 2695,\n      &quot;application&quot;: null,\n      &quot;application_fee_amount&quot;: null&#x27;
+ b&#x27;,\n      &quot;automatic_payment_methods&quot;: null,\n      &quot;canceled_at&quot;: null,\n  &#x27;
+ b&#x27;    &quot;cancellation_reason&quot;: null,\n      &quot;capture_method&quot;: &quot;automatic&quot;,\n  &#x27;
+ b&#x27;    &quot;client_secret&quot;: &quot;pi_3N5prBGL6JttpIgf07JjTKnb_secret_fNQQveOxqk46TWZQNva&#x27;
+ b&#x27;jlgkJC&quot;,\n      &quot;confirmation_method&quot;: &quot;automatic&quot;,\n      &quot;created&quot;: 1683&#x27;
+ b&#x27;636089,\n      &quot;currency&quot;: &quot;eur&quot;,\n      &quot;customer&quot;: null,\n      &quot;descript&#x27;
+ b&#x27;ion&quot;: null,\n      &quot;invoice&quot;: null,\n      &quot;last_payment_error&quot;: null,\n   &#x27;
+ b&#x27;   &quot;latest_charge&quot;: &quot;ch_3N5prBGL6JttpIgf0wAwtqTX&quot;,\n      &quot;livemode&quot;: fal&#x27;
+ b&#x27;se,\n      &quot;metadata&quot;: {\n        &quot;bag&quot;: &quot;{\\&quot;8\\&quot;: 1}&quot;,\n        &quot;save_i&#x27;
+ b&#x27;nfo&quot;: &quot;true&quot;,\n        &quot;username&quot;: &quot;newsuperuser1&quot;\n      },\n      &quot;next_a&#x27;
+ b&#x27;ction&quot;: null,\n      &quot;on_behalf_of&quot;: null,\n      &quot;payment_method&quot;: &quot;pm_1N&#x27;
+ b&#x27;5prRGL6JttpIgfwMNcHbGC&quot;,\n      &quot;payment_method_options&quot;: {\n        &quot;card&#x27;
+ b&#x27;&quot;: {\n          &quot;installments&quot;: null,\n          &quot;mandate_options&quot;: null,\n&#x27;
+ b&#x27;          &quot;network&quot;: null,\n          &quot;request_three_d_secure&quot;: &quot;automati&#x27;
+ b&#x27;c&quot;\n        }\n      },\n      &quot;payment_method_types&quot;: [\n        &quot;card&quot;&#x27;
+ b&#x27;\n      ],\n      &quot;processing&quot;: null,\n      &quot;receipt_email&quot;: null,\n      &quot;&#x27;
+ b&#x27;review&quot;: null,\n      &quot;setup_future_usage&quot;: null,\n      &quot;shipping&quot;: {\n   &#x27;
+ b&#x27;     &quot;address&quot;: {\n          &quot;city&quot;: &quot;lina&quot;,\n          &quot;country&quot;: &quot;IE&quot;,\n &#x27;
+ b&#x27;         &quot;line1&quot;: &quot;reside&quot;,\n          &quot;line2&quot;: &quot;llenagh&quot;,\n          &quot;pos&#x27;
+ b&#x27;tal_code&quot;: &quot;V9aaaa&quot;,\n          &quot;state&quot;: &quot;Co. Tipperary&quot;\n        },\n     &#x27;
+ b&#x27;   &quot;carrier&quot;: null,\n        &quot;name&quot;: &quot;Testing name&quot;,\n        &quot;phone&quot;: &quot;99&#x27;
+ b&#x27;9999&quot;,\n        &quot;tracking_number&quot;: null\n      },\n      &quot;source&quot;: null,\n  &#x27;
+ b&#x27;    &quot;statement_descriptor&quot;: null,\n      &quot;statement_descriptor_suffix&quot;: n&#x27;
+ b&#x27;ull,\n      &quot;status&quot;: &quot;succeeded&quot;,\n      &quot;transfer_data&quot;: null,\n      &quot;tr&#x27;
+ b&#x27;ansfer_group&quot;: null\n    }\n  },\n  &quot;livemode&quot;: false,\n  &quot;pending_webhooks&quot;&#x27;
+ b&#x27;: 2,\n  &quot;request&quot;: {\n    &quot;id&quot;: &quot;req_jaaXDDBXQOVpmx&quot;,\n    &quot;idempotency_key&#x27;
+ b&#x27;&quot;: &quot;fa712a15-1eeb-443a-885c-39f5b92d6e0e&quot;\n  },\n  &quot;type&quot;: &quot;payment_intent&#x27;
+ b&#x27;.succeeded&quot;\n}&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/checkout/wh/&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sig_header</td>
+                    <td class="code"><pre>&#x27;t=1683636106,v1=a2c72122b85bccacc05c041860228fa8591544d190c1a6598f256a4cc2751a9c,v0=bd7fec1757a29c1ff070241e295c791e1f6e4dca9e3c60cf6cc6ff36872392e8&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>wh_secret</td>
+                    <td class="code"><pre>&#x27;whsec_jn48dEjxZb1DCKBOY87CZ0PpNfVgEI0T&#x27;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/app/checkout/webhook_handler.py</code>, line 107, in handle_payment_intent_succeeded
+          
+          
+            <div class="context" id="c139968481133504">
+              
+                <ol start="100" class="pre-context" id="pre139968481133504">
+                
+                  <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>                )</pre></li>
+                
+                  <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>                order_exists = True</pre></li>
+                
+                  <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>                break</pre></li>
+                
+                  <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>            except Order.DoesNotExist:</pre></li>
+                
+                  <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>                attempt += 1</pre></li>
+                
+                  <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>                time.sleep(1)</pre></li>
+                
+                  <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>        if order_exists:</pre></li>
+                
+                </ol>
+              
+              <ol start="107" class="context-line">
+                <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>            self._send_confirmation_email(order)</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='108' class="post-context" id="post139968481133504">
+                  
+                  <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>            return HttpResponse(</pre></li>
+                  
+                  <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>                content=f&#x27;Webhook received: {event[&quot;type&quot;]} | SUCCESS: Verified order already in database&#x27;,</pre></li>
+                  
+                  <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>                status=200)</pre></li>
+                  
+                  <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>        else:</pre></li>
+                  
+                  <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>            order = None</pre></li>
+                  
+                  <li onclick="toggle('pre139968481133504', 'post139968481133504')"><pre>            try:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968481133504')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968481133504">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>attempt</td>
+                    <td class="code"><pre>1</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>bag</td>
+                    <td class="code"><pre>&#x27;{&quot;8&quot;: 1}&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>billing_details</td>
+                    <td class="code"><pre>&lt;StripeObject at 0x7f4cf397e150&gt; JSON: {
+  &quot;address&quot;: {
+    &quot;city&quot;: &quot;lina&quot;,
+    &quot;country&quot;: &quot;IE&quot;,
+    &quot;line1&quot;: &quot;reside&quot;,
+    &quot;line2&quot;: &quot;llenagh&quot;,
+    &quot;postal_code&quot;: &quot;42424&quot;,
+    &quot;state&quot;: &quot;Co. Tipperary&quot;
+  },
+  &quot;email&quot;: &quot;rozwelch@gmail.com&quot;,
+  &quot;name&quot;: &quot;Testing name&quot;,
+  &quot;phone&quot;: &quot;999999&quot;
+}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>event</td>
+                    <td class="code"><pre>&lt;Event event id=evt_3N5prBGL6JttpIgf0fhGi8Tc at 0x7f4cf397e0f0&gt; JSON: {
+  &quot;api_version&quot;: &quot;2022-11-15&quot;,
+  &quot;created&quot;: 1683636106,
+  &quot;data&quot;: {
+    &quot;object&quot;: {
+      &quot;amount&quot;: 2695,
+      &quot;amount_capturable&quot;: 0,
+      &quot;amount_details&quot;: {
+        &quot;tip&quot;: {}
+      },
+      &quot;amount_received&quot;: 2695,
+      &quot;application&quot;: null,
+      &quot;application_fee_amount&quot;: null,
+      &quot;automatic_payment_methods&quot;: null,
+      &quot;canceled_at&quot;: null,
+      &quot;cancellation_reason&quot;: null,
+      &quot;capture_method&quot;: &quot;automatic&quot;,
+      &quot;client_secret&quot;: &quot;pi_3N5prBGL6JttpIgf07JjTKnb_secret_fNQQveOxqk46TWZQNvajlgkJC&quot;,
+      &quot;confirmation_method&quot;: &quot;automatic&quot;,
+      &quot;created&quot;: 1683636089,
+      &quot;currency&quot;: &quot;eur&quot;,
+      &quot;customer&quot;: null,
+      &quot;description&quot;: null,
+      &quot;id&quot;: &quot;pi_3N5prBGL6JttpIgf07JjTKnb&quot;,
+      &quot;invoice&quot;: null,
+      &quot;last_payment_error&quot;: null,
+      &quot;latest_charge&quot;: &quot;ch_3N5prBGL6JttpIgf0wAwtqTX&quot;,
+      &quot;livemode&quot;: false,
+      &quot;metadata&quot;: {
+        &quot;bag&quot;: &quot;{\&quot;8\&quot;: 1}&quot;,
+        &quot;save_info&quot;: &quot;true&quot;,
+        &quot;username&quot;: &quot;newsuperuser1&quot;
+      },
+      &quot;next_action&quot;: null,
+      &quot;object&quot;: &quot;payment_intent&quot;,
+      &quot;on_behalf_of&quot;: null,
+      &quot;payment_method&quot;: &quot;pm_1N5prRGL6JttpIgfwMNcHbGC&quot;,
+      &quot;payment_method_options&quot;: {
+        &quot;card&quot;: {
+          &quot;installments&quot;: null,
+          &quot;mandate_options&quot;: null,
+          &quot;network&quot;: null,
+          &quot;request_three_d_secure&quot;: &quot;automatic&quot;
+        }
+      },
+      &quot;payment_method_types&quot;: [
+        &quot;card&quot;
+      ],
+      &quot;processing&quot;: null,
+      &quot;receipt_email&quot;: null,
+      &quot;review&quot;: null,
+      &quot;setup_future_usage&quot;: null,
+      &quot;shipping&quot;: {
+        &quot;address&quot;: {
+          &quot;city&quot;: &quot;lina&quot;,
+          &quot;country&quot;: &quot;IE&quot;,
+          &quot;line1&quot;: &quot;reside&quot;,
+          &quot;line2&quot;: &quot;llenagh&quot;,
+          &quot;postal_code&quot;: &quot;V9aaaa&quot;,
+          &quot;state&quot;: &quot;Co. Tipperary&quot;
+        },
+        &quot;carrier&quot;: null,
+        &quot;name&quot;: &quot;Testing name&quot;,
+        &quot;phone&quot;: &quot;999999&quot;,
+        &quot;tracking_number&quot;: null
+      },
+      &quot;source&quot;: null,
+      &quot;statement_descriptor&quot;: null,
+      &quot;statement_descriptor_suffix&quot;: null,
+      &quot;status&quot;: &quot;succeeded&quot;,
+      &quot;transfer_data&quot;: null,
+      &quot;transfer_group&quot;: null
+    }
+  },
+  &quot;id&quot;: &quot;evt_3N5prBGL6JttpIgf0fhGi8Tc&quot;,
+  &quot;livemode&quot;: false,
+  &quot;object&quot;: &quot;event&quot;,
+  &quot;pending_webhooks&quot;: 2,
+  &quot;request&quot;: {
+    &quot;id&quot;: &quot;req_jaaXDDBXQOVpmx&quot;,
+    &quot;idempotency_key&quot;: &quot;fa712a15-1eeb-443a-885c-39f5b92d6e0e&quot;
+  },
+  &quot;type&quot;: &quot;payment_intent.succeeded&quot;
+}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>field</td>
+                    <td class="code"><pre>&#x27;state&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>grand_total</td>
+                    <td class="code"><pre>26.95</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>intent</td>
+                    <td class="code"><pre>&lt;PaymentIntent payment_intent id=pi_3N5prBGL6JttpIgf07JjTKnb at 0x7f4cf3875eb0&gt; JSON: {
+  &quot;amount&quot;: 2695,
+  &quot;amount_capturable&quot;: 0,
+  &quot;amount_details&quot;: {
+    &quot;tip&quot;: {}
+  },
+  &quot;amount_received&quot;: 2695,
+  &quot;application&quot;: null,
+  &quot;application_fee_amount&quot;: null,
+  &quot;automatic_payment_methods&quot;: null,
+  &quot;canceled_at&quot;: null,
+  &quot;cancellation_reason&quot;: null,
+  &quot;capture_method&quot;: &quot;automatic&quot;,
+  &quot;client_secret&quot;: &quot;pi_3N5prBGL6JttpIgf07JjTKnb_secret_fNQQveOxqk46TWZQNvajlgkJC&quot;,
+  &quot;confirmation_method&quot;: &quot;automatic&quot;,
+  &quot;created&quot;: 1683636089,
+  &quot;currency&quot;: &quot;eur&quot;,
+  &quot;customer&quot;: null,
+  &quot;description&quot;: null,
+  &quot;id&quot;: &quot;pi_3N5prBGL6JttpIgf07JjTKnb&quot;,
+  &quot;invoice&quot;: null,
+  &quot;last_payment_error&quot;: null,
+  &quot;latest_charge&quot;: &quot;ch_3N5prBGL6JttpIgf0wAwtqTX&quot;,
+  &quot;livemode&quot;: false,
+  &quot;metadata&quot;: {
+    &quot;bag&quot;: &quot;{\&quot;8\&quot;: 1}&quot;,
+    &quot;save_info&quot;: &quot;true&quot;,
+    &quot;username&quot;: &quot;newsuperuser1&quot;
+  },
+  &quot;next_action&quot;: null,
+  &quot;object&quot;: &quot;payment_intent&quot;,
+  &quot;on_behalf_of&quot;: null,
+  &quot;payment_method&quot;: &quot;pm_1N5prRGL6JttpIgfwMNcHbGC&quot;,
+  &quot;payment_method_options&quot;: {
+    &quot;card&quot;: {
+      &quot;installments&quot;: null,
+      &quot;mandate_options&quot;: null,
+      &quot;network&quot;: null,
+      &quot;request_three_d_secure&quot;: &quot;automatic&quot;
+    }
+  },
+  &quot;payment_method_types&quot;: [
+    &quot;card&quot;
+  ],
+  &quot;processing&quot;: null,
+  &quot;receipt_email&quot;: null,
+  &quot;review&quot;: null,
+  &quot;setup_future_usage&quot;: null,
+  &quot;shipping&quot;: {
+    &quot;address&quot;: {
+      &quot;city&quot;: &quot;lina&quot;,
+      &quot;country&quot;: &quot;IE&quot;,
+      &quot;line1&quot;: &quot;reside&quot;,
+      &quot;line2&quot;: &quot;llenagh&quot;,
+      &quot;postal_code&quot;: &quot;V9aaaa&quot;,
+      &quot;state&quot;: &quot;Co. Tipperary&quot;
+    },
+    &quot;carrier&quot;: null,
+    &quot;name&quot;: &quot;Testing name&quot;,
+    &quot;phone&quot;: &quot;999999&quot;,
+    &quot;tracking_number&quot;: null
+  },
+  &quot;source&quot;: null,
+  &quot;statement_descriptor&quot;: null,
+  &quot;statement_descriptor_suffix&quot;: null,
+  &quot;status&quot;: &quot;succeeded&quot;,
+  &quot;transfer_data&quot;: null,
+  &quot;transfer_group&quot;: null
+}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>order</td>
+                    <td class="code"><pre>&lt;Order: DBAE55A5B29E429D97BEC820F454F973&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>order_exists</td>
+                    <td class="code"><pre>True</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>pid</td>
+                    <td class="code"><pre>&#x27;pi_3N5prBGL6JttpIgf07JjTKnb&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>profile</td>
+                    <td class="code"><pre>&lt;UserProfile: newsuperuser1&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>save_info</td>
+                    <td class="code"><pre>&#x27;true&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;checkout.webhook_handler.StripeWH_Handler object at 0x7f4cf3995f10&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>shipping_details</td>
+                    <td class="code"><pre>&lt;StripeObject at 0x7f4cf3876510&gt; JSON: {
+  &quot;address&quot;: {
+    &quot;city&quot;: &quot;lina&quot;,
+    &quot;country&quot;: &quot;IE&quot;,
+    &quot;line1&quot;: &quot;reside&quot;,
+    &quot;line2&quot;: &quot;llenagh&quot;,
+    &quot;postal_code&quot;: &quot;V9aaaa&quot;,
+    &quot;state&quot;: &quot;Co. Tipperary&quot;
+  },
+  &quot;carrier&quot;: null,
+  &quot;name&quot;: &quot;Testing name&quot;,
+  &quot;phone&quot;: &quot;999999&quot;,
+  &quot;tracking_number&quot;: null
+}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>stripe_charge</td>
+                    <td class="code"><pre>&lt;Charge charge id=ch_3N5prBGL6JttpIgf0wAwtqTX at 0x7f4cf38763f0&gt; JSON: {
+  &quot;amount&quot;: 2695,
+  &quot;amount_captured&quot;: 2695,
+  &quot;amount_refunded&quot;: 0,
+  &quot;application&quot;: null,
+  &quot;application_fee&quot;: null,
+  &quot;application_fee_amount&quot;: null,
+  &quot;balance_transaction&quot;: &quot;txn_3N5prBGL6JttpIgf0CiJ6geV&quot;,
+  &quot;billing_details&quot;: {
+    &quot;address&quot;: {
+      &quot;city&quot;: &quot;lina&quot;,
+      &quot;country&quot;: &quot;IE&quot;,
+      &quot;line1&quot;: &quot;reside&quot;,
+      &quot;line2&quot;: &quot;llenagh&quot;,
+      &quot;postal_code&quot;: &quot;42424&quot;,
+      &quot;state&quot;: &quot;Co. Tipperary&quot;
+    },
+    &quot;email&quot;: &quot;rozwelch@gmail.com&quot;,
+    &quot;name&quot;: &quot;Testing name&quot;,
+    &quot;phone&quot;: &quot;999999&quot;
+  },
+  &quot;calculated_statement_descriptor&quot;: &quot;Stripe&quot;,
+  &quot;captured&quot;: true,
+  &quot;created&quot;: 1683636105,
+  &quot;currency&quot;: &quot;eur&quot;,
+  &quot;customer&quot;: null,
+  &quot;description&quot;: null,
+  &quot;destination&quot;: null,
+  &quot;dispute&quot;: null,
+  &quot;disputed&quot;: false,
+  &quot;failure_balance_transaction&quot;: null,
+  &quot;failure_code&quot;: null,
+  &quot;failure_message&quot;: null,
+  &quot;fraud_details&quot;: {},
+  &quot;id&quot;: &quot;ch_3N5prBGL6JttpIgf0wAwtqTX&quot;,
+  &quot;invoice&quot;: null,
+  &quot;livemode&quot;: false,
+  &quot;metadata&quot;: {
+    &quot;bag&quot;: &quot;{\&quot;8\&quot;: 1}&quot;,
+    &quot;save_info&quot;: &quot;true&quot;,
+    &quot;username&quot;: &quot;newsuperuser1&quot;
+  },
+  &quot;object&quot;: &quot;charge&quot;,
+  &quot;on_behalf_of&quot;: null,
+  &quot;order&quot;: null,
+  &quot;outcome&quot;: {
+    &quot;network_status&quot;: &quot;approved_by_network&quot;,
+    &quot;reason&quot;: null,
+    &quot;risk_level&quot;: &quot;normal&quot;,
+    &quot;risk_score&quot;: 12,
+    &quot;seller_message&quot;: &quot;Payment complete.&quot;,
+    &quot;type&quot;: &quot;authorized&quot;
+  },
+  &quot;paid&quot;: true,
+  &quot;payment_intent&quot;: &quot;pi_3N5prBGL6JttpIgf07JjTKnb&quot;,
+  &quot;payment_method&quot;: &quot;pm_1N5prRGL6JttpIgfwMNcHbGC&quot;,
+  &quot;payment_method_details&quot;: {
+    &quot;card&quot;: {
+      &quot;brand&quot;: &quot;visa&quot;,
+      &quot;checks&quot;: {
+        &quot;address_line1_check&quot;: &quot;pass&quot;,
+        &quot;address_postal_code_check&quot;: &quot;pass&quot;,
+        &quot;cvc_check&quot;: &quot;pass&quot;
+      },
+      &quot;country&quot;: &quot;US&quot;,
+      &quot;exp_month&quot;: 4,
+      &quot;exp_year&quot;: 2024,
+      &quot;fingerprint&quot;: &quot;5KdOYBUgW1rTtNHm&quot;,
+      &quot;funding&quot;: &quot;credit&quot;,
+      &quot;installments&quot;: null,
+      &quot;last4&quot;: &quot;4242&quot;,
+      &quot;mandate&quot;: null,
+      &quot;network&quot;: &quot;visa&quot;,
+      &quot;network_token&quot;: {
+        &quot;used&quot;: false
+      },
+      &quot;three_d_secure&quot;: null,
+      &quot;wallet&quot;: null
+    },
+    &quot;type&quot;: &quot;card&quot;
+  },
+  &quot;receipt_email&quot;: null,
+  &quot;receipt_number&quot;: null,
+  &quot;receipt_url&quot;: &quot;https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xTWoyUUFHTDZKdHRwSWdmKIr_6KIGMgaxtfXM9k06LBaRX951HEdnMtpYuvPGayUOE135vNk_-mr_HoYqkLhAov-IPjSElAsnaz66&quot;,
+  &quot;refunded&quot;: false,
+  &quot;review&quot;: null,
+  &quot;shipping&quot;: {
+    &quot;address&quot;: {
+      &quot;city&quot;: &quot;lina&quot;,
+      &quot;country&quot;: &quot;IE&quot;,
+      &quot;line1&quot;: &quot;reside&quot;,
+      &quot;line2&quot;: &quot;llenagh&quot;,
+      &quot;postal_code&quot;: &quot;V9aaaa&quot;,
+      &quot;state&quot;: &quot;Co. Tipperary&quot;
+    },
+    &quot;carrier&quot;: null,
+    &quot;name&quot;: &quot;Testing name&quot;,
+    &quot;phone&quot;: &quot;999999&quot;,
+    &quot;tracking_number&quot;: null
+  },
+  &quot;source&quot;: null,
+  &quot;source_transfer&quot;: null,
+  &quot;statement_descriptor&quot;: null,
+  &quot;statement_descriptor_suffix&quot;: null,
+  &quot;status&quot;: &quot;succeeded&quot;,
+  &quot;transfer_data&quot;: null,
+  &quot;transfer_group&quot;: null
+}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>username</td>
+                    <td class="code"><pre>&#x27;newsuperuser1&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>value</td>
+                    <td class="code"><pre>&#x27;Co. Tipperary&#x27;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/app/checkout/webhook_handler.py</code>, line 30, in _send_confirmation_email
+          
+          
+            <div class="context" id="c139968481147776">
+              
+                <ol start="23" class="pre-context" id="pre139968481147776">
+                
+                  <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre>        subject = render_to_string(</pre></li>
+                
+                  <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre>            &#x27;checkout/confirmation_emails/confirmation_email_subject.txt&#x27;,</pre></li>
+                
+                  <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre>            {&#x27;order&#x27;: order})</pre></li>
+                
+                  <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre>        body = render_to_string(</pre></li>
+                
+                  <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre>            &#x27;checkout/confirmation_emails/confirmation_email_body.txt&#x27;,</pre></li>
+                
+                  <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre>            {&#x27;order&#x27;: order, &#x27;contact_email&#x27;: settings.DEFAULT_FROM_EMAIL})</pre></li>
+                
+                  <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="30" class="context-line">
+                <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre>        send_mail(</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='31' class="post-context" id="post139968481147776">
+                  
+                  <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre>            subject,</pre></li>
+                  
+                  <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre>            body,</pre></li>
+                  
+                  <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre>            settings.DEFAULT_FROM_EMAIL,</pre></li>
+                  
+                  <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre>            [cust_email]</pre></li>
+                  
+                  <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre>        )</pre></li>
+                  
+                  <li onclick="toggle('pre139968481147776', 'post139968481147776')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968481147776')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968481147776">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>body</td>
+                    <td class="code"><pre>(&#x27;Hello Testing name!\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;This is a confirmation of your order at Pure Glow. Your order information is &#x27;
+ &#x27;below:\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;Order Number: DBAE55A5B29E429D97BEC820F454F973\n&#x27;
+ &#x27;Order Date: May 9, 2023, 12:41 p.m.\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;Order Total: €24.50\n&#x27;
+ &#x27;Delivery: €2.45\n&#x27;
+ &#x27;Grand Total: €26.95\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;Your order will be shipped to reside in lina, IE.\n&#x27;
+ &#x27;\n&#x27;
+ &quot;We&#x27;ve got your phone number on file as 999999.\n&quot;
+ &#x27;\n&#x27;
+ &#x27;If you have any questions, feel free to contact us at &#x27;
+ &#x27;pureglowproject@gmail.com.\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;Thank you for your order!\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;Sincerely,\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;Pure Glow&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>cust_email</td>
+                    <td class="code"><pre>&#x27;rozwelch@gmail.com&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>order</td>
+                    <td class="code"><pre>&lt;Order: DBAE55A5B29E429D97BEC820F454F973&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;checkout.webhook_handler.StripeWH_Handler object at 0x7f4cf3995f10&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>subject</td>
+                    <td class="code"><pre>&#x27;Pure Glow Confirmation for Order Number DBAE55A5B29E429D97BEC820F454F973\n&#x27;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/__init__.py</code>, line 61, in send_mail
+          
+          
+            <div class="context" id="c139968481145216">
+              
+                <ol start="54" class="pre-context" id="pre139968481145216">
+                
+                  <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre>        password=auth_password,</pre></li>
+                
+                  <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre>        fail_silently=fail_silently,</pre></li>
+                
+                  <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre>    )</pre></li>
+                
+                  <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre>    mail = EmailMultiAlternatives(subject, message, from_email, recipient_list, connection=connection)</pre></li>
+                
+                  <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre>    if html_message:</pre></li>
+                
+                  <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre>        mail.attach_alternative(html_message, &#x27;text/html&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="61" class="context-line">
+                <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre>    return mail.send()</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='62' class="post-context" id="post139968481145216">
+                  
+                  <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre>def send_mass_mail(datatuple, fail_silently=False, auth_user=None,</pre></li>
+                  
+                  <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre>                   auth_password=None, connection=None):</pre></li>
+                  
+                  <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre>    &quot;&quot;&quot;</pre></li>
+                  
+                  <li onclick="toggle('pre139968481145216', 'post139968481145216')"><pre>    Given a datatuple of (subject, message, from_email, recipient_list), send</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968481145216')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968481145216">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>auth_password</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>auth_user</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>connection</td>
+                    <td class="code"><pre>&lt;django.core.mail.backends.smtp.EmailBackend object at 0x7f4cf39afb90&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>fail_silently</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>from_email</td>
+                    <td class="code"><pre>&#x27;pureglowproject@gmail.com&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>html_message</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>mail</td>
+                    <td class="code"><pre>&lt;django.core.mail.message.EmailMultiAlternatives object at 0x7f4cf3d51b90&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>message</td>
+                    <td class="code"><pre>(&#x27;Hello Testing name!\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;This is a confirmation of your order at Pure Glow. Your order information is &#x27;
+ &#x27;below:\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;Order Number: DBAE55A5B29E429D97BEC820F454F973\n&#x27;
+ &#x27;Order Date: May 9, 2023, 12:41 p.m.\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;Order Total: €24.50\n&#x27;
+ &#x27;Delivery: €2.45\n&#x27;
+ &#x27;Grand Total: €26.95\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;Your order will be shipped to reside in lina, IE.\n&#x27;
+ &#x27;\n&#x27;
+ &quot;We&#x27;ve got your phone number on file as 999999.\n&quot;
+ &#x27;\n&#x27;
+ &#x27;If you have any questions, feel free to contact us at &#x27;
+ &#x27;pureglowproject@gmail.com.\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;Thank you for your order!\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;Sincerely,\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;Pure Glow&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>recipient_list</td>
+                    <td class="code"><pre>[&#x27;rozwelch@gmail.com&#x27;]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>subject</td>
+                    <td class="code"><pre>&#x27;Pure Glow Confirmation for Order Number DBAE55A5B29E429D97BEC820F454F973\n&#x27;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/message.py</code>, line 284, in send
+          
+          
+            <div class="context" id="c139968481147072">
+              
+                <ol start="277" class="pre-context" id="pre139968481147072">
+                
+                  <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre>    def send(self, fail_silently=False):</pre></li>
+                
+                  <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre>        &quot;&quot;&quot;Send the email message.&quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre>        if not self.recipients():</pre></li>
+                
+                  <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre>            # Don&#x27;t bother creating the network connection if there&#x27;s nobody to</pre></li>
+                
+                  <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre>            # send to.</pre></li>
+                
+                  <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre>            return 0</pre></li>
+                
+                </ol>
+              
+              <ol start="284" class="context-line">
+                <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre>        return self.get_connection(fail_silently).send_messages([self])</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='285' class="post-context" id="post139968481147072">
+                  
+                  <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre>    def attach(self, filename=None, content=None, mimetype=None):</pre></li>
+                  
+                  <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+                  <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre>        Attach a file with the given filename and content. The filename can</pre></li>
+                  
+                  <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre>        be omitted and the mimetype is guessed, if not provided.</pre></li>
+                  
+                  <li onclick="toggle('pre139968481147072', 'post139968481147072')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968481147072')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968481147072">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>fail_silently</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.mail.message.EmailMultiAlternatives object at 0x7f4cf3d51b90&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/backends/smtp.py</code>, line 109, in send_messages
+          
+          
+            <div class="context" id="c139968481145280">
+              
+                <ol start="102" class="pre-context" id="pre139968481145280">
+                
+                  <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre>            new_conn_created = self.open()</pre></li>
+                
+                  <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre>            if not self.connection or new_conn_created is None:</pre></li>
+                
+                  <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre>                # We failed silently on open().</pre></li>
+                
+                  <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre>                # Trying to send would be pointless.</pre></li>
+                
+                  <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre>                return 0</pre></li>
+                
+                  <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre>            num_sent = 0</pre></li>
+                
+                  <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre>            for message in email_messages:</pre></li>
+                
+                </ol>
+              
+              <ol start="109" class="context-line">
+                <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre>                sent = self._send(message)</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='110' class="post-context" id="post139968481145280">
+                  
+                  <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre>                if sent:</pre></li>
+                  
+                  <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre>                    num_sent += 1</pre></li>
+                  
+                  <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre>            if new_conn_created:</pre></li>
+                  
+                  <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre>                self.close()</pre></li>
+                  
+                  <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre>        return num_sent</pre></li>
+                  
+                  <li onclick="toggle('pre139968481145280', 'post139968481145280')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968481145280')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968481145280">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>email_messages</td>
+                    <td class="code"><pre>[&lt;django.core.mail.message.EmailMultiAlternatives object at 0x7f4cf3d51b90&gt;]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>message</td>
+                    <td class="code"><pre>&lt;django.core.mail.message.EmailMultiAlternatives object at 0x7f4cf3d51b90&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>new_conn_created</td>
+                    <td class="code"><pre>True</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>num_sent</td>
+                    <td class="code"><pre>0</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.mail.backends.smtp.EmailBackend object at 0x7f4cf39afb90&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/backends/smtp.py</code>, line 123, in _send
+          
+          
+            <div class="context" id="c139968481134976">
+              
+                <ol start="116" class="pre-context" id="pre139968481134976">
+                
+                  <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>    def _send(self, email_message):</pre></li>
+                
+                  <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>        &quot;&quot;&quot;A helper method that does the actual sending.&quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>        if not email_message.recipients():</pre></li>
+                
+                  <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>            return False</pre></li>
+                
+                  <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>        encoding = email_message.encoding or settings.DEFAULT_CHARSET</pre></li>
+                
+                  <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>        from_email = sanitize_address(email_message.from_email, encoding)</pre></li>
+                
+                  <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>        recipients = [sanitize_address(addr, encoding) for addr in email_message.recipients()]</pre></li>
+                
+                </ol>
+              
+              <ol start="123" class="context-line">
+                <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>        message = email_message.message()</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='124' class="post-context" id="post139968481134976">
+                  
+                  <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>        try:</pre></li>
+                  
+                  <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>            self.connection.sendmail(from_email, recipients, message.as_bytes(linesep=&#x27;\r\n&#x27;))</pre></li>
+                  
+                  <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>        except smtplib.SMTPException:</pre></li>
+                  
+                  <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>            if not self.fail_silently:</pre></li>
+                  
+                  <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>                raise</pre></li>
+                  
+                  <li onclick="toggle('pre139968481134976', 'post139968481134976')"><pre>            return False</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968481134976')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968481134976">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>email_message</td>
+                    <td class="code"><pre>&lt;django.core.mail.message.EmailMultiAlternatives object at 0x7f4cf3d51b90&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>encoding</td>
+                    <td class="code"><pre>&#x27;utf-8&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>from_email</td>
+                    <td class="code"><pre>&#x27;pureglowproject@gmail.com&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>recipients</td>
+                    <td class="code"><pre>[&#x27;rozwelch@gmail.com&#x27;]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.mail.backends.smtp.EmailBackend object at 0x7f4cf39afb90&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/message.py</code>, line 248, in message
+          
+          
+            <div class="context" id="c139968481148160">
+              
+                <ol start="241" class="pre-context" id="pre139968481148160">
+                
+                  <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre>            self.connection = get_connection(fail_silently=fail_silently)</pre></li>
+                
+                  <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre>        return self.connection</pre></li>
+                
+                  <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre>    def message(self):</pre></li>
+                
+                  <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre>        encoding = self.encoding or settings.DEFAULT_CHARSET</pre></li>
+                
+                  <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre>        msg = SafeMIMEText(self.body, self.content_subtype, encoding)</pre></li>
+                
+                  <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre>        msg = self._create_message(msg)</pre></li>
+                
+                </ol>
+              
+              <ol start="248" class="context-line">
+                <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre>        msg[&#x27;Subject&#x27;] = self.subject</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='249' class="post-context" id="post139968481148160">
+                  
+                  <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre>        msg[&#x27;From&#x27;] = self.extra_headers.get(&#x27;From&#x27;, self.from_email)</pre></li>
+                  
+                  <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre>        self._set_list_header_if_not_empty(msg, &#x27;To&#x27;, self.to)</pre></li>
+                  
+                  <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre>        self._set_list_header_if_not_empty(msg, &#x27;Cc&#x27;, self.cc)</pre></li>
+                  
+                  <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre>        self._set_list_header_if_not_empty(msg, &#x27;Reply-To&#x27;, self.reply_to)</pre></li>
+                  
+                  <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139968481148160', 'post139968481148160')"><pre>        # Email header names are case-insensitive (RFC 2045), so we have to</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968481148160')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968481148160">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>encoding</td>
+                    <td class="code"><pre>&#x27;utf-8&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>msg</td>
+                    <td class="code"><pre>&lt;django.core.mail.message.SafeMIMEText object at 0x7f4cf3938550&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.mail.message.EmailMultiAlternatives object at 0x7f4cf3d51b90&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/message.py</code>, line 162, in __setitem__
+          
+          
+            <div class="context" id="c139968480691392">
+              
+                <ol start="155" class="pre-context" id="pre139968480691392">
+                
+                  <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre>class SafeMIMEText(MIMEMixin, MIMEText):</pre></li>
+                
+                  <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre>    def __init__(self, _text, _subtype=&#x27;plain&#x27;, _charset=None):</pre></li>
+                
+                  <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre>        self.encoding = _charset</pre></li>
+                
+                  <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre>        MIMEText.__init__(self, _text, _subtype=_subtype, _charset=_charset)</pre></li>
+                
+                  <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre>    def __setitem__(self, name, val):</pre></li>
+                
+                </ol>
+              
+              <ol start="162" class="context-line">
+                <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre>        name, val = forbid_multi_line_headers(name, val, self.encoding)</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='163' class="post-context" id="post139968480691392">
+                  
+                  <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre>        MIMEText.__setitem__(self, name, val)</pre></li>
+                  
+                  <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre>    def set_payload(self, payload, charset=None):</pre></li>
+                  
+                  <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre>        if charset == &#x27;utf-8&#x27; and not isinstance(charset, Charset.Charset):</pre></li>
+                  
+                  <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre>            has_long_lines = any(</pre></li>
+                  
+                  <li onclick="toggle('pre139968480691392', 'post139968480691392')"><pre>                len(line.encode()) &gt; RFC5322_EMAIL_LINE_LENGTH_LIMIT</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968480691392')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968480691392">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>name</td>
+                    <td class="code"><pre>&#x27;Subject&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.mail.message.SafeMIMEText object at 0x7f4cf3938550&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>val</td>
+                    <td class="code"><pre>&#x27;Pure Glow Confirmation for Order Number DBAE55A5B29E429D97BEC820F454F973\n&#x27;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/message.py</code>, line 60, in forbid_multi_line_headers
+          
+          
+            <div class="context" id="c139968482235136">
+              
+                <ol start="53" class="pre-context" id="pre139968482235136">
+                
+                  <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre>def forbid_multi_line_headers(name, val, encoding):</pre></li>
+                
+                  <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre>    &quot;&quot;&quot;Forbid multi-line headers to prevent header injection.&quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre>    encoding = encoding or settings.DEFAULT_CHARSET</pre></li>
+                
+                  <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre>    val = str(val)  # val may be lazy</pre></li>
+                
+                  <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre>    if &#x27;\n&#x27; in val or &#x27;\r&#x27; in val:</pre></li>
+                
+                </ol>
+              
+              <ol start="60" class="context-line">
+                <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre>        raise BadHeaderError(&quot;Header values can&#x27;t contain newlines (got %r for header %r)&quot; % (val, name))</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='61' class="post-context" id="post139968482235136">
+                  
+                  <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre>    try:</pre></li>
+                  
+                  <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre>        val.encode(&#x27;ascii&#x27;)</pre></li>
+                  
+                  <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre>    except UnicodeEncodeError:</pre></li>
+                  
+                  <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre>        if name.lower() in ADDRESS_HEADERS:</pre></li>
+                  
+                  <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre>            val = &#x27;, &#x27;.join(sanitize_address(addr, encoding) for addr in getaddresses((val,)))</pre></li>
+                  
+                  <li onclick="toggle('pre139968482235136', 'post139968482235136')"><pre>        else:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139968482235136')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139968482235136">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>encoding</td>
+                    <td class="code"><pre>&#x27;utf-8&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>name</td>
+                    <td class="code"><pre>&#x27;Subject&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>val</td>
+                    <td class="code"><pre>&#x27;Pure Glow Confirmation for Order Number DBAE55A5B29E429D97BEC820F454F973\n&#x27;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+    </ul>
+  </div>
+  <form action="https://dpaste.com/" name="pasteform" id="pasteform" method="post">
+  <div id="pastebinTraceback" class="pastebin">
+    <input type="hidden" name="language" value="PythonConsole">
+    <input type="hidden" name="title"
+      value="BadHeaderError at /checkout/wh/">
+    <input type="hidden" name="source" value="Django Dpaste Agent">
+    <input type="hidden" name="poster" value="Django">
+    <textarea name="content" id="traceback_area" cols="140" rows="25">
+Environment:
+Request Method: POST
+Request URL: https://pureglow.herokuapp.com/checkout/wh/
+Django Version: 3.2
+Python Version: 3.11.3
+Installed Applications:
+[&#x27;django.contrib.admin&#x27;,
+ &#x27;django.contrib.auth&#x27;,
+ &#x27;django.contrib.contenttypes&#x27;,
+ &#x27;django.contrib.sessions&#x27;,
+ &#x27;django.contrib.messages&#x27;,
+ &#x27;django.contrib.staticfiles&#x27;,
+ &#x27;django.contrib.sites&#x27;,
+ &#x27;allauth&#x27;,
+ &#x27;allauth.account&#x27;,
+ &#x27;allauth.socialaccount&#x27;,
+ &#x27;home&#x27;,
+ &#x27;products&#x27;,
+ &#x27;bag&#x27;,
+ &#x27;checkout&#x27;,
+ &#x27;profiles&#x27;,
+ &#x27;wishlist&#x27;,
+ &#x27;how_to&#x27;,
+ &#x27;django_summernote&#x27;,
+ &#x27;crispy_forms&#x27;,
+ &#x27;storages&#x27;]
+Installed Middleware:
+[&#x27;django.middleware.security.SecurityMiddleware&#x27;,
+ &#x27;django.contrib.sessions.middleware.SessionMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;,
+ &#x27;django.middleware.csrf.CsrfViewMiddleware&#x27;,
+ &#x27;django.contrib.auth.middleware.AuthenticationMiddleware&#x27;,
+ &#x27;django.contrib.messages.middleware.MessageMiddleware&#x27;,
+ &#x27;django.middleware.clickjacking.XFrameOptionsMiddleware&#x27;]
+Traceback (most recent call last):
+  File "/app/.heroku/python/lib/python3.11/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/app/.heroku/python/lib/python3.11/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/app/.heroku/python/lib/python3.11/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/app/.heroku/python/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/app/checkout/webhooks.py", line 54, in webhook
+    response = event_handler(event)
+  File "/app/checkout/webhook_handler.py", line 107, in handle_payment_intent_succeeded
+    self._send_confirmation_email(order)
+  File "/app/checkout/webhook_handler.py", line 30, in _send_confirmation_email
+    send_mail(
+  File "/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/__init__.py", line 61, in send_mail
+    return mail.send()
+  File "/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 109, in send_messages
+    sent = self._send(message)
+  File "/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/backends/smtp.py", line 123, in _send
+    message = email_message.message()
+  File "/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/message.py", line 248, in message
+    msg[&#x27;Subject&#x27;] = self.subject
+  File "/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/message.py", line 162, in __setitem__
+    name, val = forbid_multi_line_headers(name, val, self.encoding)
+  File "/app/.heroku/python/lib/python3.11/site-packages/django/core/mail/message.py", line 60, in forbid_multi_line_headers
+    raise BadHeaderError(&quot;Header values can&#x27;t contain newlines (got %r for header %r)&quot; % (val, name))
+Exception Type: BadHeaderError at /checkout/wh/
+Exception Value: Header values can&#x27;t contain newlines (got &#x27;Pure Glow Confirmation for Order Number DBAE55A5B29E429D97BEC820F454F973\n&#x27; for header &#x27;Subject&#x27;)
+</textarea>
+  <br><br>
+  <input type="submit" value="Share this traceback on a public website">
+  </div>
+</form>
+</div>
+<div id="requestinfo">
+  <h2>Request information</h2>
+  
+    <h3 id="user-info">USER</h3>
+    <p>AnonymousUser</p>
+  
+  <h3 id="get-info">GET</h3>
+  
+    <p>No GET data</p>
+  
+  <h3 id="post-info">POST</h3>
+  
+    <p>No POST data</p>
+  
+  <h3 id="files-info">FILES</h3>
+  
+    <p>No FILES data</p>
+  
+  <h3 id="cookie-info">COOKIES</h3>
+  
+    <p>No cookie data</p>
+  
+  <h3 id="meta-info">META</h3>
+  <table class="req">
+    <thead>
+      <tr>
+        <th>Variable</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>CONTENT_LENGTH</td>
+          <td class="code"><pre>&#x27;2313&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_TYPE</td>
+          <td class="code"><pre>&#x27;application/json; charset=utf-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ACCEPT</td>
+          <td class="code"><pre>&#x27;*/*; q=0.5, application/xml&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_CACHE_CONTROL</td>
+          <td class="code"><pre>&#x27;no-cache&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_CONNECTION</td>
+          <td class="code"><pre>&#x27;close&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_CONNECT_TIME</td>
+          <td class="code"><pre>&#x27;0&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_HOST</td>
+          <td class="code"><pre>&#x27;pureglow.herokuapp.com&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_STRIPE_SIGNATURE</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_TOTAL_ROUTE_TIME</td>
+          <td class="code"><pre>&#x27;0&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_USER_AGENT</td>
+          <td class="code"><pre>&#x27;Stripe/1.0 (+https://stripe.com/docs/webhooks)&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_VIA</td>
+          <td class="code"><pre>&#x27;1.1 vegur&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_X_FORWARDED_FOR</td>
+          <td class="code"><pre>&#x27;54.187.174.169&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_X_FORWARDED_PORT</td>
+          <td class="code"><pre>&#x27;443&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_X_FORWARDED_PROTO</td>
+          <td class="code"><pre>&#x27;https&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_X_REQUEST_ID</td>
+          <td class="code"><pre>&#x27;2694ad54-4782-45b8-8758-f2d739f6b1e8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_X_REQUEST_START</td>
+          <td class="code"><pre>&#x27;1683636106782&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH_INFO</td>
+          <td class="code"><pre>&#x27;/checkout/wh/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QUERY_STRING</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>RAW_URI</td>
+          <td class="code"><pre>&#x27;/checkout/wh/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_ADDR</td>
+          <td class="code"><pre>&#x27;10.1.39.7&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_PORT</td>
+          <td class="code"><pre>&#x27;10073&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REQUEST_METHOD</td>
+          <td class="code"><pre>&#x27;POST&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SCRIPT_NAME</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_NAME</td>
+          <td class="code"><pre>&#x27;0.0.0.0&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PORT</td>
+          <td class="code"><pre>&#x27;34879&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PROTOCOL</td>
+          <td class="code"><pre>&#x27;HTTP/1.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_SOFTWARE</td>
+          <td class="code"><pre>&#x27;gunicorn/20.0.4&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>gunicorn.socket</td>
+          <td class="code"><pre>&lt;socket.socket fd=9, family=2, type=1, proto=0, laddr=(&#x27;172.18.249.166&#x27;, 34879), raddr=(&#x27;10.1.39.7&#x27;, 10073)&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.errors</td>
+          <td class="code"><pre>&lt;gunicorn.http.wsgi.WSGIErrorsWrapper object at 0x7f4cf3d99930&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.file_wrapper</td>
+          <td class="code"><pre>&lt;class &#x27;gunicorn.http.wsgi.FileWrapper&#x27;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.input</td>
+          <td class="code"><pre>&lt;gunicorn.http.body.Body object at 0x7f4cf3a81490&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.input_terminated</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multiprocess</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multithread</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.run_once</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.url_scheme</td>
+          <td class="code"><pre>&#x27;https&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.version</td>
+          <td class="code"><pre>(1, 0)</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+  <h3 id="settings-info">Settings</h3>
+  <h4>Using settings module <code>pure_glow.settings</code></h4>
+  <table class="req">
+    <thead>
+      <tr>
+        <th>Setting</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>ABSOLUTE_URL_OVERRIDES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ACCOUNT_AUTHENTICATION_METHOD</td>
+          <td class="code"><pre>&#x27;username_email&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ACCOUNT_EMAIL_REQUIRED</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ACCOUNT_EMAIL_VERIFICATION</td>
+          <td class="code"><pre>&#x27;mandatory&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ACCOUNT_USERNAME_MIN_LENGTH</td>
+          <td class="code"><pre>4</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ADMINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ALLOWED_HOSTS</td>
+          <td class="code"><pre>[&#x27;pureglow.herokuapp.com&#x27;, &#x27;localhost&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>APPEND_SLASH</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTHENTICATION_BACKENDS</td>
+          <td class="code"><pre>(&#x27;django.contrib.auth.backends.ModelBackend&#x27;,
+ &#x27;allauth.account.auth_backends.AuthenticationBackend&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_PASSWORD_VALIDATORS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_USER_MODEL</td>
+          <td class="code"><pre>&#x27;auth.User&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AWS_ACCESS_KEY_ID</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AWS_S3_CUSTOM_DOMAIN</td>
+          <td class="code"><pre>&#x27;pure-glow.s3.amazonaws.com&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AWS_S3_OBJECT_PARAMETERS</td>
+          <td class="code"><pre>{&#x27;CacheControl&#x27;: &#x27;max-age=94608000&#x27;, &#x27;Expires&#x27;: &#x27;Thu, 31 Dec 2099 20:00:00 GMT&#x27;}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AWS_S3_REGION_NAME</td>
+          <td class="code"><pre>&#x27;eu-west-1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AWS_...
+Request
+{
+  "id": "evt_3N5prBGL6JttpIgf0fhGi8Tc",
+  "object": "event",
+  "api_version": "2022-11-15",
+  "created": 1683636106,
+  "data": {
+    "object": {
+      "id": "pi_3N5prBGL6JttpIgf07JjTKnb",
+      "object": "payment_intent",
+      "amount": 2695,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {
+        }
+      },
+      "amount_received": 2695,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+      "cancellation_reason": null,
+      "capture_method": "automatic",
+      "client_secret": "pi_3N5prBGL6JttpIgf07JjTKnb_secret_fNQQveOxqk46TWZQNvajlgkJC",
+      "confirmation_method": "automatic",
+      "created": 1683636089,
+      "currency": "eur",
+      "customer": null,
+      "description": null,
+      "invoice": null,
+      "last_payment_error": null,
+      "latest_charge": "ch_3N5prBGL6JttpIgf0wAwtqTX",
+      "livemode": false,
+      "metadata": {
+        "bag": "{\"8\": 1}",
+        "save_info": "true",
+        "username": "newsuperuser1"
+      },
+      "next_action": null,
+      "on_behalf_of": null,
+      "payment_method": "pm_1N5prRGL6JttpIgfwMNcHbGC",
+      "payment_method_options": {
+        "card": {
+          "installments": null,
+          "mandate_options": null,
+          "network": null,
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card"
+      ],
+      "processing": null,
+      "receipt_email": null,
+      "review": null,
+      "setup_future_usage": null,
+      "shipping": {
+        "address": {
+          "city": "lina",
+          "country": "IE",
+          "line1": "reside",
+          "line2": "llenagh",
+          "postal_code": "V9aaaa",
+          "state": "Co. Tipperary"
+        },
+        "carrier": null,
+        "name": "Testing name",
+        "phone": "999999",
+        "tracking_number": null
+      },
+      "source": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_jaaXDDBXQOVpmx",
+    "idempotency_key": "fa712a15-1eeb-443a-885c-39f5b92d6e0e"
+  },
+  "type": "payment_intent.succeeded"
+}
+
+Skip to content
+
+
+New Business
+Search…
+
+Create
+
+Help
+
+
+Home
+Payments
+Balances
+Customers
+Products
+Billing
+Reports
+Connect
+
+More
+Developers
+Test mode
+
+TEST DATA

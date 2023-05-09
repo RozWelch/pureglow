@@ -214,12 +214,12 @@ footer {
 }
 
 footer a {
-    color: white;
+    color: #f8efe7;
 }
 
 footer a:hover {
     text-decoration: underline !important;
-    color: white;
+    color: #f8efe7;
 }
 
 .divider {
