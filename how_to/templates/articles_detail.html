@@ -13,7 +13,7 @@
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="col-12 col-md-4 col-lg-3 offset-lg-1">
                 <div class="image-container my-5">
                     {% if howto.image %}
                     <a href="{% url 'howto_detail' howto.id %}">
@@ -27,11 +27,60 @@
                 </div>
             </div>
             <!-- How to Article details section -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-8 col-lg-6">
                 <div class="product-details-container mb-5 mt-md-5">
                     <h2 class="mb-0">{{ howto.article_title }}</h2>
                     <p class="author lead mb-0 text-left font-weight-bold">by {{ howto.author }}</p>
                     <p class="mt-3">{{ howto.content | safe }}</p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <hr class="line-break">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 card mb-4  mt-3">
+                        <h2>Comments:</h2>
+                        <div class="card-body">
+                            <!-- Loop to iterate through each comment -->
+                            {% for articlecomment in articlecomments %}
+                            <div class="comments">
+                                <p class="font-weight-bold">
+                                    <!-- The commenter's name -->
+                                    {{ articlecomment.name }}
+                                    <span class="text-muted font-weight-normal">
+                                        <!-- Comment's created date -->
+                                        {{ articlecomment.created_on }}
+                                    </span> wrote:
+                                </p>
+                                <!-- The body of the comment -->
+                                {{ articlecomment.comment_body | linebreaks }}
+                            </div>
+                            <!-- For loop ends here -->
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="col-md-4 card mb-4  mt-3 ">
+                        <div class="card-body">
+                            <!-- Comment awaiting approval message -->
+                            {% if commented %}
+                            <div class="alert alert-success" role="alert">
+                                Your comment is awaiting approval
+                            </div>
+                            {% else %}
+                            {% if user.is_authenticated %}
+            
+                            <h3>Leave a comment:</h3>
+                            <p>Posting as: {{ user.username }}</p>
+                            <form method="post" class="commentform" autocomplete="off">
+                                {{ comment_form | crispy }}
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                            </form>
+                            {% endif %}
+                            {% endif %}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
