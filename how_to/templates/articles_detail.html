@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -16,11 +17,11 @@
             <div class="col-12 col-md-4 col-lg-3 offset-lg-1">
                 <div class="image-container my-5">
                     {% if howto.image %}
-                    <a href="{% url 'howto_detail' howto.id %}">
+                    <a>
                         <img class="card-img-top img-fluid" src="{{ howto.image.url }}" alt="{{ howto.name }}">
                     </a>
                     {% else %}
-                    <a href="{% url 'howto_detail' howto.id %}">
+                    <a>
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ howto.name }}">
                     </a>
                     {% endif %}

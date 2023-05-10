@@ -1,9 +1,9 @@
 ## Pure Glow
 Pure Glow is a skincare range, selling products for the face, body and an organic range. Users can browse skincare products, and purchase them. There is a ‘how to’ section, with useful articles on how to use the products, users can view comments and signed-in users can add a comment. Signed-in users can add products to a wishlist, to purchase at a later date. 
 
-The payment system uses Stripe. Please note this website is for educational purposes. Do not enter any personal credit/debit card details when using the site. To test this system, test card details can be used. These can be found in Stripe's documentation website: ![stripe](https://stripe.com/docs/testing/) 
+The payment system uses Stripe. Please note this website is for educational purposes. Do not enter any personal credit/debit card details when using the site. To test this system, test card details can be used. These can be found in Stripe's documentation website: [stripe](https://stripe.com/docs/testing/) 
 
-The live link can be found here - ![pure_glow](https://pureglow.herokuapp.com/)
+The live link can be found here - [pure glow skincare](https://pureglow.herokuapp.com/)
 
 ## Am I Responsive mockups
 * Used Am I Responsive website to show the main pages on different devices:
@@ -30,7 +30,7 @@ The site was aimed at purchasers of skin care products, main target audience is 
 
 * Colour pallet:
     * The main colours choosen gave the site a premium look, with warm accent colours to give an approchable feel.  
-    ![Colour Pallett](https://github.com/RozWelch/pureglow/documentation/readme_images/colour_pallet.jpg)
+    ![Colour Pallett](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/colour_pallet.jpg)
 
 * Wireframes:
     <details>
@@ -230,17 +230,11 @@ These open in a separate browser window to avoid taking the user away from the s
 ## Fixed and Unfixed Bugs
 
 * Fixed bugs:
+    * When first deployed to Heroku, the links were giving a ‘Server Error 500’. I fixed a couple of errors first: First I moved custom_storages.py to the correct location. I added gunicorn to the requirements.txt file. However these were not the cause of the error. I set DEBUT = True in settings to get a more accurate error message. On checking Heroku config vars, I had copied the "hidden" version of the database url from ElephantSQL: Some of the URL has been censored with **** symbols. From ElephantSQL, I copied the full DB url: I then updated the config var on heroku, and restart my app dynos: (the more button in the upper right, and select Restart All Dynos to rebuild my app.) Then the app was working correctly.
 
-    * The comments form would re-submit a comment if the back button was used. To prevent this autocomplete="off" was added to the form in the html file.
+    * Product sorting was not working initially. The “ for the href was in the wrong place (before ?category). When “ moved to after category, the product sorting worked correctly.
 
-    * The care providers list was misaligned, the loop was in the wrong place, it had an opening div before it, and closing div after, leaving the styling crossing over into the next iteration, causing the next iteration to be moved out by 12px each time. It was resolved by moving the closing div tag.
-
-    * When a success message was added to the DeleteProvider view, it was not showing up. A bug in Django which has yet to be fixed meant Message Mixins didn't work with Delete Views.
-    The workaround was found on Stack: https://stackoverflow.com/a/42656041
-
-    * When initial commit was made, it failed as I had divergent branches, there was remote work that was not local. I found the answer on Slack. I integrated the remote changes by using the 'git config pull.rebase false' command to tell git how to merge the changes 'git pull' command to get the changes from the local branch, and then it was possible to 'git push' my commit.
-
-    * When site was deployed to Heroku, the css file was not linking. After speaking with tutor support, a workaround was that in the env.py file add a var DEV,  with a value of '1', then DEBUG was set to DEBUG = 'DEV' in os.environ. Then disable collect static variable was removed from Heroku vars. The deployed site then ran with css working.
+    * A confirmation email was not being sent when I made a purchase, the purchase goes through ok and I get a success message, but I don't get an email. I checked on stripe and the payments were giving an error. I checked my heroku config vars, and noticed an extra line was on my STRIPE_WH_SECRET var - I removed that and tested again. Under the list of events in Strips, there was a 500 error - On checking the html with the error underneath, there was a BadHeader Error. There was a newline at the end of your email subject file. I removed this line and then the emails came through correctly.
 
 * No known unfixed bugs
 
@@ -336,7 +330,7 @@ The project was created in Git Hub using the Code Institute template.
      * Press Enter. Your local clone will be created.
 
 ## Credits
-* Code Institue's 'I think therefore I blog' tutorial
+* Code Institue's 'Boutique Ado' tutorial
 * All images used are from Freepix: www.freepix.com
 
 ## Acknowledgements
