@@ -34,9 +34,9 @@
                         <!-- Display Add to wishlist icon -->
                         <div class="col pt-2 pl-0">
                             <p class="text-right mb-0">
-                                <span class="pr-1">Wishlist: </span>
+                                <span class="pr-1">Add to Wishlist </span>
                                 <a href="{% url 'add_to_wishlist' product.id %}" aria-label="Add to wishlist">
-                                    <i class="fas fa-heart alt-text-muted"></i>
+                                    <i class="fas fa-heart dark-orange"></i>
                                 </a>
                             </p>
                         </div>
@@ -46,11 +46,6 @@
                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                         </a>
                     </p>
-                    {% endif %}
-                    {% if product.rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                    {% else %}
-                        <small class="text-muted">No Rating</small>
                     {% endif %}
                     {% if request.user.is_superuser %}
                     <small class="ml-3">

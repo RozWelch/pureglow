@@ -65,7 +65,6 @@ class HowToDetail(View):
                 "post": post,
                 "comments": comments,
                 "commented": True,
-                "comment_form": articlecommentform,
-                "liked": liked
+                "comment_form": ArticleCommentForm()
             },
         )
