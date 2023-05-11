@@ -57,42 +57,50 @@ The site was aimed at purchasers of skin care products, main target audience is 
     ![Database](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/database_schema_drawing.jpg)
 
 * User Stories:
-* Epic: First Time User - Site design and navigation
-    * As a First time User, I can view information on the Home Page so that I can clearly see the purpose of the site and how to use it
-    * As a First Time User, I can easily understand the main purpose of the app, so that I can find the infomation I require easily
-    * As a First Time User, I can navigate the site so that I can navigate to the information I require in an effective and intuitive fashion
-    * As a First Time User,  I can view care providers, so that I can browse a list of care providers
-    * As a First Time User,  I can view care providers full profile, so that I can see all of their details and comments
+* Epic: Viewing and Navigation
+    * As a Site User, I can intuitively navigate around the site, so that I can find content.
+    * As a Site User, I can view a list of products, so that I can select a product to view.
+    * As a shopper, I can click on a product, so that I can read the full product details.
+    * As a shopper, I can view a specific category of products, so I can browse the type of products I'm looking for.
+    * As a shopper, I can search all products, so that I can find what I am looking for.
+    * As a shopper, I can sort all products, so that I can view products based on price or title.
+    * As a site user, I can read ‘how to’ articles, so I better understand how to use the products.
+    * As a site user, I can read comments on ‘how to’ articles left by other customers, so I see what feedback and star rating they gave on the products they purchased.
+    * As a shopper, I can add products to my wish list, so that I can go back and view them at a later date.
+    * As a shopper, I can view my wish list, so I can find them easily in the one location.
  
-* Epic: Frequent User - account functions
-    * As a Frequent User, I can create a new account so that I can access all functions provided by the app
-    * As a Frequent User,  I can login and logout, so that I can access my details 
-    * As a Frequent User, I can see my login status so that I can know if I am logged in or out
-    * As a Frequent User,  I can view care providers and service provided, so that I can see care providers that suit my needs 
-    * As a Frequent User,  I can login and comment on a care provider, so that I can give my feedback on their service
+* Epic: User Account and Profile
+    * As a site user, I can register an account, so that I can have a personal account and keep track of my orders and wishlist.
+    * As a site user, I can log in or log out of my account, so that I can keep my account secure.
+    * As a site user, I can see my login status, so that I know if I'm logged in or out.
+    * As a site user, I can save my personal details in my user profile, so that I do not have to fill them out for future orders.
+    * As a site user, I can view my order history, so that I can remember what purchases I've made previously.
+    * As a site user, I can recover my password in case I forget it, so that I can recover access to my account.
 
-* Epic: Care Provider Account
-    * As a care provider,  I can login and logout, so that I can access my details
-    * As a care provider,  I can see my login status so that I can know if I am logged in or out 
-    * As a care provider,  I can create an account, so that I can add my details 
-    * As a care provider,  I can update my account details, so that I can manage my account content
-    * As a care provider,  I can delete my account details, so that I can manage my account 
+* Epic: Purchasing
+    * As a shopper, I can add products with different quantities to my shopping bag, so that I can purchase them all together when I am ready.
+    * As a shopper, I can view the current total of my shopping bag as I am shopping, so that I can see how much my purchases costs so far, so I can avoid spending too much.
+    * As a shopper, I can view the contents of my shopping bag at any time, so I can see the products included and the total cost.
+    * As a shopper, I can adjust the quantity, or delete products in my bag, so that I can easily make changes before I purchase.
+    * As a shopper, I can see a summary of my shopping cart when I checkout so that I know what products are included and the total cost before I commit to purchasing.
+    * As a shopper, I can easily enter my payment information securely, so that I can purchase my chosen products quickly with no issues.
+    * As a shopper, I can checkout as a guest, so I don't have to sign up for an account.
+    * As a shopper, I can view an order confirmation after checkout, so that I know my purchase was successful and see a summary of my purchases.
+    * As a shopper, I can receive an email confirmation of my order, so that I have a record of my purchase.
 
-* Epic: Site Admin
-    * As a Site Admin,  I can approve care provider’s accounts, so that I can check they are authentic care providers
-    * As a Site Admin,  I can add a care provider account, so that I can add to the site content's list of care providers
-    * As a Site Admin,  I can update or delete a care provider’s accounts, so that I can manage my care providers content
-    * As a Site Admin,  I can approve comments, so that I can filter out objectionable comments
-    * As a Site Admin, I can update comments, so that I can manage my care providers content
-    * As a Site Admin, I can delete comments, so that I can manage my care providers content
+* Epic: Admin & Store Management
+    * As an Admin, I can easily add/edit/delete products through a front end interface, so that I can manage the store content.
+    * As an Admin, I can add/edit/delete ‘how to’ articles, so that I can manage the store content.
+    * As an Admin, I can approve comments on ‘how to’ articles, so I can manage the site content.
+
+* Epic: User Interaction
+    * As a site user, I can add comments on ‘how to’ articles, so that I can give my feedback.
+    * As a site user, I can sign up for the website's newsletter, so that I can keep up to date with new products and promotions.
 
 * Epic: Future Features
-    * Logged in User can 'like' a Care Provider, number of likes can be displayed 
-    * Have different user types for a care provider or a care seeker, so they can be restricted to certain areas of the website
-    * Care providers can be filtered by county or by speciality or by disabled parking availability
-    * Bookmarks page, so logged in user can bookmark providers, and see a page of their bookmarked providers
-
-
+    * As a shopper, I can collect points for purchasing products, so I can use them as a discount on future purchases.
+    * As a shopper, I can review products and rate them, so I can give my feedback on my purchases.
+    * As a shopper, I can create an account using my Google or Facebook account.
 
 ## Features
 * Header and footer
