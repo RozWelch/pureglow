@@ -276,6 +276,10 @@ footer a:hover {
     font-size: .8rem;
 }
 
+.line-break {
+    height: 3px !important;
+    color: #bb5c2a;
+}
 
 /* -------------------------------- Media Queries */
 
@@ -319,7 +323,7 @@ footer a:hover {
     -ms-user-select: none;
     user-select: none;
     background-color: #000;
-    border: 1px solid #000;
+    border: 1px solid #4e2000;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
