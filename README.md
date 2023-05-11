@@ -189,50 +189,64 @@ These open in a separate browser window to avoid taking the user away from the s
     * Python: Code Institute pep8 validator: https://pep8ci.herokuapp.com/
 
 ## Agile
-* Github projects kanban boards were used, see link to final board here: https://github.com/users/RozWelch/projects/6/views/1
-* The project was then divided in 6 sprints:
+* Github projects kanban boards were used, see link to final board here: https://github.com/users/RozWelch/projects/7
+* The project was broken down into sprints, with a Github milestone for each Epic. A Github issue was added for each user story, and allocated to a milestone. Each user story had a defined acceptance criteria, which breaks it down into tasks. 
+* The project was then divided into sprints:
 * Sprint 1:
     <details>
-    <summary>Administration functionality</summary>
+    <summary>User authentication</summary>
 
-    ![sprint1](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/sprint1_AdmininProgress.jpg)
+    ![sprint1](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/agile/sprint1_userauth.jpg)
 
 * Sprint 2:
     <details>
-    <summary>Add Care Providers list and details views</summary>
+    <summary>Product and product details</summary>
 
-    ![sprint2](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/sprint_2_addviews.jpg)
+    ![sprint2](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/agile/sprint2_products_and_details.jpg)
 
 * Sprint 3:
     <details>
-    <summary>Add Commenting functionality</summary>
+    <summary>The shopping bag</summary>
 
-    ![sprint3](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/sprint_3_addlikesandcomments-.jpg)
+    ![sprint3](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/agile/sprint3_shopping_bag.jpg)
 
 * Sprint 4:
     <details>
-    <summary>Home Page and site navigation</summary>
+    <summary>Toasts and complete the shopping bag</summary>
 
-    ![sprint4](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/sprint4-homepage-sitenav-mainpurpose.jpg)
+    ![sprint4](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/agile/sprint4_toasts_finish_shoppingbag.jpg)
 
 * Sprint 5:
     <details>
-    <summary>User login and logout functionality</summary>
+    <summary>The checkout app</summary>
 
-    ![sprint5](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/sprint5_create.jpg)
+    ![sprint5](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/agile/sprint5_checkout_app.jpg)
 
 * Sprint 6:
     <details>
-    <summary>Care Provider CRUD functionality</summary>
+    <summary>User profiles</summary>
 
-    ![sprint6](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/sprint_6_update_delete.jpg)
+    ![sprint6](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/agile/sprint6_user_profiles.jpg)
 
-* Final Sprint:
+* Sprint 7:
     <details>
-    <summary>Tidy up and final review</summary>
-    After a meeting with my mentor, some of the tasks were moved to future features, due to time contraints at this stage.
+    <summary>Wishlist</summary>
 
-    ![sprintfinal](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/final_sprint.jpg)
+    ![sprint6](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/agile/sprint7_wishlist.jpg)
+
+* Sprint 8:
+    <details>
+    <summary>‘How to’ Articles</summary>
+
+    ![sprint6](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/agile/Sprint8_how_to_articles.jpg)
+
+* Sprint 9:
+    <details>
+    <summary>Newsletter sign up</summary>
+
+    ![sprint6](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/agile/sprint9_newslettr_signup.jpg)
+
+* Final Sprint: Refactoring and tidy up styling. After a meeting with my mentor, some of the tasks were moved to future features, due to time constraints at this stage.
 
 
 ## Fixed and Unfixed Bugs
