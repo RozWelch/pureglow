@@ -255,6 +255,16 @@ footer a:hover {
     width: 600px;
 }
 
+#mce-EMAIL {
+    width: 200px;
+    height: 25px;
+}
+
+#mc-embedded-subscribe {
+    width: 90px;
+    height: 35px;
+}
+
 /* ------------------------ Wishlist table */
 .product-image-small {
     width: 3.5rem;

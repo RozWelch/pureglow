@@ -178,7 +178,7 @@ These open in a separate browser window to avoid taking the user away from the s
     * Favicon: to create a favicon for the site
     * Summernote: WYSIWYG editor - for users to create comments 
     * Crispy Forms: for Django forms
-    * Cloudinary: image hosting service 
+    * AWS: S3 bucket - image hosting service 
     * Bootstrap: CSS Framework for developing the site
     * Secret Key Generator: https://djecrety.ir/
     * Database schema drawing toool: https://drawsql.app
@@ -354,6 +354,11 @@ The project was created in Git Hub using the Code Institute template.
 ## Credits
 * Code Institue's 'Boutique Ado' tutorial
 * All images used are from Freepix: www.freepix.com
+* How To articles: https://www.nytimes.com/guides/tmagazine/skincare-routine
+* W3Schools
+* Django Documentation
+* Bootstrap Documentation
+* Stack Overflow
 
 ## Acknowledgements
 Thanks to my mentor, my facilitator, my fellow students on Slack, tutoring support and to my friends for helping test the site.
