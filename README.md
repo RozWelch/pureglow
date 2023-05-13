@@ -37,16 +37,31 @@ The site was aimed at purchasers of skin care products, main target audience is 
     <summary>Balsamiq wireframes</summary>
     
     * Home Page Wireframe
-    ![Home Page](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/homepage.jpg)
+    ![Home Page](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/wireframes/wireframe1_homepage.jpg)
 
-    * Care Providers list Wireframe 
-    ![|List Page](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/providerlist.jpg)
+    * All Products list page 
+    ![|All Products](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/wireframes/wireframe2_all_products.jpg)
 
-    * Care Providers details Wireframe
-    ![Detail Page](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/providerdetails.jpg)
+    * Face Products list page
+    ![Face Products](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/wireframes/wireframe3_face_products.jpg)
     
-    * Add Care Provider page Wireframe
-    ![Add Page](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/addprovider.jpg)
+    * Body Products list page
+    ![Body Products](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/wireframes/wireframe4_body_products.jpg)
+
+    * Organic Products list page
+    ![Organic Products](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/wireframes/wireframe5_organic_products.jpg)
+
+    * My Profile page
+    ![My Profile](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/wireframes/wireframe6_myprofile.jpg)
+
+    * My Wishlist page
+    ![Wishlist](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/wireframes/wireframe7_wishlist.jpg)
+
+    * Shopping bag page
+    ![Shopping bag](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/wireframes/wireframe8_shoppingbag.jpg)
+
+    * Admin Products management page
+    ![Products management](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/wireframes/wireframe9_productmgmt.jpg)
 
 * Database Drawing:
     <details>
