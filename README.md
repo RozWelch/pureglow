@@ -54,7 +54,7 @@ The site was aimed at purchasers of skin care products, main target audience is 
 
     * Database
     
-    ![Database](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/database_schema_drawing.jpg)
+    ![Database](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/database_schema_drawsql_diagram.jpg)
 
 * User Stories:
 * Epic: Viewing and Navigation
