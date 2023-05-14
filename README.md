@@ -17,6 +17,7 @@ The live link can be found here - [pure glow skincare](https://pureglow.herokuap
 ## Contents
 * [Design and User Experience](#Design-and-User-Experience)
 * [Features](#Features)
+* [Marketing](#Marketing)
 * [Technologies Used](#Technologies-Used)
 * [Agile Methodology](#Agile)
 * [Fixed and Unfixed Bugs](#Fixed-and-Unfixed-Bugs)
@@ -177,6 +178,17 @@ These open in a separate browser window to avoid taking the user away from the s
     * Have different user types for a care provider or a care seeker, so they can be restricted to certain areas of the website
     * Care providers can be filtered by county or by speciality
     * Bookmarks page, so logged in user can bookmark providers, and see a page of their bookmarked providers
+
+## Marketing
+* Business Model
+    * pure glow is a Business to Consumer site (B2C). Products are sold directly online to the end user consumer. A pure glow customer is most likely to be a female adult interested in skincare. 
+* SEO
+    * Keywords were researched for the site    
+* Social Media Marketing
+    * A facebook page was created for social media marketing. The page has a 'Shop Now' button to take the user to the pure glow website. A link to the facebook page is on the pure glow website footer. 
+    ![Facebook](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/facebookpage_pureglow.jpg)
+* Email Marketing
+    * An email signup is included in the footer of the website. Users can sign up for an email and do not need an account to do this. This allows the business to share new arrivals, offers and news with customers and potential customers. Mailchimp was used to create this feature.
 
 ## Technologies Used
 * Languages: Python, HTML, CSS, Javascript
