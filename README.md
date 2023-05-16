@@ -119,65 +119,180 @@ The site was aimed at purchasers of skin care products, main target audience is 
     * As a shopper, I can create an account using my Google or Facebook account.
 
 ## Features
-* Header and footer
-    ![header](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/header_logo_nav.jpg)
-    * Logo: This logo is positioned in the top left of the navigation bar. The logo is linked to the home page so the user can easily navigate back to the home page.
-    * Navigation Bar: The navigation bar is present at the top of every page and includes links to other pages.
-When logged in, the user will see an icon and their user name. If not logged in they will see a link to sign up or log in.
-The navigation bar is fully responsive, collapsing into a hamburger menu for smaller devices. The links show the user their current page by displaying a different colour and an underline, this is also used when the user hovers over a link so they can see what page they will navigate to.
-    ![footer](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/footer.jpg)
-    * Footer: The footer section has links to Carehub's Facebook, Instagram, Twitter and Youtube pages.
-These open in a separate browser window to avoid taking the user away from the site.
+* Header
+    * The site logo is positing at the top left and is linked to the home page to make it easy for a user to navigate back to the home page.
+    ![Header](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature1_header.jpg)
 
-* Home page
-    * The call to action section
-    ![cta_in](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/cta_section_loggedin.jpg)
-    ![cta_out](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/cta_section_notloggedin.jpg)
-    * The call to action section shows a relevant image, and a easy to locate call to action button: sign up button if not logged in, or find care button if already logged in.
-    * The about section
-    ![about](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/about_section.jpg)
-    * The about section gives a brief description of who the site is for and what type of care a user can find there. 
+* Navigation Bar
+    * The navigation bar is at the top of every pages and includes links to the main pages.
+    * It is fully responsive, and collapses to a hamburger menu on mobile size devices
 
-* Account pages
+* Search bar
+    ![Searchbar](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature2_searchbar.jpg)
+    * The search bar is located at the top centre of the page.
+    * On mobile size devices, it becomes a search icon, which opens up as a bar when clicked.
+    * When a search word is entered, the product’s name and description is searched for the word, and a list of results are displayed to the user.
+    
+
+* The User Icon
+    ![usericon](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature3_account_nav.jpg)
+    * This is displayed on the top right. 
+    * When logged out a Sign up or Log in dropdown is displayed
+    * If logged in, My Profile is available as well
+    * If logged in and an Admin, the Product management option is available
+
+* The bag icon
+    ![Bagicon](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature4_bag_nav.jpg)
+    * This is displayed on the top right. 
+    * Once a product is added to the bag, the number of items in the bag is displayed
+    * When the user adds products to their bag, a toast message appears in the top right-hand corner of the screen. The bag contents and the total cost of the bag are shown
+    * Clicking the icon brings the user to the shopping bag page
+
+* Footer
+    ![Footer](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature6_footer.jpg)
+    * The footer is at the bottom of every page
+    * The newsletter signup allows a user opt to sign up for a newsletter - this is powered by Mailchimp
+    * The next section has links to the products page, a site map, and the sites privacy policy
+    * The final section has social media links, including a link to the pure glow Facebook page, created for this project
+    * All external links open in a new tab, to avoid taking the user away from the pure glow site 
+
+* The home page
+    ![Home](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature7_homepage_cta.jpg)
+    * A brief introduction to the site is included
+    * A CTA ‘Shop now’ button in included to encourage the user to browse the products
+
+* User’s Accounts pages
+    * Sign Up
+    ![Signup](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature8_sign_up.jpg)
+
     * Sign In
-    ![signin](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/sign_in.jpg)
-    * Sign up
-    ![signup](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/sign_up.jpg)
+    ![Signin](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature9_sign_in.jpg)
+
     * Log out
-    ![logout](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/sign_out.jpg)
-    * Allauth was used to create the Sign up / Log in / Log out functions. A success message is displayed when the user has signed in / signed out / or created and account sucessfully.
+    ![Logout](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature10_sign_out.jpg)
 
-* Care Providers' list view
-    ![providerlist](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/providers_list.jpg)
-    * Shows a list of Care Providers that have been approved by the site Admin, ordered by business name. The page paginates after every 6 providers are listed. Clicking on the 'Care providers Detail' button will bring the user to the full details for that provider.
+    * Allauth was used to create the Sign up, Sign in and Log out functionality
+    * The user receives a success message on successfully login/logout
+    * When signing up for an account, the user must verify their email address provided
+    * The user can reset their password if forgotten,  by clicking the 'Forgot Password' on the login page
 
-* Care Provider Detail view
-    ![providerdetail](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/provider_details.jpg)
-    * Shows the full details for that provider
-    * If the user is the author of the provider listing, they will see the buttons to edit or delete that provider
-    ![editdeleteprovider](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/edit_delete_provider.jpg)
+* Profile
+    ![Profile](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature11_my_profile.jpg)
+    * The profile page contains the user’s saved delivery and contact information, so they don’t have to enter it each time they checkout
+    * Order history - The user can view their previous orders
 
-* Care Provider Detail - Comments section
-    ![comments](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/comments.jpg)
-    * Shows comments that have been approved by the site Admin for that Care Provider. If the user is signed in, a comment box is shown where they can leave a commnet. They are shown a message to show they have sucessfully left a comment, and it awaits approval by admin.
+* All products
+    ![Products](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature12_all_products.jpg)
+    * When clicked the products navigation link shows a drop down menu where all products can be shown sorted by price or by category
+    ![ProductsMenu](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature13_all_products_dropdown.jpg)
+    * The products are displayed, with a sort by button where the products can be sorted by price (ascending or descending), name or category (A-Z or Z-A)
+    * Each product card shows the product image, name, price 
+    * If an authenticated user is a superuser, they will see a button to Edit or Delete a product
 
-* Add a care provider page
-    ![comments](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/add_provider.jpg)
-    * If logged in, a user will see a form to add a care provider. A care provider can add an image, or a default placeholder image will be used. The user will receive a success message. The care provider details then await approval by the site Admin.
+* All Face products
+    ![Face](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature14_face_products.jpg)
+    * When clicked the Face navigation link shows a drop down menu where the user can select: Moisturiser, Cleansers, Masks and treatment or all face care
+    * The Category of Face Care product is shown under the Products heading
+    * The products are displayed, with a sort by button where the products can be sorted by price (ascending or descending), name or category (A-Z or Z-A)
+    * Each product card shows the product image, name, price 
+    * If an authenticated user is a superuser, they will see a button to Edit or Delete a product
 
-* Edit care provider page
-    ![comments](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/edit_provider.jpg)
-    * If logged in, and the user is the author of the Care Provider, they can see the edit button, which brings them to an edit provider page. The form is pre populated with all fields from the original provider details. When changes are submitted, the user will receive a message that the details have been sucessfully updated.
+* All Body Products
+    ![Body](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature15_body_products.jpg)
+    * When clicked the Face navigation link shows a drop down menu where the user can select: Body Moisturiser, Body Bath and shower or all body
+    * The Category of Body Care product is shown under the Products heading
+    * The products are displayed, with a sort by button where the products can be sorted by price (ascending or descending), name or category (A-Z or Z-A)
+    * Each product card shows the product image, name, price 
+    * If an authenticated user is a superuser, they will see a button to Edit or Delete a product
 
-* Delete care provider page
-    ![comments](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/featuresimages/delete_provider.jpg)
-    * If logged in, and the user is the author of the Care Provider, they can see the delete button. If clicked, they will be asked to confirm they wish to delete the provider, or they can cancel. If they click delete, the user will receive a message to say the provider has successfully been deleted.
+* All Organic Products
+    ![Organic](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature16_organic_products.jpg)
+    * When clicked the Face navigation link shows a drop down menu where the user can select: face, body or all organic
+    * The Category of Organic Care product is shown under the Products heading
+    * The products are displayed, with a sort by button where the products can be sorted by price (ascending or descending), name or category (A-Z or Z-A)
+    * Each product card shows the product image, name, price 
+    * If an authenticated user is a superuser, they will see a button to Edit or Delete a product
+
+* Product Detail page
+    ![Details](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature17_product_details.jpg)
+    * The product image is shown, with a brief description, the category
+    * A Quantity button with + - is show so a user can add the item to their shopping bag
+    * A Wishlist icon is shown so a user can add the item to a wishlist
+    * If an authenticated user is a superuser, they will see a button to Edit or Delete a product
+
+* Add Product page
+    ![Add product](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature18_add_product.jpgg)
+    * If an authenticated user is a superuser, they can see a Product Management, where they can add a product
+    * Fields with an Astrix are required, the user will get an error message if they are not filled out and the form submit button is clicked
+    * The sku must be unique, the user will get an error message if they try submit a sku that already exists
+    * If a user tries to add a product by changing the url, without being a superuser they are redirected to a custom 403 page.
+    * If a price is added with more than 6 digits the form will not be submitted and the user will receive an error message
+    * The user can upload a photo, or if no photo is submitted  a placeholder image is used
+    * Clicking the 'Add Product' button at the bottom of the form will create the product if the form is valid
+    * The user will receive a success message notifying them that the product has been successfully added
+
+* Edit a Product
+    ![Edit](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature19_edit_product.jpg)
+    * A logged in superuser will see an edit button on the product list, or the product detail page.
+    * When clicked, a form opens with the product details repopulated
+    * If edited, and updated button is clicked, the user will receive a success message
+
+* Delete a Product
+    * A logged in superuser will see a delete button on the product list, or the product detail page.
+    * When clicked, the user will receive a message asking if they are sure they wish to delete.
+    * If deleted and confirmed the user wants to delete,  the user will receive a success message.
+
+* ‘How To’ Articles list page
+    ![How to](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature23_how_to_articles.jpg)
+    * A list of articles are displayed showing the title and the author
+
+* ‘How To’ Articles details page
+    ![How to detail](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature24_how_to_detail.jpg)
+    * The articles are written by an admin user. 
+    * The article is shown with a list of any comments displayed below
+    * A signed in user can make a comment.
+    * On clicking submit, they will be show a success message telling them their comment is awaiting approval
+    * An admin user can approve comments.
+
+* Wishlist
+    ![Wishlist](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature25_wishlist.jpg)
+    * A logged-in user can add items to their wishlist by clicking on the icon on the product details page
+    * On their wishlist page, they can see details of items in their list, and click on the shop now icon to purchase them, or click on the bin icon to remove them
+
+* Shopping Bag
+    ![Shopping bag](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature20_shopping_bag.jpg)
+    * If there are items in the shopping bag they are displayed
+    * Next to the item is a + and - button to update the quantities.
+    * If the quantity is 0, the - button is disables to prevent a negative quantity
+    * The total of the bag is displayed, with delivery cost if applicable, and how much extra to spend for free delivery.
+    * Under the grand total are two buttons - one to return shopping to products, or the other to checkout.
+
+* Checkout
+    * The user can see a summary of their purchases, and the cost.
+    * A form will be displayed for the user to fill out with contact details, delivery address, and card details
+    * If the user is a guest, a link for them to create an account or login will be shown
+    * If the user is already signed in, a checkbox will be shown to save the delivery information
+    * If the user is signed in, and had delivery information on their profile, the details will be shown
+    * If a user leaves a required field empty, or puts in an incorrect format, they will be shown an error message
+    * Order summary section
+    * The order summary shows the user what they are purchasing, details and cost.
+    * The order summary shows an image of the product, which links back to that product’s details.
+
+* Payment
+    * If an incorrect number is entered, the user is shown an error message to show invalid card number
+    * A warning message is displayed at the bottom of the screen to show the user how much their card will be charged
+    * When the form is submitted, a loading screen is displayed to prevent the user clicking away from the page
+    * The web hook ensures the order will be created in the database, even if the user’s form didn’t submit correctly, or if the user closed the browser 
+    * The web hook will also search the database to confirm the order exists. If not found, it will create one using the payment information 
+
+* Payment confirmation
+    * When the user’s payment is processed, they are taken to the checkout success page, with a summary of the order
+    * The user will receive an order confirmation email
 
 * Future Features
-    * Logged in User can 'like' a Care Provider, number of likes can be displayed 
-    * Have different user types for a care provider or a care seeker, so they can be restricted to certain areas of the website
-    * Care providers can be filtered by county or by speciality
-    * Bookmarks page, so logged in user can bookmark providers, and see a page of their bookmarked providers
+    * Points can be collected for purchasing products, so they can be used as a discount on future purchases.
+    * Signed in users can review products and rate them, to give feedback on their purchases.
+    * A user can create an account using their Google or Facebook account.
 
 ## Marketing
 * Business Model
