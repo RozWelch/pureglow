@@ -81,30 +81,35 @@ h2 {
     min-width: 250px;
 }
 
-.btn-black {
+.btn-brown {
     background: #aa4416;
     color: white;
 }
 
-.btn-outline-black {
-    background: white;
+.btn-outline-brown {
+    background: #f8efe7;
     color: #aa4416 !important; /* override link colours for <a> elements */
     border: 1px solid #bb5c2a;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
+#brown-button {
+    background: #bb5c2a;
+}
+
+
+.btn-outline-brown:hover,
+.btn-outline-brown:active,
+.btn-outline-brown:focus {
     background: #4e2000;
-    color: white !important;
+    color: #f8efe7 !important;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-brown:hover,
+.btn-brown:active,
+.btn-brown:focus {
     background: #4e2000;
     color: white;
 }
@@ -431,13 +436,13 @@ footer a:hover {
         font-size: .9rem;
     }
 
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-outline-brown.rounded-0,
+    .btn.btn-brown.rounded-0 {
         padding: .375rem .375rem;
     }
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-outline-brown.rounded-0.btn-lg,
+    .btn.btn-brown.rounded-0.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
@@ -458,6 +463,10 @@ footer a:hover {
         font-size: 2rem;
         margin-left: 18px;
         margin-right: 72px;
+    }
+
+    .sign-up {
+        font-size: 1rem;
     }
 
 /* Wishlist styling for smaller screens */
