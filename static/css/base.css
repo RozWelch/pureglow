@@ -82,7 +82,7 @@ h2 {
 }
 
 .btn-brown {
-    background: #aa4416;
+    background: #aa4416 !important;
     color: white;
 }
 
