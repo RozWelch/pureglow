@@ -34,11 +34,15 @@ h1 {
 }
 
 .text-danger { 
-    color: #c94709 !important;
+    color: #a41b17 !important;
 }
 
 .edit-product {
-    color: #004b8d !important;
+    color: #004173 !important;
+}
+
+.text-info {
+    color: #26732a !important;
 }
 
 /* from Bulma */
