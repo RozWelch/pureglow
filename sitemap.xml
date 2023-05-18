@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://pureglow.herokuapp.com/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/bag/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/?category=face_moisturiser</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/?category=face_cleanser</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/?category=masks_treatments</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/?category=face_moisturiser,face_cleanser,masks_treatments</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/?category=body_moisturiser</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/?category=body_bath_shower</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/?category=body_moisturiser,body_bath_shower</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/?category=organic_face</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/?category=organic_body</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/?category=organic_face,organic_body</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/how_to/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/18/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/35/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/11/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/22/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/27/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/9/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/13/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/2/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/14/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/12/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/17/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/6/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/15/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/28/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/3/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/30/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/16/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/26/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/5/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/1/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/8/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/21/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/10/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/19/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/24/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/7/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/29/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/25/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/20/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/products/34/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/how_to/are-face-masks-worth-all-the-hype/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/how_to/face-care-routine/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/how_to/eye-creams-explained/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/how_to/a-healthy-diet-for-healthy-skin/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/how_to/what-can-i-do-when-my-skin-gets-irritated/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/how_to/how-to-pick-a-moisturiser/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/how_to/how-to-use-body-scrub-effectively-for-soft-radiant-skin/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pureglow.herokuapp.com/how_to/hydration-for-skin/</loc>
+  <lastmod>2023-05-18T13:16:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

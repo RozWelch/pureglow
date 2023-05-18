@@ -126,8 +126,21 @@ h2 {
     border: 1px solid #bb5c2a !important;
 }
 
-.bg-brown {
-    background: linear-gradient(135deg, #bb5c2a, #fac27d) !important;
+.bg-brown-gradient {
+    background: linear-gradient(-45deg, #bb5c2a, #fac27d, #c94709, #bb5c2a) !important;
+	animation: gradient 15s ease infinite !important;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .overlay {
@@ -267,6 +280,7 @@ footer a:hover {
 #mce-EMAIL {
     width: 170px;
     height: 25px;
+    margin-bottom: 20px;
 }
 
 #mc-embedded-subscribe {
