@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <br>
+            <hr>
+            <h2 class="logo-font mb-4">Delete Product</h2>
+            <hr>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="font-weight-bold mb-0 wishlist-heading">Hello, {{ user.username }},</p>
+            <p class="wishlist-heading">Are you sure you wish to Delete this Product?</p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-12 col-lg-8">
+            <!-- Delete Product -->
+            <form class="text-left" method="POST">
+                {%  csrf_token  %}
+                <div>
+                    <button class="btn btn-danger" type="submit">Delete</button>
+                    <a class="btn btn-outline-brown" href="{% url 'products' %}">Cancel</a>
+                </div>
+                <br>
+                <br>
+            </form>
+            <br>
+        </div>
+        <br>
+    </div>
+</div>
+{% endblock %}
