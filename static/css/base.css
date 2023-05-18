@@ -408,14 +408,14 @@ footer a:hover {
     }
 }
 
-/* Media Queries for mobile size devices */
+/* Media Queries for smaller size devices */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 130px;
     }
 
     body {
-        height: calc(100vh - 130px);
+        height: calc(90vh - 130px);
         background: url('/media/mobile_homepage_portrait4.jpg') no-repeat center center fixed;
     }
 
@@ -477,4 +477,12 @@ footer a:hover {
     font-size: .9rem;
 }
 
+}
+
+/* Media Queries for mobile and size devices */
+@media (max-width: 601px) {
+    body {
+        height: calc(95vh - 130px);
+        background: url('/media/mobile_homepage_portrait5.jpg') no-repeat center center fixed;
+    }
 }
