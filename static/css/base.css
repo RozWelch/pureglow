@@ -127,8 +127,9 @@ h2 {
 }
 
 .bg-brown-gradient {
-    background: linear-gradient(-45deg, #bb5c2a, #fac27d, #c94709, #bb5c2a) !important;
-	animation: gradient 15s ease infinite !important;
+    background: linear-gradient(-45deg, #bb5c2a, #fac27d, #bb5c2a, #aa4416);
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
