@@ -126,6 +126,7 @@ h2 {
     border: 1px solid #bb5c2a !important;
 }
 
+/* tutorial for animated gradient: https://codepen.io/P1N2O/pen/pyBNzX */
 .bg-brown-gradient {
     background: linear-gradient(-45deg, #bb5c2a, #fac27d, #bb5c2a, #aa4416);
     background-size: 400% 400%;
