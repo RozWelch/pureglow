@@ -9,6 +9,7 @@ html {
     height: 100%;
 }
 
+/* body, with background image */
 body {
     background: url('/media/homepage_image.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -33,7 +34,7 @@ h1 {
     color: #654630 !important;
 }
 
-.text-danger { 
+.text-danger {
     color: #a41b17 !important;
 }
 
@@ -92,7 +93,8 @@ h2 {
 
 .btn-outline-brown {
     background: #f8efe7;
-    color: #aa4416 !important; /* override link colours for <a> elements */
+    color: #aa4416 !important;
+    /* override link colours for <a> elements */
     border: 1px solid #bb5c2a;
 }
 
@@ -130,32 +132,35 @@ h2 {
 .bg-brown-gradient {
     background: linear-gradient(-45deg, #bb5c2a, #fac27d, #bb5c2a, #aa4416);
     background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
+/* overlay to hide background image on pages it's not used */
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: #f8efe7;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #f8efe7;
+    z-index: -1;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
     background: #4e2000 !important;
     color: #f8f9fa !important;
 }
@@ -174,7 +179,7 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-/* ------------------------------- bootstrap toasts */
+/* -------- bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -193,10 +198,10 @@ a.category-badge > span.badge:hover {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid #4e2000;
     position: absolute;
     top: -10px;
@@ -242,7 +247,7 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
-/* --------------------------------footer */
+/* --------------footer */
 
 footer {
     background: linear-gradient(135deg, #bb5c2a, #85390e) !important;
@@ -290,7 +295,7 @@ footer a:hover {
     height: 35px;
 }
 
-/* ------------------------ Wishlist table */
+/* ------------ Wishlist table */
 .product-image-small {
     width: 3.5rem;
     height: 3.5rem;
@@ -308,7 +313,7 @@ footer a:hover {
     color: #c94709 !important;
 }
 
-/* ------------------------ How to Articles */
+/* ------------------- How to Articles */
 .author {
     font-size: .8rem;
 }
@@ -322,16 +327,18 @@ footer a:hover {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -349,8 +356,8 @@ footer a:hover {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -367,18 +374,19 @@ footer a:hover {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #c94709; /* text-info */
+    color: #c94709;
+    /* text-info */
 }
 
 /* Product Form */
@@ -467,7 +475,8 @@ footer a:hover {
         font-size: .75rem;
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
 
@@ -487,11 +496,11 @@ footer a:hover {
         font-size: 1rem;
     }
 
-/* Wishlist styling for smaller screens */
+    /* Wishlist styling for smaller screens */
 
-.wishlist-heading {
-    font-size: .9rem;
-}
+    .wishlist-heading {
+        font-size: .9rem;
+    }
 
 }
 
