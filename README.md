@@ -501,6 +501,7 @@ The project was created in Git Hub using the Code Institute template.
 * Django Documentation
 * Bootstrap Documentation
 * Stack Overflow
+* Animated Background tutorial: https://codepen.io/P1N2O/pen/pyBNzX
 
 ## Acknowledgements
 Thanks to my mentor, my facilitator, my fellow students on Slack, tutoring support and to my friends for helping test the site.
