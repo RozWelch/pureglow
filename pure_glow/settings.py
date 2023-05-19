@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 
-ALLOWED_HOSTS = ['pureglow.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['pureglow.herokuapp.com', 'localhost', '8000-rozwelch-pureglow-bfltlxpaymk.ws-eu97.gitpod.io']
 
 
 # Application definition
