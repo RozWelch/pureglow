@@ -159,6 +159,10 @@ h2 {
     right: 0;
 }
 
+.green {
+    color: #26732a !important;
+}
+
 /* overlay to hide background image on pages it's not used */
 .overlay {
     height: 100%;

@@ -12,19 +12,6 @@ class HowToList(generic.ListView):
     template_name = "articles.html"
 
 
-# def howto_detail(request, slug):
-#     """ A view to show how to articles """
-
-#     howto = get_object_or_404(HowTo, slug=slug)
-
-#     context = {
-#         'howto': howto,
-#     }
-
-#     return render(request, 'articles_detail.html', context)
-
-
-
 class HowToDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
