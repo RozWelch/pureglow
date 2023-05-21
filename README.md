@@ -462,7 +462,7 @@ The site was aimed at purchasers of skin care products, main target audience is 
 
 ## Testing
 
-* Link to testing and results: https://github.com/RozWelch/CareHub-Project4-2023/blob/main/TESTING.md
+* Link to testing and results: https://ADD LINK
 
 ## Project Creation and Deployment
 
@@ -475,7 +475,17 @@ The project was created in Git Hub using the Code Institute template.
     * Choose Github as the deployment method, then select the correct repository, and click the connect button
     * Select the Settings tab
     * Click Reveal Config Vars
-    * Add Config Vars settings and values
+    * Add Config Vars settings and values as below:
+        * AWS_ACCESS_KEY_ID	 From: AWS CSV file
+        * AWS_SECRET_ACCESS_KEY	 From: AWS CSV file(instructions below)
+        * DATABASE_URL	 From: Elephant Postgres 
+        * EMAIL_HOST_PASS	 From: Password from email client
+        * EMAIL_HOST_USER	 From: Site's email address
+        * SECRET_KEY	 From: Random key generated with secret key generator
+        * STRIPE_PUBLIC_KEY	 From: Stripe Dashboard /Developers tab /API Keys /Publishable key
+        * STRIPE_SECRET_KEY	 From: Stripe Dashboard /Developers tab /API Keys /Secret key
+        * STRIPE_WH_SECRET	 From: Stripe Dashboard /Developers tab /Webhooks /site endpoint /Signing secret
+        * USE_AWS	 Set to: True when AWS is set up
     * Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes
     * Scroll to the bottom of the deploy page and select the preferred deployment type
     * Click 'Enable Automatic Deploys' if you wish to automatically deploy when you push updates to Github

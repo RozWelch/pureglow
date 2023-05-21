@@ -163,9 +163,14 @@ h2 {
     right: 0;
 }
 
-.green {
-    color: #26732a !important;
+/* to keep back to top arrow above the footer */
+#backtotop {
+    position: fixed;
+    left: calc(100vw - 45px);
+    top: calc(100vh - 270px);
+    z-index: 10;
 }
+
 
 /* overlay to hide background image on pages it's not used */
 .overlay {
@@ -515,12 +520,17 @@ footer a:hover {
         font-size: .9rem;
     }
 
+    /* to keep back to top arrow above the footer */
+    #backtotop {
+    top: calc(100vh - 487px);
+}
+
 }
 
 /* Media Queries for mobile and smaller size devices */
 @media (max-width: 601px) {
     body {
-        height: calc(95vh - 130px);
+        height: calc(95vh - 90px);
         background: url('/media/mobile_homepage_portrait5.jpg') no-repeat center center fixed;
     }
 

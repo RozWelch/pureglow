@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.views import generic, View
 from .models import HowTo, ArticleComment
-from .forms import ArticleCommentForm
+from .forms import ArticleCommentForm, ArticleForm
 from django.urls import reverse, reverse_lazy
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.contrib.messages.views import SuccessMessageMixin
 
 
@@ -55,3 +56,29 @@ class HowToDetail(View):
                 "comment_form": ArticleCommentForm()
             },
         )
+
+
+@login_required
+def add_article(request):
+    """ Add a product to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = ArticleForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save()
+            messages.success(request, 'Successfully added article!')
+            return redirect(reverse('skincare_articles', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to add article. Please ensure the form is valid.')
+    else:
+        form = ArticleForm()
+
+    template = 'how_to/add_article.html' 
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
