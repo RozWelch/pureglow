@@ -277,11 +277,6 @@ footer a:hover {
     color: #f8efe7;
 }
 
-.divider {
-    border-left: 1px solid rgba(233, 80, 14, 0.2);
-    border-right: 1px solid rgba(233, 80, 14, 0.2);
-}
-
 .social-networks i {
     font-size: 1.6rem;
 }
@@ -523,5 +518,9 @@ footer a:hover {
     body {
         height: calc(95vh - 130px);
         background: url('/media/mobile_homepage_portrait5.jpg') no-repeat center center fixed;
+    }
+
+    #footerlinks {
+        padding: 0px !important;
     }
 }

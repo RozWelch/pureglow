@@ -221,7 +221,7 @@ The site was aimed at purchasers of skin care products, main target audience is 
     * If an authenticated user is a superuser, they will see a button to Edit or Delete a product
 
 * Add Product page
-    ![Add product](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature18_add_product.jpgg)
+    ![Add product](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature18_add_product.jpg)
     * If an authenticated user is a superuser, they can see a Product Management, where they can add a product
     * Fields with an Astrix are required, the user will get an error message if they are not filled out and the form submit button is clicked
     * The sku must be unique, the user will get an error message if they try submit a sku that already exists
@@ -475,18 +475,18 @@ The project was created in Git Hub using the Code Institute template.
     * Choose Github as the deployment method, then select the correct repository, and click the connect button
     * Select the Settings tab
     * Click Reveal Config Vars
-    * Add Config Vars settings with values: SECRET_KEY =(add value here), CLOUDINARY_URL, DATABASE_URL, PORT = 8000, DISABLE_COLLECTSTATIC = 1
+    * Add Config Vars settings and values
     * Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes
     * Scroll to the bottom of the deploy page and select the preferred deployment type
     * Click 'Enable Automatic Deploys' if you wish to automatically deploy when you push updates to Github
 
 * Forking the repository
-     * Locate the repository at this link https://github.com/RozWelch/CareHub-Project4-2023
+     * Locate the repository at this link https://github.com/RozWelch/pureglow
      * At the top right of the repository, select 'Fork' from the menu
      * A copy of the repository is now created
 
 * Cloning the repository
-     * Locate the repository at this link https://github.com/RozWelch/CareHub-Project4-2023
+     * Locate the repository at this link https://github.com/RozWelch/pureglow
      * Under 'Local', there is cloning options: HTTPS, SSH, GitHub CLI. Click the prefered cloning option, and then copy the link provided.
      * Open the terminal
      * In the terminal change the current working directory to where you wish to put the cloned directory

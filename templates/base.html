@@ -50,14 +50,15 @@
 
 <body>
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+        <div id="topnav" class="row bg-white pt-lg-2 d-lg-flex">
+            <!-- pure glow logo -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="main-logo text-brown my-0"><strong>pure</strong> glow</h2>
                 </a>
             </div>
             <!-- Search bar -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-none">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-brown rounded-0" type="text" name="q"
@@ -74,7 +75,7 @@
                 </form>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0 d-none">
                     <!-- Dropdown menu for my account -->
                     <li class="list-inline-item dropdown">
                         <a class="text-brown nav-link" href="#" data-toggle="dropdown"
