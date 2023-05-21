@@ -149,6 +149,16 @@ h2 {
     }
 }
 
+#newproduct {
+    background-color: #f8efe7;
+    padding: 5px;
+    opacity: 80%;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 /* overlay to hide background image on pages it's not used */
 .overlay {
     height: 100%;

@@ -62,13 +62,15 @@
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card h-100 border-0">
-                        {% if product.is_new %}
-                        <div>NEW</div>
-                        {% endif %}
                         {% if product.image %}
+                        <div>
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                         </a>
+                            {% if product.is_new %}
+                            <div id="newproduct">NEW</div>
+                            {% endif %}
+                        </div>
                         {% else %}
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
