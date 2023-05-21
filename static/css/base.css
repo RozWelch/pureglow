@@ -46,6 +46,10 @@ h1 {
     color: #26732a !important;
 }
 
+.logo-heading {
+    display: flex !important;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
