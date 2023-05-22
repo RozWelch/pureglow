@@ -163,6 +163,15 @@ h2 {
     right: 0;
 }
 
+#readmore {
+    color: #f8efe7;
+    padding: 3px;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 /* to keep back to top arrow */
 #backtotop {
     z-index: 99;
@@ -523,7 +532,7 @@ footer a:hover {
 /* Media Queries for mobile and smaller size devices */
 @media (max-width: 601px) {
     body {
-        height: calc(95vh - 90px);
+        height: calc(85vh - 70px);
         background: url('/media/mobile_homepage_portrait5.jpg') no-repeat center center fixed;
     }
 

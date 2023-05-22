@@ -24,6 +24,7 @@
                     {% for howto in howto_list %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
+                                <div id="readmore">READ MORE ></div>
                                 {% if howto.image %}
                                 <a href="{% url 'howto_detail' howto.slug %}">
                                     <img class="card-img-top img-fluid" src="{{ howto.image.url }}" alt="{{ howto.name }}">

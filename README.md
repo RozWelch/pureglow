@@ -10,9 +10,9 @@ The live link can be found here - [pure glow skincare](https://pureglow.herokuap
     <details>
     <summary>Pure Glow mockups</summary>
 
-    ![home](https://github.com/RozWelch/)
-    ![list](https://github.com/RozWelch/)
-    ![details](https://github.com/RozWelch/)
+    ![home](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/amiresponsive/homepage.jpg)
+    ![list](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/amiresponsive/allproducts.jpg)
+    ![details](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/amiresponsive/skincare_articels.jpg)
 
 ## Contents
 * [Design and User Experience](#Design-and-User-Experience)
@@ -399,6 +399,8 @@ The site was aimed at purchasers of skin care products, main target audience is 
     * Product sorting was not working initially. The “ for the href was in the wrong place (before ?category). When “ moved to after category, the product sorting worked correctly.
 
     * A confirmation email was not being sent when I made a purchase, the purchase goes through ok and I get a success message, but I don't get an email. I checked on stripe and the payments were giving an error. I checked my heroku config vars, and noticed an extra line was on my STRIPE_WH_SECRET var - I removed that and tested again. Under the list of events in Strips, there was a 500 error - On checking the html with the error underneath, there was a BadHeader Error. There was a newline at the end of your email subject file. I removed this line and then the emails came through correctly.
+
+    * The 'back to top' arrow was not working properly when you scrolled down to the footer section. I added and id, and gave the arrow a z-index of 99, so that it was always on top. The arrow then worked correctly when over the footer section.
 
 * No known unfixed bugs
 
