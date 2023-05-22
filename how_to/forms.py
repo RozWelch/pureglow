@@ -11,4 +11,4 @@ class ArticleCommentForm(forms.ModelForm):
 class ArticleForm(forms.ModelForm):
     class Meta:
         model = HowTo
-        fields = ('article_title', 'content', 'image_url', 'image')
+        fields = ('article_title', 'content', 'image')
