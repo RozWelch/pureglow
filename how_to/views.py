@@ -82,3 +82,50 @@ def add_article(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def edit_article(request, slug):
+    """ Edit an article in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    article = get_object_or_404(HowTo, slug=slug)
+    if request.method == 'POST':
+        form = ArticleForm(request.POST, request.FILES, instance=howto)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated article!')
+            return redirect(reverse('skincare_articles', args=[slug]))
+        else:
+            messages.error(request, 'Failed to update article. Please ensure the form is valid.')
+    else:
+        form = ArticleForm(instance=article)
+        messages.info(request, f'You are editing {article.article_title}')
+
+    template = 'how_to/edit_article.html'
+    context = {
+        'form': form,
+        'article': article,
+    }
+
+    return render(request, template, context)
+
+
+# @login_required
+# def delete_article(request, slug):
+#     """ Delete an article """
+#     if not request.user.is_superuser:
+#         messages.error(request, 'Sorry, only store owners can do that.')
+#         return redirect(reverse('home'))
+        
+#     product = get_object_or_404(Product, slug=slug)
+#     context ={}
+
+#     if request.method == "POST":
+#         howto.delete()
+#         messages.success(request, 'Your Article is deleted!')
+#         return redirect(reverse('skincare_articles'))
+        
+#     return render(request, "how_to/delete_product.html", context)
