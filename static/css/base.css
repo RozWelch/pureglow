@@ -163,12 +163,10 @@ h2 {
     right: 0;
 }
 
-/* to keep back to top arrow above the footer */
+/* to keep back to top arrow */
 #backtotop {
-    position: fixed;
-    left: calc(100vw - 45px);
-    top: calc(100vh - 270px);
-    z-index: 10;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 
@@ -519,11 +517,6 @@ footer a:hover {
     .wishlist-heading {
         font-size: .9rem;
     }
-
-    /* to keep back to top arrow above the footer */
-    #backtotop {
-    top: calc(100vh - 487px);
-}
 
 }
 
