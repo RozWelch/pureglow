@@ -43,12 +43,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                {% if request.user.is_superuser %}
-                                <small class="ml-3">
-                                    <a class="edit-product" href="{% url 'edit_article' howto.slug %}">Edit</a> |
-                                    <a class="text-danger" href="">Delete</a>
-                                </small>
-                                {% endif %}
                             </div>
                         </div>
                         {% if forloop.counter|divisibleby:1 %}

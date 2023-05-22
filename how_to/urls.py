@@ -4,6 +4,5 @@ from .views import HowToDetail
 
 urlpatterns = [
     path("", views.HowToList.as_view(), name="skincare_articles"),
-    path('add/', views.add_article, name='add_article'),
     path('<slug:slug>/', views.HowToDetail.as_view(), name='howto_detail'),
 ]
