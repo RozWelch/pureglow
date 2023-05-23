@@ -417,8 +417,12 @@ The site was aimed at purchasers of skin care products, main target audience is 
 * CSS:
     <details>
     <summary>No errors when ran through the official W3C CSS Validator.</summary>
-
-    ![css](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/css_valid.jpg)
+    base css:
+    ![base css](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/base_css.jpg)
+    checkout css:
+    ![base css](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/checkout_css.jpg)
+    profile css:
+    ![base css](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/profile_css.jpg)
 
 * HTML:
     <details>
