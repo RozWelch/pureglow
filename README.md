@@ -414,21 +414,24 @@ The site was aimed at purchasers of skin care products, main target audience is 
 
 ## Validation 
 
-* CSS:
+* CSS - no errors when run through W3 validator:
     <details>
-    <summary>No errors when ran through the official W3C CSS Validator.</summary>
-    base css:
+    <summary>Base Css</summary>
     ![base css](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/base_css.jpg)
-    checkout css:
+
+    <details>
+    <summary>Checkout Css</summary>
     ![base css](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/checkout_css.jpg)
-    profile css:
-    ![base css](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/profile_css.jpg)
+
+    <details>
+    <summary>Profile Css</summary>
+    ![profile css](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/profile_css.jpg)
 
 * HTML:
     <details>
     <summary>All HTML files ran through the W3C HTML Validator with no errors</summary>
 
-    ![homepage](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/homepage_noerrors.jpg)
+    ![homepage](https://github.com/RozWelch/pureglow/blob/main)
 
 
 * Python:
@@ -437,13 +440,43 @@ The site was aimed at purchasers of skin care products, main target audience is 
 
     All Python files ran through Code Institites PEP8 Validator with no errors, except for 2 files. The env.py and settings.py files had 2 lines that were too long, but I kept them as long lines, as the code was more legible.
 
-    ![admin](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/admin_clear.jpg)    
+    ![admin](https://github.com/RozWelch/pureglow/blob/main)    
 
-* Javascript:
+* Javascript: No errors when ran through JShint.
     <details>
-    <summary>No errors when ran through JShint.</summary>
+    <summary>Bag JS</summary>
 
-    ![jshint](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/jshint_valid.jpg)
+    ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/bag_js.jpg)
+
+    <details>
+    <summary>Base JS</summary>
+
+    ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/base_js.jpg)
+
+    <details>
+    <summary>Checkout JS</summary>
+
+    ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/checkout_stripe_js.jpg)
+
+    <details>
+    <summary>Image Selector JS</summary>
+
+    ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/image_selector_js.jpg)
+
+    <details>
+    <summary>Products JS</summary>
+
+    ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/products_js.jpg)
+
+    <details>
+    <summary>Profile JS</summary>
+
+    ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/profile_js.jpg)
+
+    <details>
+    <summary>Quantity Input JS</summary>
+
+    ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/quantity_input_js.jpg)
 
 * Lighthouse:
     <details>
