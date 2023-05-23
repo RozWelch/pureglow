@@ -163,13 +163,17 @@ h2 {
     right: 0;
 }
 
-#readmore {
-    color: #f8efe7;
-    padding: 3px;
-    z-index: 99;
-    position: absolute;
-    top: 0;
-    right: 0;
+.br-margin {
+    margin: 10vh 0 25vh;
+}
+
+.br-margin2 {
+    margin: 5vh 0 15vh;
+}
+
+/* how to articles rollover opacity effect */
+.howto-rollover:hover {
+    opacity: .6;
 }
 
 /* to keep back to top arrow */
@@ -532,11 +536,15 @@ footer a:hover {
 /* Media Queries for mobile and smaller size devices */
 @media (max-width: 601px) {
     body {
-        height: calc(85vh - 70px);
+        height: calc(85vh - 50px);
         background: url('/media/mobile_homepage_portrait5.jpg') no-repeat center center fixed;
     }
 
     #footerlinks {
         padding: 0px !important;
+    }
+
+    h2 {
+        margin-top: 20px;
     }
 }
