@@ -72,6 +72,14 @@ The site was aimed at purchasers of skin care products, main target audience is 
     
     ![Database](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/database_schema_drawsql_diagram.jpg)
 
+* Sitemap Drawing:
+    <details>
+    <summary>Sitemap drawing</summary>
+
+    * Sitemap
+    
+    ![Sitemap](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/sitemap.jpg)
+
 * User Stories:
 * Epic: Viewing and Navigation
     * As a Site User, I can intuitively navigate around the site, so that I can find content.
