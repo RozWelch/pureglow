@@ -425,12 +425,7 @@ The site was aimed at purchasers of skin care products, main target audience is 
     <summary>All HTML files ran through the W3C HTML Validator with no errors</summary>
 
     ![homepage](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/homepage_noerrors.jpg)
-    ![findcare](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/find_care_noerrors.jpg)
-    ![providerdetails](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/provider_details_noerrors.jpg)
-    ![forproviders](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/forproviders_noerrors.jpg)
-    ![signup](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/signup_noerrors.jpg)
-    ![login](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/login_noerrors.jpg)
-    ![logout](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/logout_noerrors.jpg)
+
 
 * Python:
     <details>
@@ -439,16 +434,6 @@ The site was aimed at purchasers of skin care products, main target audience is 
     All Python files ran through Code Institites PEP8 Validator with no errors, except for 2 files. The env.py and settings.py files had 2 lines that were too long, but I kept them as long lines, as the code was more legible.
 
     ![admin](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/admin_clear.jpg)    
-    ![apps](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/apps_clear.jpg) 
-    ![env](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/env_2lines_left_long.jpg) 
-    ![forms](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/forms_clear.jpg) 
-    ![manage](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/manage_clear.jpg) 
-    ![models](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/models_clear.jpg) 
-    ![settings](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/settings_2lines_left_long.jpg) 
-    ![urlscaresearch](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/urls_caresearch_clear.jpg) 
-    ![urls](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/urls_clear.jpg) 
-    ![views](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/views_clear.jpg) 
-    ![wsgi](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/wsgi_clear.jpg) 
 
 * Javascript:
     <details>
@@ -458,16 +443,23 @@ The site was aimed at purchasers of skin care products, main target audience is 
 
 * Lighthouse:
     <details>
-    <summary>Score was 100% for Accessibility</summary>
+    <summary>Lighhouse results</summary>
 
-    Score was 100% for Accessibility, which was important for the site's target users. On first running through Lighthouse, the score was lower, but after adjusting the colour contrast on CTA buttons, the score was brought to 100%. Other scores were close to, or at 100%.
-    ![homepage](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/homepage.jpg) 
-    ![findcare](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/find_care.jpg) 
-    ![addprovider](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/add_provider.jpg)    
-    ![logout](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/logout.jpg) 
-    ![providerdetails](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/provider_details.jpg) 
-    ![signin](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/signin.jpg) 
-    ![signup](https://github.com/RozWelch/CareHub-Project4-2023/blob/main/assets/readmeimages/validations/signup.jpg) 
+    Scores were close to, or at 100%.
+    ![homepage](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse1_homepage.jpg) 
+    ![all_products](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse2_all_products.jpg) 
+    ![all_face](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse3_all_face.jpg) 
+    ![all_body](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse4_all_body.jpg)
+    ![organics](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse5_organics.jpg)
+    ![Product Detail](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse6_product_detail.jpg)
+    ![How to Articles](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse7_howto_articles.jpg)
+    ![How to Detail](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse8_howto_detail.jpg)
+    ![Profile](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse8_howto_detail.jpg)
+    ![Wishlist](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse10_wishlist.jpg)
+    ![Bag](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse11_bag.jpg)
+    ![Checkout](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse12_checkout.jpg)
+    ![Checkout success](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse13_checkout_success.jpg)
+
 
 
 ## Testing

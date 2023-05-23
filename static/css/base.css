@@ -284,6 +284,7 @@ a.category-badge>span.badge:hover {
 /* --------------footer */
 
 footer {
+    margin-top: 100px;
     background: linear-gradient(135deg, #bb5c2a, #85390e) !important;
     color: #f8efe7;
 }
@@ -523,6 +524,10 @@ footer a:hover {
 
     .sign-up {
         font-size: 1rem;
+    }
+
+    footer {
+        margin-top: 10px;
     }
 
     /* Wishlist styling for smaller screens */

@@ -65,7 +65,7 @@
                         {% if product.image %}
                         <div>
                         <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                            <img class="card-img-top img-fluid howto-rollover" src="{{ product.image.url }}" alt="{{ product.name }}">
                         </a>
                             {% if product.is_new %}
                             <div id="newproduct">NEW</div>
@@ -74,7 +74,7 @@
                         {% else %}
                         <div>
                         <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                            <img class="card-img-top img-fluid howto-rollover" src="{{ MEDIA_URL }}noimage.png"
                                 alt="{{ product.name }}">
                         </a>
                             {% if product.is_new %}
