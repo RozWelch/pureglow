@@ -415,19 +415,22 @@ The site was aimed at purchasers of skin care products, main target audience is 
 ## Validation 
 
 * CSS - no errors when run through W3 validator:
-* Base css file
+    * Base css file
     <details>
     <summary>Base Css</summary>
+    
     ![base css](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/base_css.jpg)
 
-* Checkout css file
+    * Checkout css file
     <details>
     <summary>Checkout Css</summary>
+
     ![checkout css](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/checkout_css.jpg)
 
-* Profile css file
+    * Profile css file
     <details>
     <summary>Profile Css</summary>
+
     ![profile css](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/profile_css.jpg)
 
 * HTML:
@@ -446,43 +449,43 @@ The site was aimed at purchasers of skin care products, main target audience is 
     ![admin](https://github.com/RozWelch/pureglow/blob/main)    
 
 * Javascript: No errors when ran through JShint.
-* The shopping bag JS
+    * The shopping bag JS
     <details>
     <summary>Bag JS</summary>
 
     ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/bag_js.jpg)
 
-* Base JS
+    * Base JS
     <details>
     <summary>Base JS</summary>
 
     ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/base_js.jpg)
 
-* Checkout JS
+    * Checkout JS
     <details>
     <summary>Checkout JS</summary>
 
     ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/checkout_stripe_js.jpg)
 
-* Image selector JS
+    * Image selector JS
     <details>
     <summary>Image Selector JS</summary>
 
     ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/image_selector_js.jpg)
 
-* Products JS
+    * Products JS
     <details>
     <summary>Products JS</summary>
 
     ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/products_js.jpg)
 
-* Profile JS
+    * Profile JS
     <details>
     <summary>Profile JS</summary>
 
     ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/profile_js.jpg)
 
-* Quantity Input JS
+    * Quantity Input JS
     <details>
     <summary>Quantity Input JS</summary>
 
