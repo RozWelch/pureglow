@@ -435,9 +435,11 @@ The site was aimed at purchasers of skin care products, main target audience is 
 
 * HTML:
     <details>
-    <summary>All HTML files ran through the W3C HTML Validator with no errors</summary>
+    <summary>All HTML files ran through the W3C HTML Validator</summary>
 
-    ![homepage](https://github.com/RozWelch/pureglow/blob/main)
+    ![all html valid](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/all_files_html_valid.jpg)
+
+    All files were valid, with the exception of a duplicate ID where a product image is added. This could not be fixed, as it would break the code.
 
 
 * Python:
