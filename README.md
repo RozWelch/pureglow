@@ -571,7 +571,7 @@ A 'How To' section was added, to show the expertise of the company and to engage
 
 # Testing
 
-* Link to testing and results: https://ADD LINK
+* Link to testing and results: [Testing](https://github.com/RozWelch/pureglow/blob/main/TESTING.md)
 
 # Project Creation and Deployment
 
