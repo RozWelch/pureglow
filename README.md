@@ -443,12 +443,54 @@ The site was aimed at purchasers of skin care products, main target audience is 
 
 
 * Python:
-    <details>
-    <summary>Code Institites PEP8 Validator</summary>
 
-    All Python files ran through Code Institites PEP8 Validator with no errors, except for 2 files. The env.py and settings.py files had 2 lines that were too long, but I kept them as long lines, as the code was more legible.
+    All Python files ran through Code Institites PEP8 Validator with no errors.
 
-    ![admin](https://github.com/RozWelch/pureglow/blob/main)    
+| File name | CI Linter Results | link to screenshot | 
+| -- | -- | -- | 
+| bag/apps.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/bag/bag_apps.jpg) |
+| bag/contexts.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/bag/bag_contexts.jpg)   |
+| bag/urls.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/bag/bag_urls.jpg) |
+| bag/views.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/bag/bag_views.jpg) |
+| checkout/admin.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/checkout/checkout_admin.jpg) |
+| checkout/apps.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/checkout/checkout_apps.jpg) |
+| checkout/forms.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/checkout/checkout_forms.jpg) |
+| checkout/models.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/checkout/checkout_models.jpg) |
+| checkout/signals.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/checkout/checkout_signals.jpg) |
+| checkout/urls.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/checkout/checkout_urls.jpg) |
+| checkout/views.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/checkout/checkout_views.jpg) |
+| checkout/webhookhandler.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/checkout/checkout_webhookhandler.jpg) |
+| checkout/webhooks.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/checkout/checkout_webhooks.jpg) |
+| home/apps.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/home/home_apps.jpg) |
+| home/urls.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/home/home_urls.jpg) |
+| home/views.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/home/home_views.jpg) |
+| how_to/apps.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/how_to/howto_adds.jpg) |
+| how_to/admin.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/how_to/howto_admin.jpg) |
+| how_to/forms.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/how_to/howto_forms.jpg) |
+| how_to/models.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/how_to/howto_models.jpg) |
+| how_to/urls.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/how_to/howto_urls.jpg) |
+| how_to/views.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/how_to/howto_views.jpg) |
+| products/admin | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/products/products_admin.jpg) |
+| products/apps | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/products/products_apps.jpg) |
+| products/forms | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/products/products_forms.jpg) |
+| products/models | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/products/products_models.jpg) |
+| products/urls | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/products/products_urls.jpg) |
+| products/views | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/products/products_views.jpg) |
+| products/widgets | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/products/products_widgets.jpg) |
+| profiles/apps.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/profiles/profiles_apps.jpg) |
+| profiles/forms.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/profiles/profiles_forms.jpg) |
+| profiles/models.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/profiles/profiles_models.jpg) |
+| profiles/urls.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/profiles/profiles_urls.jpg) |
+| profiles/views.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/profiles/profiles_views.jpg) |
+| pure_glow/asgi.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/pure_glow/pureglow_asgi.jpg) |
+| pure_glow/settings.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/pure_glow/pureglow_settings.jpg) |
+| pure_glow/urls.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/pure_glow/pureglow_urls.jpg) |
+| pure_glow/wsgi.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/pure_glow/pureglow_wsgi.jpg) |
+| wishlist/apps.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/wishlist/wishlist_apps.jpg) |
+| wishlist/models.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/wishlist/wishlist_models.jpg) |
+| wishlist/urls.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/wishlist/wishlist_urls.jpg) |
+| wishlist/views.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/wishlist/wishlist_views.jpg) |
+  
 
 * Javascript: No errors when ran through JShint.
 * The shopping bag JS
