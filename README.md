@@ -1,11 +1,11 @@
-## Pure Glow
+# Pure Glow
 Pure Glow is a skincare range, selling products for the face, body and an organic range. Users can browse skincare products, and purchase them. There is a ‘how to’ section, with useful articles on how to use the products, users can view comments and signed-in users can add a comment. Signed-in users can add products to a wishlist, to purchase at a later date. 
 
 The payment system uses Stripe. Please note this website is for educational purposes. Do not enter any personal credit/debit card details when using the site. To test this system, test card details can be used. These can be found in Stripe's documentation website: [stripe](https://stripe.com/docs/testing/) 
 
 The live link can be found here - [pure glow skincare](https://pureglow.herokuapp.com/)
 
-## Am I Responsive mockups
+# Am I Responsive mockups
 * Used Am I Responsive website to show the main pages on different devices:
     <details>
     <summary>Pure Glow mockups</summary>
@@ -14,7 +14,7 @@ The live link can be found here - [pure glow skincare](https://pureglow.herokuap
     ![list](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/amiresponsive/allproducts.jpg)
     ![details](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/amiresponsive/skincare_articels.jpg)
 
-## Contents
+# Contents
 * [Design and User Experience](#Design-and-User-Experience)
 * [Features](#Features)
 * [Marketing](#Marketing)
@@ -26,7 +26,7 @@ The live link can be found here - [pure glow skincare](https://pureglow.herokuap
 * [Project Deployment](#Project-Creation-and-Deployment)
 * [Credits](#Credits)
 
-## Design and User Experience
+# Design and User Experience
 The site was aimed at purchasers of skin care products, main target audience is women age 18+.
 
 * Colour pallet:
@@ -126,7 +126,7 @@ The site was aimed at purchasers of skin care products, main target audience is 
     * As a shopper, I can review products and rate them, so I can give my feedback on my purchases.
     * As a shopper, I can create an account using my Google or Facebook account.
 
-## Features
+# Features
 * Header
     * The site logo is positing at the top left and is linked to the home page to make it easy for a user to navigate back to the home page.
     ![Header](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/features_low_res/feature1_header.jpg)
@@ -302,18 +302,31 @@ The site was aimed at purchasers of skin care products, main target audience is 
     * Signed in users can review products and rate them, to give feedback on their purchases.
     * A user can create an account using their Google or Facebook account.
 
-## Marketing
-* Business Model
+# Marketing
+## Business Model
     * pure glow is a Business to Consumer site (B2C). Products are sold directly online to the end user consumer. A pure glow customer is most likely to be a female adult interested in skincare. 
-* SEO
-    * Keywords were researched for the site    
-* Social Media Marketing
+## SEO
+SEO techniques were used to ensure the site ranks highly in search engine results
+## Keywords
+Both short tail and long tail keywords were carefully selected for the site. Keywords were selected by researching data available on keyword volume and competition using [wordtracker.com](https://www.wordtracker.com/)
+The most relevant keywords have been added to the site's meta-keywords and meta-description. These keywords have also been included in site content across the site:
+Pure Glow, skincare, moisturiser, face moisturiser, body moisturiser, skin cleanser, skin care products, organic skin care products
+Pure skin care, Kind to your skin, natural skin care range, nourish your skin
+
+## Sitemap and robots.txt 
+Using xml-sitemaps.com, a site map of the site was made. This ensures search engines are able to easily navigate the site and understand the site's structure.
+
+A robots.txt file was added to the project to tell search engines what directories not to search on the website. This improves SEO by increasing the quality of the site.
+
+Content marketing
+A 'How To' section was added, to show the expertise of the company and to engage and give users a reason to return to the site.   
+## Social Media Marketing
     * A facebook page was created for social media marketing. The page has a 'Shop Now' button to take the user to the pure glow website. A link to the facebook page is on the pure glow website footer. 
     ![Facebook](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/facebookpage_pureglow.jpg)
-* Email Marketing
+## Email Marketing
     * An email signup is included in the footer of the website. Users can sign up for an email and do not need an account to do this. This allows the business to share new arrivals, offers and news with customers and potential customers. Mailchimp was used to create this feature.
 
-## Technologies Used
+# Technologies Used
 * Languages: Python, HTML, CSS, Javascript
 * Other technologies used:  
     * Django: Main python framework 
@@ -338,7 +351,7 @@ The site was aimed at purchasers of skin care products, main target audience is 
     * Jshint: to validate Javascript
     * Python: Code Institute pep8 validator: https://pep8ci.herokuapp.com/
 
-## Agile
+# Agile
 * Github projects kanban boards were used, see link to final board here: https://github.com/users/RozWelch/projects/7
 * The project was broken down into sprints, with a Github milestone for each Epic. A Github issue was added for each user story, and allocated to a milestone. Each user story had a defined acceptance criteria, which breaks it down into tasks. 
 * The project was then divided into sprints:
@@ -399,7 +412,7 @@ The site was aimed at purchasers of skin care products, main target audience is 
 * Final Sprint: Refactoring and tidy up styling. After a meeting with my mentor, some of the tasks were moved to future features, due to time constraints at this stage.
 
 
-## Fixed and Unfixed Bugs
+# Fixed and Unfixed Bugs
 
 * Fixed bugs:
     * When first deployed to Heroku, the links were giving a ‘Server Error 500’. I fixed a couple of errors first: First I moved custom_storages.py to the correct location. I added gunicorn to the requirements.txt file. However these were not the cause of the error. I set DEBUT = True in settings to get a more accurate error message. On checking Heroku config vars, I had copied the "hidden" version of the database url from ElephantSQL: Some of the URL has been censored with **** symbols. From ElephantSQL, I copied the full DB url: I then updated the config var on heroku, and restart my app dynos: (the more button in the upper right, and select Restart All Dynos to rebuild my app.) Then the app was working correctly.
@@ -412,7 +425,7 @@ The site was aimed at purchasers of skin care products, main target audience is 
 
 * No known unfixed bugs
 
-## Validation 
+# Validation 
 
 * CSS - no errors when run through W3 validator:
 * Base css file
@@ -556,11 +569,11 @@ The site was aimed at purchasers of skin care products, main target audience is 
 
 
 
-## Testing
+# Testing
 
 * Link to testing and results: https://ADD LINK
 
-## Project Creation and Deployment
+# Project Creation and Deployment
 
 The project was created in Git Hub using the Code Institute template.
 
@@ -599,7 +612,7 @@ The project was created in Git Hub using the Code Institute template.
      * Type: 'git clone', then paste the URL already copied from GitHub earlier
      * Press Enter. Your local clone will be created.
 
-## Credits
+# Credits
 * Code Institue's 'Boutique Ado' tutorial
 * All images used are from Freepix: www.freepix.com
 * How To articles: https://www.nytimes.com/guides/tmagazine/skincare-routine
@@ -610,5 +623,5 @@ The project was created in Git Hub using the Code Institute template.
 * Animated Background tutorial: https://codepen.io/P1N2O/pen/pyBNzX
 * Terms & Conditions generatior: https://app.websitepolicies.com/
 
-## Acknowledgements
+# Acknowledgements
 Thanks to my mentor, my facilitator, my fellow students on Slack, tutoring support and to my friends for helping test the site.
