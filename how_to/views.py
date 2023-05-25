@@ -29,7 +29,7 @@ class HowToDetail(View):
                 "comment_form": ArticleCommentForm()
             },
         )
-    
+
     def post(self, request, slug, *args, **kwargs):
 
         queryset = HowTo.objects

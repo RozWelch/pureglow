@@ -8,7 +8,7 @@ class HowToAdmin(SummernoteModelAdmin):
 
     list_display = ('article_title', 'slug', 'created_on')
     search_fields = ['article_title', 'content']
-    list_filter = ('article_title','created_on')
+    list_filter = ('article_title', 'created_on')
     prepopulated_fields = {'slug': ('article_title',)}
     summernote_fields = ('content',)
 
