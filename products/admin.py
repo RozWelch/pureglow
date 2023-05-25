@@ -3,6 +3,7 @@ from .models import Product, SkinCategory
 
 # Register your models here.
 
+
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
@@ -16,6 +17,7 @@ class ProductAdmin(admin.ModelAdmin):
     )
 
     ordering = ('sku',)
+
 
 class SkinCategoryAdmin(admin.ModelAdmin):
     list_display = (

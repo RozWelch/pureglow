@@ -7,9 +7,11 @@ class ProductForm(forms.ModelForm):
 
     class Meta:
         model = Product
-        fields = ('category', 'sku', 'name', 'product_size', 'description', 'price', 'image_url', 'image', 'is_new')
+        fields = ('category', 'sku', 'name', 'product_size', 'description',
+                  'price', 'image_url', 'image', 'is_new')
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(label='Image', required=False,
+                             widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
