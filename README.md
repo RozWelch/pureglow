@@ -89,14 +89,13 @@ The site was aimed at purchasers of skin care products, main target audience is 
     * As a shopper, I can search all products, so that I can find what I am looking for.
     * As a shopper, I can sort all products, so that I can view products based on price or title.
     * As a site user, I can read ‘how to’ articles, so I better understand how to use the products.
-    * As a site user, I can read comments on ‘how to’ articles left by other customers, so I see what feedback and star rating they gave on the products they purchased.
+    * As a site user, I can read comments on ‘how to’ articles left by other customers, so I see what feedback they gave on the products they purchased.
     * As a shopper, I can add products to my wish list, so that I can go back and view them at a later date.
     * As a shopper, I can view my wish list, so I can find them easily in the one location.
  
 * Epic: User Account and Profile
     * As a site user, I can register an account, so that I can have a personal account and keep track of my orders and wishlist.
     * As a site user, I can log in or log out of my account, so that I can keep my account secure.
-    * As a site user, I can see my login status, so that I know if I'm logged in or out.
     * As a site user, I can save my personal details in my user profile, so that I do not have to fill them out for future orders.
     * As a site user, I can view my order history, so that I can remember what purchases I've made previously.
     * As a site user, I can recover my password in case I forget it, so that I can recover access to my account.

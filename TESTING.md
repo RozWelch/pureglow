@@ -1,7 +1,120 @@
+# Contents
+* [Browser and Devices Tests](#Browser-and-Devices-Tests)
+* [User Story Testing](#User-Story-Testing)
+* [Manual Testing](#Manual-Testing)
+
 # Browser and Devices Tests
 ## Browsers: tested on Google Chrome and Safari browsers with no issues noted.
 ## Devices: viewed on the following devices to check responsiveness: iPhone 11 Pro, iPhone 14, Samsung Galaxy, iPad, iMac pro 15in screen, iMac 27in screen
 ## Chrome Developer tools: checked multiple device sizes to check responsiveness
+
+# User Story Testing
+
+## Epic: Viewing and Navigation
+1 As a Site User, I can intuitively navigate around the site, so that I can find content.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/1_userstory_nav.jpg)
+
+2 As a Site User, I can view a list of products, so that I can select a product to view.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/2_all_products.jpg)
+
+3 As a shopper, I can click on a product, so that I can read the full product details.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/3_product_detail.jpg)
+
+4 As a shopper, I can view a specific category of products, so I can browse the type of products I'm looking for.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/4_products_category.jpg)
+
+5 As a shopper, I can search all products, so that I can find what I am looking for.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/5_search_results.jpg)
+
+6 As a shopper, I can sort all products, so that I can view products based on price or title.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/6_sort_priceetc.jpg)
+
+7 As a site user, I can read ‘how to’ articles, so I better understand how to use the products.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/7_articles.jpg)
+
+8 As a site user, I can read comments on ‘how to’ articles left by other customers, so I see what feedback they gave on the products they purchased.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/8_leaveacomment.jpg)
+
+9 As a shopper, I can add products to my wish list, so that I can go back and view them at a later date.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/9_addtowishlist.jpg)
+
+10 As a shopper, I can view my wish list, so I can find them easily in the one location.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/10_viewwishlist.jpg)
+
+
+## Epic: User Account and Profile
+
+11 As a site user, I can register an account, so that I can have a personal account and keep track of my orders and wishlist.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/11_register.jpg)
+
+12 As a site user, I can log in or log out of my account, so that I can keep my account secure.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/12_signin.jpg)
+
+13 As a site user, I can save my personal details in my user profile, so that I do not have to fill them out for future orders.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/13_userprofile.jpg)
+
+14 As a site user, I can view my order history, so that I can remember what purchases I've made previously.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/14_orderhistory.jpg)
+
+15 As a site user, I can recover my password in case I forget it, so that I can recover access to my account.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/15_password_recovery.jpg)
+
+
+## Epic: Purchasing
+
+16 As a shopper, I can add products with different quantities to my shopping bag, so that I can purchase them all together when I am ready.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/16_add_quantity.jpg)
+
+17 As a shopper, I can view the current total of my shopping bag as I am shopping, so that I can see how much my purchases costs so far, so I can avoid spending too much.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/17_view_total.jpg)
+
+18 As a shopper, I can view the contents of my shopping bag at any time, so I can see the products included and the total cost.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/18_bag_total.jpg)
+
+19 As a shopper, I can adjust the quantity, or delete products in my bag, so that I can easily make changes before I purchase.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/19_bag_adjust.jpg)
+
+20 As a shopper, I can see a summary of my shopping cart when I checkout so that I know what products are included and the total cost before I commit to purchasing.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/20_checkout_summary.jpg)
+
+21 As a shopper, I can easily enter my payment information securely, so that I can purchase my chosen products quickly with no issues.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/21_stripe_payment.jpg)
+
+22 As a shopper, I can checkout as a guest, so I don't have to sign up for an account.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/22_guest_checkout.jpg)
+
+23 As a shopper, I can view an order confirmation after checkout, so that I know my purchase was successful and see a summary of my purchases.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/23_order_confirmation_toast.jpg)
+
+24 As a shopper, I can receive an email confirmation of my order, so that I have a record of my purchase.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/24_email_confirm.jpg)
+
+
+## Epic: Admin & Store Management
+
+25 As an Admin, I can easily add/edit/delete products through a front end interface, so that I can manage the store content.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/25_addproduct.jpg)
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/25_delete_product_confirm.jpg)
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/25_edit_delete_adminbuttons.jpg)
+
+
+26 As an Admin, I can add/edit/delete ‘how to’ articles, so that I can manage the store content.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/26_admin_articles.jpg)
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/26_admin_edit_delete_articles.jpg)
+
+
+27 As an Admin, I can approve comments on ‘how to’ articles, so I can manage the site content.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/27_admin_comments.jpg)
+
+
+## Epic: User Interaction
+
+28 As a site user, I can add comments on ‘how to’ articles, so that I can give my feedback.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/28_add_comment.jpg)
+
+29 As a site user, I can sign up for the website's newsletter, so that I can keep up to date with new products and promotions.
+![nav](https://github.com/RozWelch/pureglow/blob/main/documentation/userstory_testing/29_email_signup.jpg)
+
 
 # Manual Testing
 ## Site Navigation
@@ -212,3 +325,8 @@
 | Information Displayed | Displayed | All previous order info displayed correctly | Pass |
 | Message | On load | Past confirmation order info message appears | Pass |
 | 'Back to Profile' button | Click | Redirect to profile page | Pass |
+| Wishlist page |   |   |  
+| Information Displayed | Displayed | All wishlist info displayed correctly | Pass |
+| 'Shop now' icon | Click | Brings user to product detail page | Pass |
+| 'Remove' icon | Click | Removes item from wishlist and displays success message | Pass |
+
