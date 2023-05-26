@@ -534,6 +534,10 @@ footer a:hover {
         margin-top: 10px;
     }
 
+    .logo-font {
+        margin-top: 30px;
+    }
+
     /* Wishlist styling for smaller screens */
 
     .wishlist-heading {
