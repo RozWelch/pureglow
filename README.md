@@ -80,7 +80,7 @@ The site was aimed at purchasers of skin care products, main target audience is 
     
     ![Sitemap](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/sitemap.jpg)
 
-* User Stories:
+## User Stories:
 * Epic: Viewing and Navigation
     * As a Site User, I can intuitively navigate around the site, so that I can find content.
     * As a Site User, I can view a list of products, so that I can select a product to view.
@@ -304,7 +304,7 @@ The site was aimed at purchasers of skin care products, main target audience is 
 
 # Marketing
 ## Business Model
-    * pure glow is a Business to Consumer site (B2C). Products are sold directly online to the end user consumer. A pure glow customer is most likely to be a female adult interested in skincare. 
+* pure glow is a Business to Consumer site (B2C). Products are sold directly online to the end user consumer. A pure glow customer is most likely to be a female adult interested in skincare. 
 ## SEO
 SEO techniques were used to ensure the site ranks highly in search engine results
 ## Keywords
@@ -321,10 +321,10 @@ A robots.txt file was added to the project to tell search engines what directori
 Content marketing
 A 'How To' section was added, to show the expertise of the company and to engage and give users a reason to return to the site.   
 ## Social Media Marketing
-    * A facebook page was created for social media marketing. The page has a 'Shop Now' button to take the user to the pure glow website. A link to the facebook page is on the pure glow website footer. 
-    ![Facebook](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/facebookpage_pureglow.jpg)
+* A facebook page was created for social media marketing. The page has a 'Shop Now' button to take the user to the pure glow website. A link to the facebook page is on the pure glow website footer. 
+![Facebook](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/facebookpage_pureglow.jpg)
 ## Email Marketing
-    * An email signup is included in the footer of the website. Users can sign up for an email and do not need an account to do this. This allows the business to share new arrivals, offers and news with customers and potential customers. Mailchimp was used to create this feature.
+* An email signup is included in the footer of the website. Users can sign up for an email and do not need an account to do this. This allows the business to share new arrivals, offers and news with customers and potential customers. Mailchimp was used to create this feature.
 
 # Technologies Used
 * Languages: Python, HTML, CSS, Javascript
@@ -427,7 +427,7 @@ A 'How To' section was added, to show the expertise of the company and to engage
 
 # Validation 
 
-* CSS - no errors when run through W3 validator:
+## CSS - no errors when run through W3 validator:
 * Base css file
     <details>
     <summary>Base Css</summary>
@@ -455,7 +455,7 @@ A 'How To' section was added, to show the expertise of the company and to engage
     All files were valid, with the exception of a duplicate ID where a product image is added. This could not be fixed, as it would break the code.
 
 
-* Python:
+## Python:
 
     All Python files ran through Code Institites PEP8 Validator with no errors.
 
@@ -505,7 +505,7 @@ A 'How To' section was added, to show the expertise of the company and to engage
 | wishlist/views.py | All clear, no errors found | [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/python_jpgs/wishlist/wishlist_views.jpg) |
   
 
-* Javascript: No errors when ran through JShint.
+## Javascript: No errors when ran through JShint.
 * The shopping bag JS
     <details>
     <summary>Bag JS</summary>
@@ -548,7 +548,7 @@ A 'How To' section was added, to show the expertise of the company and to engage
 
     ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/quantity_input_js.jpg)
 
-* Lighthouse:
+## Lighthouse:
     <details>
     <summary>Lighhouse results</summary>
 
@@ -625,3 +625,4 @@ The project was created in Git Hub using the Code Institute template.
 
 # Acknowledgements
 Thanks to my mentor, my facilitator, my fellow students on Slack, tutoring support and to my friends for helping test the site.
+A HUGE thank you to my fellow co-hort women on this course - such a great team to have to work with - can't thank them enough for all the support, advice and a bit of craic!
