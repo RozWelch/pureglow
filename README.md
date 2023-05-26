@@ -30,7 +30,7 @@ The live link can be found here - [pure glow skincare](https://pureglow.herokuap
 The site was aimed at purchasers of skin care products, main target audience is women age 18+.
 
 * Colour pallet:
-    * The main colours choosen gave the site a premium look, with warm accent colours to give an approchable feel.  
+    * The main colours choosen gave the site a premium look, with warm accent colours to give an approachable feel.  
     ![Colour Pallett](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/colour_pallet.jpg)
 
 * Wireframes:
@@ -548,10 +548,11 @@ A 'How To' section was added, to show the expertise of the company and to engage
     ![bag js](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/validation/css/jshint/quantity_input_js.jpg)
 
 ## Lighthouse:
+* Scores were close to, or at 100%.
+
     <details>
     <summary>Lighhouse results</summary>
-
-    Scores were close to, or at 100%.
+    
     ![homepage](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse1_homepage.jpg) 
     ![all_products](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse2_all_products.jpg) 
     ![all_face](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/lighthouse_scores/lighthouse3_all_face.jpg) 
@@ -575,41 +576,8 @@ A 'How To' section was added, to show the expertise of the company and to engage
 # Project Creation and Deployment
 
 The project was created in Git Hub using the Code Institute template.
-
-* Deployment from Heroku:  
-    * Login to Heroku (https://www.heroku.com/) or create an account
-    * On the main page, click the 'New' button in the top right corner, select 'Create New App' from the menu
-    * Choose a name and select your region, then click on the 'Create App' button
-    * Choose Github as the deployment method, then select the correct repository, and click the connect button
-    * Select the Settings tab
-    * Click Reveal Config Vars
-    * Add Config Vars settings and values as below:
-        * AWS_ACCESS_KEY_ID	 From: AWS CSV file
-        * AWS_SECRET_ACCESS_KEY	 From: AWS CSV file(instructions below)
-        * DATABASE_URL	 From: Elephant Postgres 
-        * EMAIL_HOST_PASS	 From: Password from email client
-        * EMAIL_HOST_USER	 From: Site's email address
-        * SECRET_KEY	 From: Random key generated with secret key generator
-        * STRIPE_PUBLIC_KEY	 From: Stripe Dashboard /Developers tab /API Keys /Publishable key
-        * STRIPE_SECRET_KEY	 From: Stripe Dashboard /Developers tab /API Keys /Secret key
-        * STRIPE_WH_SECRET	 From: Stripe Dashboard /Developers tab /Webhooks /site endpoint /Signing secret
-        * USE_AWS	 Set to: True when AWS is set up
-    * Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes
-    * Scroll to the bottom of the deploy page and select the preferred deployment type
-    * Click 'Enable Automatic Deploys' if you wish to automatically deploy when you push updates to Github
-
-* Forking the repository
-     * Locate the repository at this link https://github.com/RozWelch/pureglow
-     * At the top right of the repository, select 'Fork' from the menu
-     * A copy of the repository is now created
-
-* Cloning the repository
-     * Locate the repository at this link https://github.com/RozWelch/pureglow
-     * Under 'Local', there is cloning options: HTTPS, SSH, GitHub CLI. Click the prefered cloning option, and then copy the link provided.
-     * Open the terminal
-     * In the terminal change the current working directory to where you wish to put the cloned directory
-     * Type: 'git clone', then paste the URL already copied from GitHub earlier
-     * Press Enter. Your local clone will be created.
+The project was deployed using Heroku.
+Deployment setup can be viewed here: [Deployment](https://github.com/RozWelch/pureglow/blob/main/DEPLOY.md)
 
 # Credits
 * Code Institue's 'Boutique Ado' tutorial
@@ -624,4 +592,4 @@ The project was created in Git Hub using the Code Institute template.
 
 # Acknowledgements
 Thanks to my mentor, my facilitator, my fellow students on Slack, tutoring support and to my friends for helping test the site.
-A HUGE thank you to my fellow co-hort women on this course - such a great team to have to work with - can't thank them enough for all the support, advice and a bit of craic!
+A HUGE thank you to my fellow cohort women on this course - such a great team to have to work with - can't thank them enough for all the support, advice and a bit of craic!
