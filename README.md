@@ -592,4 +592,3 @@ Deployment setup can be viewed here: [Deployment](https://github.com/RozWelch/pu
 
 # Acknowledgements
 Thanks to my mentor, my facilitator, my fellow students on Slack, tutoring support and to my friends for helping test the site.
-A HUGE thank you to my fellow cohort women on this course - such a great team to have to work with - can't thank them enough for all the support, advice and a bit of craic!

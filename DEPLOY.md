@@ -2,12 +2,12 @@ The project was created in Git Hub using the Code Institute template.
 # DEPLOYMENT PROCESS
 
 ## To Fork the site
-Locate the repository at this link LINK
+Locate the repository at this link [pure glow Github](https://github.com/RozWelch/pureglow/tree/main)
 * At the top right of the repository, select 'Fork' from the menu
 * A copy of the repository is now created
 
 ## Cloning the repository
-* Locate the repository at this LINK
+* Locate the repository at this link [pure glow Github](https://github.com/RozWelch/pureglow/tree/main)
 * Under 'Local', there is cloning options: HTTPS, SSH, GitHub CLI. Click the prefered cloning option, and then copy the link provided.
 * Open the terminal
 * In the terminal change the current working directory to where you wish to put the cloned directory
@@ -20,17 +20,17 @@ Locate the repository at this link LINK
 * Choose a name and select your region, then click on the 'Create App' button
 * Choose Github as the deployment method, then select the correct repository, and click the connect button
 * Select the Settings tab
-* Click Reveal Config Vars SCREENSHOT
+* Click Reveal Config Vars [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/deployment/config_vars.jpg) 
 * Add Config Vars settings and values as below:
 * AWS_ACCESS_KEY_ID From: AWS - CSV file - see AWS section below
 * AWS_SECRET_ACCESS_KEY From: AWS - CSV file - see AWS section below
-* DATABASE_URL From: ElephantSQL Postgres - see ElephantSQL section
+* DATABASE_URL From: ElephantSQL Postgres - see ElephantSQL section - [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/deployment/elephantsql_database.jpg) 
 * EMAIL_HOST_PASS From: Password from email client
 * EMAIL_HOST_USER From: Site's email address
-* SECRET_KEY From: Random key generated with secret key generator LINK
-* STRIPE_PUBLIC_KEY From the Developers tab on Stripe - API Keys /Publishable key
-* STRIPE_SECRET_KEY From the Developers tab on Stripe - API Keys /Secret key
-* STRIPE_WH_SECRET From the Developers tab on Stripe - Webhooks /site endpoint /Signing secret
+* SECRET_KEY From: Random key generated with secret key generator
+* STRIPE_PUBLIC_KEY From the Developers tab on Stripe - API Keys /Publishable key [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/deployment/stripe_api_key.jpg) 
+* STRIPE_SECRET_KEY From the Developers tab on Stripe - API Keys /Secret key [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/documentation/readme_images/deployment/stripe_signing_secret.jpg) 
+* STRIPE_WH_SECRET From the Developers tab on Stripe - Webhooks /site endpoint /Signing secret [screenshot](https://github.com/RozWelch/pureglow/blob/main/documentation/readme_images/deployment/stripe_signingsecret_webhooks.jpg) 
 * USE_AWS Set to: True when AWS is set up
 
 * Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes
